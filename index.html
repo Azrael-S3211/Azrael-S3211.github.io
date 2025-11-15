@@ -1,123 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>EcoBin — Protótipo de Lixeira Subterrânea</title>
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <style>
-    :root{
-      --bg:#f4f6f8;
-      --card:#ffffff;
-      --text:#1a1a1a;
-      --muted:#555;
-      --accent:#2563eb;
-    }
-    *{box-sizing:border-box;margin:0;padding:0;font-family:Inter,Arial}
-    body{background:var(--bg);color:var(--text);line-height:1.7}
-    .wrap{max-width:1100px;margin:30px auto;padding:20px}
-    header{text-align:center;margin-bottom:30px}
-    h1{font-size:32px;margin-bottom:10px}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoBin - Protótipo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+            line-height: 1.6;
+        }
+        header {
+            background: #ffffff;
+            padding: 25px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
 
-    section{margin-top:30px}
-    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,0.08);text-align:justify}
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: justify;
+        }
 
-    .grid-models{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
-    .model-box{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
-    model-viewer{width:100%;height:420px;background:#000;border-radius:8px;}
-    .caption{text-align:center;margin-top:8px;font-size:14px;color:var(--muted)}
+        h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+        }
 
-    table{width:100%;border-collapse:separate;border-spacing:0 6px;margin-top:12px}
-    th{text-align:left;padding:6px;background:#e7e9ec;font-weight:600}
-    td{padding:6px;background:#fff}
+        .model-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
 
-    footer{text-align:center;margin-top:40px;font-size:14px;color:var(--muted)}
+        model-viewer {
+            width: 100%;
+            height: 350px;
+            background: #000;
+            border-radius: 10px;
+        }
 
-    @media(max-width:800px){.grid-models{grid-template-columns:1fr} model-viewer{height:340px}}
-  </style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+        }
+
+        table th {
+            background: #eee;
+        }
+    </style>
 </head>
 <body>
-<div class="wrap">
 
-<header>
-  <h1>EcoBin — Lixeira Subterrânea Inteligente</h1>
-  <p style="color:var(--muted)">Protótipo funcional com automação, acessibilidade e maior capacidade de armazenamento urbano.</p>
-</header>
+<header>EcoBin - Lixeira Subterrânea Inteligente</header>
 
-<section class="grid-models">
-  <div class="model-box">
-    <model-viewer src="lixeira_fechada.glb" alt="Lixeira Fechada" camera-controls exposure="0.8" shadow-intensity="1" auto-rotate></model-viewer>
-    <div class="caption">Modelo — Lixeira Fechada</div>
-  </div>
-
-  <div class="model-box">
-    <model-viewer src="lixeira_aberta.glb" alt="Lixeira Aberta" camera-controls exposure="0.8" shadow-intensity="1" auto-rotate></model-viewer>
-    <div class="caption">Modelo — Lixeira Aberta</div>
-  </div>
+<section>
+    <h2>Proposta e Propósito</h2>
+    <p>
+        A gestão dos resíduos sólidos é um dos desafios mais importantes das cidades brasileiras,
+        afetando diretamente a saúde pública, o meio ambiente e a qualidade de vida. As lixeiras
+        tradicionais apresentam limitações como baixa capacidade, exposição às condições climáticas,
+        mau cheiro e atração de animais.
+    </p>
+    <p>
+        A EcoBin propõe uma lixeira subterrânea inteligente que combina maior capacidade de
+        armazenamento com um sistema moderno, discreto e automatizado de descarte. O objetivo é
+        melhorar a eficiência da coleta e promover um ambiente urbano mais limpo, sustentável e
+        organizado.
+    </p>
 </section>
 
-<section class="card">
-  <h2>1. Proposta e Propósitos do Projeto</h2>
-  <p>
-    A gestão dos resíduos sólidos é um dos maiores desafios enfrentados nas cidades brasileiras, com impactos diretos na saúde pública, no meio ambiente e na qualidade de vida da população. As lixeiras tradicionais, embora funcionais, apresentam limitações como baixa capacidade, exposição às intempéries, mau cheiro e atração de animais.
-  </p>
-  <p>
-    O projeto EcoBin propõe o desenvolvimento de uma lixeira subterrânea inteligente, unindo alta capacidade de armazenamento a um sistema moderno, discreto e automatizado de descarte. O objetivo é melhorar a eficiência da coleta e promover ambientes urbanos mais limpos, sustentáveis e acessíveis.
-  </p>
+<section>
+    <h2>Protótipo 3D</h2>
+    <p>Abaixo estão os modelos 3D do protótipo. À esquerda, a versão fechada; à direita, a versão aberta.</p>
+
+    <div class="model-container">
+        <model-viewer src="lixeira_fechada.glb" camera-controls auto-rotate></model-viewer>
+        <model-viewer src="lixeira_aberta.glb" camera-controls auto-rotate></model-viewer>
+    </div>
 </section>
 
-<section class="card">
-  <h2>2. Objetivos</h2>
-  <h3>2.1 Objetivo Geral</h3>
-  <p>Construir um protótipo físico de lixeira subterrânea que permita o descarte seguro, acessível e automatizado de resíduos sólidos em áreas públicas.</p>
-
-  <h3>2.2 Objetivos do Produto</h3>
-  <p>
-    O EcoBin utiliza um contêiner subterrâneo de alta capacidade acessado por tampas metálicas discretas, equipadas com sensores de abertura automática que garantem acessibilidade universal. O sistema conta ainda com retenção de odores, proteção contra chuva e compatibilidade com veículos de coleta especializados.
-  </p>
+<section>
+    <h2>Objetivo do Projeto</h2>
+    <p>
+        O objetivo geral do projeto é construir um protótipo físico de uma lixeira subterrânea que
+        possibilite o descarte seguro, acessível e automatizado de resíduos sólidos em áreas públicas.
+        O sistema utiliza tampas metálicas com sensores para abertura automática, retenção de odores
+        e proteção contra chuva.
+    </p>
 </section>
 
-<section class="card">
-  <h2>3. Justificativa</h2>
-  <p>
-    A gestão inadequada dos resíduos urbanos ainda é um dos principais problemas ambientais do país. Segundo Guerra et al. (2021), métodos tradicionais de coleta e armazenamento são paliativos e pouco eficientes a longo prazo.
-  </p>
-  <p>
-    A literatura recente destaca o papel da Internet das Coisas na modernização da coleta de resíduos (Sato, 2022), reforçando a importância de soluções tecnológicas inovadoras (Costa & Fracalossi, 2017). Além disso, Silva e Lima (2023) apontam que tecnologias automatizadas promovem eficiência operacional, inclusão social e redução de impactos ambientais.
-  </p>
-  <p>
-    Oliveira (2024) destaca que sistemas subterrâneos também melhoram a organização urbana, reduzem a poluição visual e minimizam vetores de doenças. Assim, o EcoBin contribui diretamente para o ODS 11 — Cidades e Comunidades Sustentáveis, especialmente a meta 11.6.
-  </p>
+<section>
+    <h2>Justificativa</h2>
+    <p>
+        A gestão inadequada dos resíduos sólidos urbanos representa um dos maiores problemas das
+        cidades brasileiras. Estudos recentes destacam que soluções tradicionais se mostram pouco
+        eficientes a longo prazo e que tecnologias como IoT e sistemas automatizados podem tornar a
+        coleta mais inteligente, sustentável e eficiente.
+    </p>
+    <p>
+        A EcoBin contribui diretamente para cidades mais limpas e organizadas, alinhando-se aos
+        Objetivos de Desenvolvimento Sustentável (ODS), especialmente o ODS 11.
+    </p>
 </section>
 
-<section class="card">
-  <h2>4. Materiais Utilizados</h2>
-  <p>Materiais selecionados considerando funcionalidade, durabilidade e viabilidade do protótipo:</p>
+<section>
+    <h2>Materiais Utilizados</h2>
 
-  <table>
-      <tr><th>Recurso</th><th>Quantidade</th><th>Descrição</th><th>Valor Unitário (R$)</th><th>Valor Total (R$)</th></tr>
-      <tr><td>Sensor ultrassônico</td><td>2</td><td>Detecta presença para acionar o sistema</td><td>45,00</td><td>90,00</td></tr>
-      <tr><td>Arduino Uno</td><td>1</td><td>Microcontrolador para automação</td><td>120,00</td><td>120,00</td></tr>
-      <tr><td>Motor DC</td><td>1</td><td>Aciona a tampa automaticamente</td><td>85,00</td><td>85,00</td></tr>
-      <tr><td>Estrutura metálica</td><td>1</td><td>Base e corpo da lixeira</td><td>200,00</td><td>200,00</td></tr>
-      <tr><td>Tampa de alumínio</td><td>1</td><td>Cobertura superior</td><td>80,00</td><td>80,00</td></tr>
-      <tr><td>Cabos e conectores</td><td>1</td><td>Ligações elétricas</td><td>30,00</td><td>30,00</td></tr>
-      <tr><td>Fonte de alimentação</td><td>1</td><td>Fornece energia ao sistema</td><td>70,00</td><td>70,00</td></tr>
-  </table>
-  <p><strong>Valor total estimado:</strong> R$ 675,00</p>
+    <table>
+        <tr>
+            <th>Recurso</th>
+            <th>Quantidade</th>
+            <th>Descrição</th>
+            <th>Valor Total (R$)</th>
+        </tr>
+        <tr>
+            <td>Sensor ultrassônico</td>
+            <td>2</td>
+            <td>Detecção para acionamento automático</td>
+            <td>90,00</td>
+        </tr>
+        <tr>
+            <td>Arduino Uno</td>
+            <td>1</td>
+            <td>Microcontrolador principal</td>
+            <td>120,00</td>
+        </tr>
+        <tr>
+            <td>Motor DC</td>
+            <td>1</td>
+            <td>Automação da tampa</td>
+            <td>85,00</td>
+        </tr>
+        <tr>
+            <td>Estrutura metálica</td>
+            <td>1</td>
+            <td>Base e corpo da lixeira</td>
+            <td>200,00</td>
+        </tr>
+        <tr>
+            <td>Tampa de alumínio</td>
+            <td>1</td>
+            <td>Cobertura superior</td>
+            <td>80,00</td>
+        </tr>
+        <tr>
+            <td>Cabos e conectores</td>
+            <td>1</td>
+            <td>Ligações elétricas</td>
+            <td>30,00</td>
+        </tr>
+        <tr>
+            <td>Fonte de alimentação</td>
+            <td>1</td>
+            <td>Energia do sistema</td>
+            <td>70,00</td>
+        </tr>
+    </table>
+
+    <p><strong>Valor total estimado:</strong> R$ 675,00.</p>
 </section>
 
-<section class="card">
-  <h2>5. Métodos</h2>
-  <p>
-    O desenvolvimento seguiu etapas estruturadas: pesquisa de viabilidade, testes de sensores e motor integrados ao Arduino Uno, construção da estrutura metálica e instalação da tampa automatizada. Foram realizados testes simulados de descarte e acionamento para avaliar eficiência e consumo energético.
-  </p>
+<section>
+    <h2>Métodos</h2>
+    <p>
+        O projeto foi desenvolvido por meio de etapas estruturadas incluindo planejamento técnico,
+        testes individuais dos sensores e motores, integração com Arduino Uno, montagem da
+        estrutura física metálica e instalação da tampa automatizada. Testes simulados de descarte e
+        acionamento foram realizados para avaliar desempenho e consumo de energia.
+    </p>
 </section>
 
-<footer>
-  EcoBin — Protótipo Acadêmico | 2025
-</footer>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-</div>
 </body>
 </html>
