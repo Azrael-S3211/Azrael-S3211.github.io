@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Meu GitHub Pages</title>
+  <meta name="description" content="Página simples para GitHub Pages">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3b82f6;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:linear-gradient(180deg,var(--bg),#0b1220);color:#e6eef6;line-height:1.5}
+    .wrap{max-width:900px;margin:48px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    nav a:hover{color:var(--accent)}
+    .hero{background:var(--card);padding:28px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    h1{margin:0 0 8px;font-size:28px}
+    p.lead{margin:0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .card{background:linear-gradient(180deg,var(--glass),transparent);padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .muted{color:var(--muted);font-size:14px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:white;text-decoration:none}
+    /* responsive small tweaks */
+    @media (max-width:560px){.wrap{margin:18px;padding:16px} h1{font-size:20px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">GH</div>
+        <div>
+          <div style="font-weight:700">Meu GitHub Pages</div>
+          <div class="muted" style="font-size:13px">Um site simples gerado para o seu github.io</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Sobre</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Olá — bem-vindo ao meu GitHub Pages</h1>
+        <p class="lead">Esta é uma página inicial simples, pronta para ser usada em <strong>username.github.io</strong>. Edite o conteúdo e suba para o repositório.</p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Rápido</h3>
+            <p class="muted">HTML + CSS leve — abre rápido em qualquer conexão.</p>
+          </div>
+          <div class="card">
+            <h3>Responsivo</h3>
+            <p class="muted">Adapta-se bem a celulares, tablets e desktop.</p>
+          </div>
+          <div class="card">
+            <h3>Customizável</h3>
+            <p class="muted">Troque cores, fontes e seções facilmente.</p>
+          </div>
+        </div>
+
+        <p style="margin-top:16px">
+          <a class="btn" href="#projects">Ver projetos</a>
+        </p>
+      </section>
+
+      <section id="about" style="margin-top:20px">
+        <div class="card">
+          <h2>Sobre</h2>
+          <p class="muted">Aqui você pode colocar uma descrição curta sobre você, seus interesses ou o propósito deste site. Use Markdown para criar conteúdo nas suas páginas do GitHub, ou edite diretamente este arquivo <code>index.html</code>.</p>
+        </div>
+      </section>
+
+      <section id="projects" style="margin-top:16px">
+        <div class="card">
+          <h2>Projetos</h2>
+          <ul class="muted">
+            <li>Projeto A — breve descrição</li>
+            <li>Projeto B — breve descrição</li>
+            <li>Projeto C — breve descrição</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:16px">
+        <div class="card">
+          <h2>Contato</h2>
+          <p class="muted">Coloque seu e-mail ou link para redes sociais. Ex: <a href="mailto:seu@exemplo.com">seu@exemplo.com</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Criado com ❤️ — Suba este arquivo como <code>index.html</code> no repositório <strong>username.github.io</strong> para publicar.
+    </footer>
+  </div>
+</body>
+</html>
