@@ -90,6 +90,16 @@
       color:#eef3fb;
     }
     th{background:rgba(255,255,255,0.05)}
+    
+    /* Estilo para o título da subseção de materiais */
+    h3 {
+      font-size: 18px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: var(--accent);
+      border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+      padding-bottom: 5px;
+    }
 
     footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
 
@@ -113,14 +123,13 @@
       </div>
       <nav>
         <a href="#proposta">Proposta</a>
-        <a href="#modelos">Modelos</a>
-        <a href="#materiais">Materiais</a>
+        <a href="#modelos">Protótipo 3D</a>
+        <a href="#materiais">Recursos</a>
         <a href="#metodos">Métodos</a>
       </nav>
     </header>
 
-    <!-- PROPOSTA -->
-    <section id="proposta" class="section-card">
+        <section id="proposta" class="section-card">
       <h2>Proposta e Propósito</h2>
       <p>
         A gestão dos resíduos sólidos é um desafio crescente nas cidades brasileiras, impactando
@@ -136,12 +145,13 @@
       </p>
     </section>
 
-    <!-- MODELOS 3D -->
-    <section id="modelos" class="section-card">
+        <section id="modelos" class="section-card">
       <h2>Protótipo 3D</h2>
       <p>
-        Abaixo estão os modelos 3D do protótipo. À esquerda encontra-se a versão fechada;
-        à direita, a versão aberta.
+        O protótipo digital foi desenvolvido no **AutoCAD** e representa a **estrutura final** da EcoBin,
+        substituindo o modelo físico para fins de validação e visualização. Este formato 3D permite
+        uma avaliação minuciosa da estrutura e ergonomia, como demonstrado pelas vistas abaixo.
+        À esquerda, encontra-se a versão fechada; à direita, a versão aberta.
       </p>
 
       <div class="grid">
@@ -161,18 +171,21 @@
       </div>
     </section>
 
-    <!-- OBJETIVOS -->
-    <section id="objetivos" class="section-card">
+        <section id="objetivos" class="section-card">
       <h2>Objetivos do Projeto</h2>
       <p>
-        Desenvolver um protótipo físico funcional de uma lixeira subterrânea que permita o descarte
-        seguro, acessível e automatizado de resíduos sólidos em áreas públicas. O sistema conta com
-        sensores para abertura automática, mecanismos de retenção de odores e proteção contra chuva.
+        O objetivo geral do projeto era, inicialmente, construir um protótipo físico de uma lixeira subterrânea
+        que permitisse o descarte seguro, acessível e automatizado de resíduos sólidos em áreas públicas.
+        O sistema contaria com sensores para abertura automática, mecanismos de retenção de odores e proteção contra chuva.
+      </p>
+      <p>
+        **Nota:** Devido à suspensão do acesso ao laboratório (FabLab), o projeto foi reorientado para o desenvolvimento
+        de um **protótipo digital 3D** (AutoCAD) e do site de documentação, o que funcionou como uma etapa
+        de **prototipação experimental** para validação do conceito.
       </p>
     </section>
 
-    <!-- JUSTIFICATIVA -->
-    <section id="justificativa" class="section-card">
+        <section id="justificativa" class="section-card">
       <h2>Justificativa</h2>
       <p>
         A coleta tradicional de resíduos tem se mostrado insuficiente para atender às necessidades
@@ -182,31 +195,44 @@
       </p>
     </section>
 
-    <!-- MATERIAIS -->
-    <section id="materiais" class="section-card">
-      <h2>Materiais Utilizados</h2>
+        <section id="materiais" class="section-card">
+      <h2>Custos e Recursos</h2>
+      
+      <p>Lista dos materiais e custos estimados para a **construção do protótipo físico** (Objetivo inicial):</p>
 
       <table>
         <tr><th>Recurso</th><th>Qtd.</th><th>Descrição</th><th>Valor (R$)</th></tr>
-        <tr><td>Sensor ultrassônico</td><td>2</td><td>Acionamento automático</td><td>90,00</td></tr>
-        <tr><td>Arduino Uno</td><td>1</td><td>Microcontrolador</td><td>120,00</td></tr>
-        <tr><td>Motor DC</td><td>1</td><td>Abertura da tampa</td><td>85,00</td></tr>
+        <tr><td>Sensor ultrassônico</td><td>2</td><td>Detecta presença para acionamento</td><td>90,00</td></tr>
+        <tr><td>Arduino Uno</td><td>1</td><td>Microcontrolador para automação</td><td>120,00</td></tr>
+        <tr><td>Microservo</td><td>1</td><td>Conversão de sinais em movimento mecânico</td><td>14,90</td></tr>
+        <tr><td>Motor DC</td><td>1</td><td>Aciona a tampa automaticamente</td><td>85,00</td></tr>
         <tr><td>Estrutura metálica</td><td>1</td><td>Base e corpo da lixeira</td><td>200,00</td></tr>
         <tr><td>Tampa de alumínio</td><td>1</td><td>Cobertura superior</td><td>80,00</td></tr>
         <tr><td>Cabos e conectores</td><td>1</td><td>Ligações elétricas</td><td>30,00</td></tr>
-        <tr><td>Fonte de alimentação</td><td>1</td><td>Energia do sistema</td><td>70,00</td></tr>
+        <tr><td>Fonte de alimentação</td><td>1</td><td>Fornece energia ao sistema</td><td>70,00</td></tr>
       </table>
 
-      <p><strong>Total estimado:</strong> R$ 675,00</p>
+      <p><strong>Total estimado para o protótipo físico:</strong> R$ 689,90</p>
+
+      <h3>Recursos Utilizados para o Modelo Digital</h3>
+
+      <table>
+        <tr><th>Recurso</th><th>Qtd.</th><th>Descrição</th><th>Valor (R$)</th></tr>
+        <tr><td>AutoCAD</td><td>1</td><td>Licença anual via Plano Estudante</td><td>0,00</td></tr>
+        <tr><td>GitHub</td><td>1</td><td>Hospedagem de código-fonte e site</td><td>0,00</td></tr>
+        <tr><td>Computador</td><td>1</td><td>Hardware de desenvolvimento (Acer Aspire 5)</td><td>3.500,00</td></tr>
+      </table>
+      <p style="font-size:14px;color:var(--muted)">Estes recursos foram utilizados na fase de desenvolvimento digital, conforme Tabela 2 do TCC.</p>
     </section>
 
-    <!-- MÉTODOS -->
-    <section id="metodos" class="section-card">
+        <section id="metodos" class="section-card">
       <h2>Métodos</h2>
       <p>
-        O desenvolvimento seguiu etapas estruturadas: pesquisa técnica, testes de sensores e motor,
-        integração com Arduino, montagem da estrutura metálica, instalação da tampa automatizada
-        e testes simulados de funcionamento e consumo energético.
+        O método foi dividido em duas fases. Inicialmente, focou-se na **Pesquisa e Testes Iniciais**
+        (definição do circuito, testes de sensores ultrassônicos e motor, e planejamento da montagem da estrutura física).
+        Em seguida, a metodologia foi reorientada para o **Desenvolvimento Digital**, que incluiu a
+        modelagem 3D detalhada no AutoCAD, a documentação técnica e o desenvolvimento do site
+        (Visual Studio Code/GitHub) para a apresentação final do protótipo experimental.
       </p>
     </section>
 
