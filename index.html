@@ -1,245 +1,248 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>EcoBin — Protótipo</title>
-  <meta name="description" content="Protótipo 3D e descrição completa do projeto EcoBin">
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EcoBin — Protótipo</title>
+  <meta name="description" content="Protótipo 3D e descrição completa do projeto EcoBin">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-  <style>
-    :root{
-      --bg:#0f1724;
-      --card:#0b1220;
-      --muted:#98a2b3;
-      --accent:#3b82f6;
-      --glass: rgba(255,255,255,0.04)
-    }
-    *{box-sizing:border-box}
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#98a2b3;
+      --accent:#3b82f6;
+      --glass: rgba(255,255,255,0.04)
+    }
+    *{box-sizing:border-box}
 
-    body{
-      margin:0;
-      font-family:Inter, system-ui, -apple-system,'Segoe UI',Roboto,Arial;
-      background:linear-gradient(180deg,var(--bg),#071126);
-      color:#eef3fb;
-      line-height:1.6;
-    }
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system,'Segoe UI',Roboto,Arial;
+      background:linear-gradient(180deg,var(--bg),#071126);
+      color:#eef3fb;
+      line-height:1.6;
+    }
 
-    .wrap{max-width:1100px;margin:40px auto;padding:20px}
+    .wrap{max-width:1100px;margin:40px auto;padding:20px}
 
-    header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      margin-bottom:24px;
-    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:24px;
+    }
 
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{
-      width:48px;height:48px;
-      border-radius:10px;
-      background:linear-gradient(135deg,var(--accent),#7c3aed);
-      display:flex;align-items:center;justify-content:center;
-      font-weight:700;
-    }
-    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
-    nav a:hover{color:var(--accent)}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{
+      width:48px;height:48px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#7c3aed);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;
+    }
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    nav a:hover{color:var(--accent)}
 
-    h1{margin:0;font-size:26px}
-    p.lead{margin:6px 0 0;color:var(--muted)}
+    h1{margin:0;font-size:26px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
 
-    .section-card{
-      background:var(--card);
-      padding:26px;
-      border-radius:14px;
-      box-shadow:0 6px 18px rgba(2,6,23,0.6);
-      margin-bottom:24px;
-    }
+    .section-card{
+      background:var(--card);
+      padding:26px;
+      border-radius:14px;
+      box-shadow:0 6px 18px rgba(2,6,23,0.6);
+      margin-bottom:24px;
+    }
 
-    h2{margin-top:0;font-size:22px;color:#fff}
-    p{text-align:justify}
+    h2{margin-top:0;font-size:22px;color:#fff}
+    p{text-align:justify}
 
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:18px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:18px}
 
-    .model-card{
-      background:rgba(255,255,255,0.03);
-      padding:12px;
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,0.03);
-      display:flex;
-      flex-direction:column;
-    }
+    .model-card{
+      background:rgba(255,255,255,0.03);
+      padding:12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.03);
+      display:flex;
+      flex-direction:column;
+    }
 
-    model-viewer{
-      width:100%;height:420px;border-radius:8px;
-      background:#000;
-    }
+    model-viewer{
+      width:100%;height:420px;border-radius:8px;
+      background:#000;
+    }
 
-    .caption{
-      margin-top:10px;color:var(--muted);
-      display:flex;justify-content:space-between;align-items:center;
-    }
+    .caption{
+      margin-top:10px;color:var(--muted);
+      display:flex;justify-content:space-between;align-items:center;
+    }
 
-    .btn{background:var(--accent);color:white;padding:8px 10px;border-radius:8px;text-decoration:none;font-size:14px}
+    .btn{background:var(--accent);color:white;padding:8px 10px;border-radius:8px;text-decoration:none;font-size:14px}
 
-    table{
-      width:100%;border-collapse:collapse;margin-top:20px;
-    }
-    th,td{
-      padding:10px;border-bottom:1px solid rgba(255,255,255,0.1);
-      color:#eef3fb;
-    }
-    th{background:rgba(255,255,255,0.05)}
-    
-    /* Estilo para o título da subseção de materiais */
-    h3 {
-      font-size: 18px;
-      margin-top: 25px;
-      margin-bottom: 10px;
-      color: var(--accent);
-      border-bottom: 1px solid rgba(59, 130, 246, 0.3);
-      padding-bottom: 5px;
-    }
+    table{
+      width:100%;border-collapse:collapse;margin-top:20px;
+    }
+    th,td{
+      padding:10px;border-bottom:1px solid rgba(255,255,255,0.1);
+      color:#eef3fb;
+    }
+    th{background:rgba(255,255,255,0.05)}
+    
+    /* Estilo para o título da subseção de materiais */
+    h3 {
+      font-size: 18px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: var(--accent);
+      border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+      padding-bottom: 5px;
+    }
 
-    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
 
-    @media(max-width:880px){
-      .grid{grid-template-columns:1fr}
-      model-viewer{height:360px}
-    }
-  </style>
+    @media(max-width:880px){
+      .grid{grid-template-columns:1fr}
+      model-viewer{height:360px}
+    }
+  </style>
 </head>
 
 <body>
-  <div class="wrap">
+  <div class="wrap">
 
-    <header>
-      <div class="brand">
-        <div class="logo">EB</div>
-        <div>
-          <div style="font-weight:700;font-size:18px">EcoBin</div>
-          <div class="muted" style="font-size:13px">Protótipo de lixeira subterrânea automatizada</div>
-        </div>
-      </div>
-      <nav>
-        <a href="#proposta">Proposta</a>
-        <a href="#modelos">Protótipo 3D</a>
-        <a href="#materiais">Recursos</a>
-        <a href="#metodos">Métodos</a>
-      </nav>
-    </header>
+    <header>
+      <div class="brand">
+        <div class="logo">EB</div>
+        <div>
+          <div style="font-weight:700;font-size:18px">EcoBin</div>
+          <div class="muted" style="font-size:13px">Protótipo de lixeira subterrânea automatizada</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#proposta">Proposta</a>
+        <a href="#modelos">Protótipo 3D</a>
+        <a href="#materiais">Recursos</a>
+        <a href="#metodos">Métodos</a>
+      </nav>
+    </header>
 
-        <section id="proposta" class="section-card">
-      <h2>Proposta e Propósito</h2>
-      <p>
-        A gestão dos resíduos sólidos é um desafio crescente nas cidades brasileiras, impactando
-        diretamente a saúde pública, o meio ambiente e a qualidade de vida. As lixeiras tradicionais
-        apresentam limitações como baixa capacidade, exposição às condições climáticas, mau cheiro
-        e atração de animais.
-      </p>
-      <p>
-        O projeto EcoBin propõe uma solução moderna: uma lixeira subterrânea inteligente, com
-        maior capacidade de armazenamento e um sistema automatizado de descarte. Essa solução
-        visa melhorar a eficiência da coleta e tornar o ambiente urbano mais limpo, sustentável
-        e organizado.
-      </p>
-    </section>
+        <section id="proposta" class="section-card">
+      <h2>Proposta e Propósito</h2>
+      <p>
+        A gestão dos resíduos sólidos é um desafio crescente nas cidades brasileiras, impactando
+        diretamente a saúde pública, o meio ambiente e a qualidade de vida. As lixeiras tradicionais
+        apresentam limitações como baixa capacidade, exposição às condições climáticas, mau cheiro
+        e atração de animais.
+      </p>
+      <p>
+        O projeto EcoBin propõe uma solução moderna: uma lixeira subterrânea inteligente, com
+        maior capacidade de armazenamento e um sistema automatizado de descarte. Essa solução
+        visa melhorar a eficiência da coleta e tornar o ambiente urbano mais limpo, sustentável
+        e organizado.
+      </p>
+    </section>
 
-        <section id="modelos" class="section-card">
-      <h2>Protótipo 3D</h2>
-      <p>
-        O protótipo digital foi desenvolvido no  AutoCAD  e representa a  estrutura final  da EcoBin,
-        substituindo o modelo físico para fins de validação e visualização. Este formato 3D permite
-        uma avaliação minuciosa da estrutura e ergonomia, como demonstrado pelas vistas abaixo.
-        À esquerda, encontra-se a versão fechada; à direita, a versão aberta.
-      </p>
+        <section id="modelos" class="section-card">
+      <h2>Protótipo 3D</h2>
+      <p>
+        O protótipo digital foi desenvolvido no  AutoCAD  e representa a  estrutura final  da EcoBin,
+        substituindo o modelo físico para fins de validação e visualização. Este formato 3D permite
+        uma avaliação minuciosa da estrutura e ergonomia, como demonstrado pelas vistas abaixo.
+        À esquerda, encontra-se a versão fechada; à direita, a versão aberta.
+      </p>
 
-      <div class="grid">
-        <div class="model-card">
-          <model-viewer src="lixeira_fechada.glb" camera-controls auto-rotate></model-viewer>
-          <div class="caption">
-            <span>Lixeira fechada</span>
-          </div>
-        </div>
+      <div class="grid">
+        <div class="model-card">
+          <model-viewer src="lixeira_fechada.glb" camera-controls auto-rotate></model-viewer>
+          <div class="caption">
+            <span>Lixeira fechada</span>
+          </div>
+        </div>
 
-        <div class="model-card">
-          <model-viewer src="lixeira_aberta.glb" camera-controls auto-rotate></model-viewer>
-          <div class="caption">
-            <span>Lixeira aberta</span>
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="model-card">
+          <model-viewer src="lixeira_aberta.glb" camera-controls auto-rotate></model-viewer>
+          <div class="caption">
+            <span>Lixeira aberta</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="objetivos" class="section-card">
-      <h2>Objetivos do Projeto</h2>
-      <p>
-        O objetivo geral do projeto era, inicialmente, construir um protótipo físico de uma lixeira subterrânea
-        que permitisse o descarte seguro, acessível e automatizado de resíduos sólidos em áreas públicas.
-        O sistema contaria com sensores para abertura automática, mecanismos de retenção de odores e proteção contra chuva.
-      </p>
-      <p>
-         Nota:  Devido à suspensão do acesso ao laboratório (FabLab), o projeto foi reorientado para o desenvolvimento
-        de um  protótipo digital 3D  (AutoCAD) e do site de documentação, o que funcionou como uma etapa
-        de  prototipação experimental  para validação do conceito.
-      </p>
-    </section>
+        <section id="objetivos" class="section-card">
+      <h2>Objetivos do Projeto</h2>
+      <p>
+        O objetivo geral do projeto era, inicialmente, construir um protótipo físico de uma lixeira subterrânea
+        que permitisse o descarte seguro, acessível e automatizado de resíduos sólidos em áreas públicas.
+        O sistema contaria com sensores para abertura automática, mecanismos de retenção de odores e proteção contra chuva.
+      </p>
+      <p>
+         Nota:  Devido à suspensão do acesso ao laboratório (FabLab), o projeto foi reorientado para o desenvolvimento
+        de um  protótipo digital 3D  (AutoCAD) e do site de documentação, o que funcionou como uma etapa
+        de  prototipação experimental  para validação do conceito.
+      </p>
+    </section>
 
-        <section id="justificativa" class="section-card">
-      <h2>Justificativa</h2>
-      <p>
-        A coleta tradicional de resíduos tem se mostrado insuficiente para atender às necessidades
-        crescentes das cidades. Tecnologias como IoT e sistemas automatizados tornam o processo
-        mais eficiente, sustentável e econômico. A EcoBin se alinha ao ODS 11, promovendo cidades
-        mais limpas, organizadas e seguras.
-      </p>
-    </section>
+        <section id="justificativa" class="section-card">
+      <h2>Justificativa</h2>
+      <p>
+        A coleta tradicional de resíduos tem se mostrado insuficiente para atender às necessidades
+        crescentes das cidades. Tecnologias como IoT e sistemas automatizados tornam o processo
+        mais eficiente, sustentável e econômico. A EcoBin se alinha ao ODS 11, promovendo cidades
+        mais limpas, organizadas e seguras.
+      </p>
+    </section>
 
-        <section id="materiais" class="section-card">
-      <h2>Custos e Recursos</h2>
-      
-      <p>Lista dos materiais e custos estimados para a  construção do protótipo físico  (Objetivo inicial):</p>
+                <section id="materiais" class="section-card">
+      <h2>Custos e Recursos</h2>
+      
+      <p>Lista dos materiais e custos estimados para a  construção do protótipo físico  (Objetivo inicial):</p>
 
-      <table>
-        <tr><th>Recurso</th><th>Qtd.</th><th>Descrição</th><th>Valor (R$)</th></tr>
-        <tr><td>Sensor ultrassônico</td><td>2</td><td>Detecta presença para acionamento</td><td>90,00</td></tr>
-        <tr><td>Arduino Uno</td><td>1</td><td>Microcontrolador para automação</td><td>120,00</td></tr>
-        <tr><td>Microservo</td><td>1</td><td>Conversão de sinais em movimento mecânico</td><td>14,90</td></tr>
-        <tr><td>Motor DC</td><td>1</td><td>Aciona a tampa automaticamente</td><td>85,00</td></tr>
-        <tr><td>Estrutura metálica</td><td>1</td><td>Base e corpo da lixeira</td><td>200,00</td></tr>
-        <tr><td>Tampa de alumínio</td><td>1</td><td>Cobertura superior</td><td>80,00</td></tr>
-        <tr><td>Cabos e conectores</td><td>1</td><td>Ligações elétricas</td><td>30,00</td></tr>
-        <tr><td>Fonte de alimentação</td><td>1</td><td>Fornece energia ao sistema</td><td>70,00</td></tr>
-      </table>
+      <table>
+        <tr><th>Recurso</th><th>Qtd.</th><th>Descrição</th><th>Valor (R$)</th></tr>
+        <tr><td>Sensor ultrassônico</td><td>2</td><td>Detecta presença para acionamento</td><td>90,00</td></tr>
+        <tr><td>Arduino Uno</td><td>1</td><td>Microcontrolador para automação</td><td>120,00</td></tr>
+        <tr><td>Microservo</td><td>1</td><td>Conversão de sinais em movimento mecânico</td><td>14,90</td></tr>
+        <tr><td>Motor DC</td><td>1</td><td>Aciona a tampa automaticamente</td><td>85,00</td></tr>
+        <tr><td>Estrutura metálica</td><td>1</td><td>Base e corpo da lixeira</td><td>200,00</td></tr>
+        <tr><td>Tampa de alumínio</td><td>1</td><td>Cobertura superior</td><td>80,00</td></tr>
+        <tr><td>Cabos e conectores</td><td>1</td><td>Ligações elétricas</td><td>30,00</td></tr>
+        <tr><td>Fonte de alimentação</td><td>1</td><td>Fornece energia ao sistema</td><td>70,00</td></tr>
+      </table>
 
-      <p><strong>Total estimado para o protótipo físico:</strong> R$ 689,90</p>
+      <p><strong>Total estimado para o protótipo físico:</strong> R$ 689,90</p>
 
-      <h3>Recursos Utilizados para o Modelo Digital</h3>
+      <h3>Recursos Utilizados para o Modelo Digital</h3>
 
-      <table>
-        <tr><th>Recurso</th><th>Qtd.</th><th>Descrição</th><th>Valor (R$)</th></tr>
-        <tr><td>AutoCAD</td><td>1</td><td>Licença anual via Plano Estudante</td><td>0,00</td></tr>
-        <tr><td>GitHub</td><td>1</td><td>Hospedagem de código-fonte e site</td><td>0,00</td></tr>
-        <tr><td>Computador</td><td>1</td><td>Hardware de desenvolvimento (Acer Aspire 5)</td><td>3.500,00</td></tr>
-      </table>
-      <p style="font-size:14px;color:var(--muted)">Estes recursos foram utilizados na fase de desenvolvimento digital, conforme Tabela 2 do TCC.</p>
-    </section>
+      <table>
+        <tr><th>Recurso</th><th>Qtd.</th><th>Descrição</th><th>Valor (R$)</th></tr>
+        <tr><td>AutoCAD</td><td>1</td><td>Licença anual via Plano Estudante</td><td>0,00</td></tr>
+        <tr><td>**Conversor Image to STL**</td><td>**1**</td><td>**Plataforma online para conversão de STEP para GLB**</td><td>**0,00**</td></tr>
+        <tr><td>GitHub</td><td>1</td><td>Hospedagem de código-fonte e site</td><td>0,00</td></tr>
+        <tr><td>Computador</td><td>1</td><td>Hardware de desenvolvimento (Acer Aspire 5)</td><td>3.500,00</td></tr>
+      </table>
+      <p style="font-size:14px;color:var(--muted)">Estes recursos foram utilizados na fase de desenvolvimento digital, conforme Tabela 2 do TCC.</p>
+    </section>
 
-        <section id="metodos" class="section-card">
-      <h2>Métodos</h2>
-      <p>
-        O método foi dividido em duas fases. Inicialmente, focou-se na  Pesquisa e Testes Iniciais 
-        (definição do circuito, testes de sensores ultrassônicos e motor, e planejamento da montagem da estrutura física).
-        Em seguida, a metodologia foi reorientada para o  Desenvolvimento Digital , que incluiu a
-        modelagem 3D detalhada no AutoCAD, a documentação técnica e o desenvolvimento do site
-        (Visual Studio Code/GitHub) para a apresentação final do protótipo experimental.
-      </p>
-    </section>
+                <section id="metodos" class="section-card">
+      <h2>Métodos</h2>
+      <p>
+        O método foi dividido em duas fases. Inicialmente, focou-se na  Pesquisa e Testes Iniciais 
+        (definição do circuito, testes de sensores ultrassônicos e motor, e planejamento da montagem da estrutura física).
+        Em seguida, a metodologia foi reorientada para o  Desenvolvimento Digital, que incluiu a
+        modelagem 3D detalhada no AutoCAD, a exportação para o formato STEP e, posteriormente,
+        a conversão para **.GLB** através da plataforma **Image to STL**. A etapa final consistiu na
+        documentação técnica e no desenvolvimento do site (Visual Studio Code/GitHub) para a
+        apresentação do protótipo experimental.
+      </p>
+    </section>
 
-    <footer>
-      UPX 9
-    </footer>
+    <footer>
+      UPX 9
+    </footer>
 
-  </div>
+  </div>
 </body>
 </html>
