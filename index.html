@@ -3,144 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Workshop - Wide Market</title>
-    <link rel="icon" type="image/png" href="static/img/logo.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <title>Teste de Tons de Cinza - Banners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .banner {
+            border-radius: 12px;
+            padding: 40px 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+        .banner:hover {
+            transform: translateY(-2px);
+        }
+        .banner-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h2 {
+            margin: 0 0 10px 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Barra Superior -->
-    <div class="top-bar">
-        <div class="top-bar-content">
-            <a href="index.html" class="logo">
-                <img src="static/img/logo.png" alt="Wide Market Logo">
-                Wide Market
-            </a>
-            <div class="top-bar-links">
-                <a href="login.html" id="login-link" data-i18n="topBar.login">Login</a>
-                <a href="usuario.html" id="user-link" class="hidden" data-i18n="topBar.account">Minha Conta</a>
-                <div class="language-switcher">
-                    <label for="language-select" class="sr-only" data-i18n="topBar.language">Idioma</label>
-                    <select id="language-select" data-i18n-aria-label="topBar.language"></select>
-                </div>
-            </div>
-        </div>
+
+<!-- Banner 1: Branco -->
+<div class="banner" style="background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); color: #333;">
+    <div class="banner-content">
+        <h2>Banner #1</h2>
+        <p>Tom: Branco</p>
     </div>
+</div>
 
-    <!-- Navegação Principal -->
-    <div class="categories-nav">
-        <div class="categories-container">
-            <a href="index.html" class="category-link" data-i18n="nav.home">Home</a>
-            <a href="produtos.html" class="category-link" data-i18n="nav.products">Produtos</a>
-            <a href="workshop3d.html" class="category-link active" data-i18n="nav.workshop3d">3D Workshop</a>
-            <a href="livros.html" class="category-link" data-i18n="nav.books">Livros</a>
-            <a href="cursos.html" class="category-link" data-i18n="nav.courses">Cursos</a>
-            <a href="servicos.html" class="category-link" data-i18n="nav.services">Serviços</a>
-            <a href="ferramentas.html" class="category-link" data-i18n="nav.tools">Ferramentas e Softwares</a>
-        </div>
+<!-- Banner 2: Cinza Muito Claro -->
+<div class="banner" style="background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%); color: #333;">
+    <div class="banner-content">
+        <h2>Banner #2</h2>
+        <p>Tom: Cinza Muito Claro</p>
     </div>
+</div>
 
-    <!-- Banner 3D Workshop -->
-    <section class="amazon-banner-section" style="margin: 40px 20px; text-align: center;">
-        <div class="amazon-banner" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; padding: 30px 20px; color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: transform 0.3s, box-shadow 0.3s;">
-            <div style="max-width: 1200px; margin: 0 auto;">
-                <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 200px;">
-                        <model-viewer src="static/img/Ranger.glb" alt="3D Model" camera-controls autoplay auto-rotate shadow-intensity="1" exposure="1" style="width: 100%; height: 200px;"></model-viewer>
-                    </div>
-                    <div style="flex: 1; min-width: 200px;">
-                        <h2 style="margin: 0 0 10px 0; font-size: 28px; font-weight: bold;">Cupom Exclusivo: WIDEMARKET</h2>
-                        <p style="margin: 0; font-size: 20px; font-weight: 600;">Ganhe 10% de desconto em modelos 3D!</p>
-                        <p style="margin: 10px 0 0 0; font-size: 16px; font-weight: 400;">*Válido apenas para produtos selecionados. Cupom sujeito a expiração.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <style>
-            .amazon-banner:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-            }
-        </style>
-    </section>
+<!-- Banner 3: Cinza Claro -->
+<div class="banner" style="background: linear-gradient(135deg, #d0d0d0 0%, #c0c0c0 100%); color: #222;">
+    <div class="banner-content">
+        <h2>Banner #3</h2>
+        <p>Tom: Cinza Claro</p>
+    </div>
+</div>
 
-    <!-- Seção de Produtos 3D Workshop -->
-    <section class="section-heading" style="margin-top: 60px; padding: 0 20px;">
-        <h2>3D Workshop</h2>
-        <p>Confira nossa seleção de modelos 3D e assets para criadores e designers.</p>
-    </section>
+<!-- Banner 4: Cinza Claro-Médio -->
+<div class="banner" style="background: linear-gradient(135deg, #b0b0b0 0%, #a0a0a0 100%); color: #111;">
+    <div class="banner-content">
+        <h2>Banner #4</h2>
+        <p>Tom: Cinza Claro-Médio</p>
+    </div>
+</div>
 
-    <section class="filter-bar" style="padding: 0 20px; margin-bottom: 30px;">
-        <div class="filter-field filter-field--search">
-            <label class="filter-label" for="workshop3d-search">Buscar produtos</label>
-            <div class="filter-field__controls">
-                <input
-                    type="search"
-                    id="workshop3d-search"
-                    placeholder="Digite parte do nome"
-                >
-            </div>
-        </div>
-        <div class="filter-field">
-            <label class="filter-label" for="workshop3d-collection">Coleção</label>
-            <select id="workshop3d-collection">
-                <option value="">Todas as coleções</option>
-                <!-- As demais opções serão preenchidas automaticamente pelo JS -->
-            </select>
-        </div>
-    </section>
+<!-- Banner 5: Cinza Médio -->
+<div class="banner" style="background: linear-gradient(135deg, #909090 0%, #808080 100%); color: #fff;">
+    <div class="banner-content">
+        <h2>Banner #5</h2>
+        <p>Tom: Cinza Médio</p>
+    </div>
+</div>
 
-    <section class="products-grid" id="workshop3d-products-grid" style="padding: 0 20px; margin-bottom: 60px;"></section>
+<!-- Banner 6: Cinza Médio-Escuro -->
+<div class="banner" style="background: linear-gradient(135deg, #707070 0%, #606060 100%); color: #fff;">
+    <div class="banner-content">
+        <h2>Banner #6</h2>
+        <p>Tom: Cinza Médio-Escuro</p>
+    </div>
+</div>
 
-    <!-- Banners finais -->
-    <section class="home-bottom-ads">
-        <h3>Anúncios</h3>
-        <div class="home-bottom-ads__grid">
-            <div class="ad-banner">
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-5820256021930446"
-                    data-ad-slot="1234567890"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-            <div class="ad-banner">
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-5820256021930446"
-                    data-ad-slot="0987654321"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-        </div>
-    </section>
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-block">
-                <h4 data-i18n="footer.aboutTitle">Wide Market</h4>
-                <p data-i18n="footer.about">Os melhores preços em lojas oficiais. Compre direto com o melhor indicativo de preço do mercado.</p>
-            </div>
-            <div class="footer-block">
-                <h4 data-i18n="footer.links.title">Navegação</h4>
-                <a href="index.html" data-i18n="nav.home">Home</a>
-                <a href="produtos.html" data-i18n="nav.products">Produtos</a>
-                <a href="cursos.html" data-i18n="footer.links.courses">Cursos</a>
-                <a href="servicos.html" data-i18n="footer.links.services">Serviços</a>
-                <a href="ferramentas.html" data-i18n="footer.links.tools">Ferramentas e Softwares</a>
-            </div>
+<!-- Banner 7: Cinza Escuro -->
+<div class="banner" style="background: linear-gradient(135deg, #505050 0%, #404040 100%); color: #fff;">
+    <div class="banner-content">
+        <h2>Banner #7</h2>
+        <p>Tom: Cinza Escuro</p>
+    </div>
+</div>
 
-        </div>
-        <div class="footer-bottom" data-i18n="footer.rights">© 2025 Wide Market. Todos os direitos reservados.</div>
-    </footer>
+<!-- Banner 8: Cinza Muito Escuro -->
+<div class="banner" style="background: linear-gradient(135deg, #303030 0%, #202020 100%); color: #fff;">
+    <div class="banner-content">
+        <h2>Banner #8</h2>
+        <p>Tom: Cinza Muito Escuro</p>
+    </div>
+</div>
 
-    <script src="assets/js/i18n.js"></script>
-    <script src="assets/js/auth.js"></script>
-    <script src="static/base/workshop3d.js"></script>
+<!-- Banner 9: Quase Preto -->
+<div class="banner" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); color: #fff;">
+    <div class="banner-content">
+        <h2>Banner #9</h2>
+        <p>Tom: Quase Preto</p>
+    </div>
+</div>
+
+<!-- Banner 10: Preto -->
+<div class="banner" style="background: linear-gradient(135deg, #000000 0%, #000000 100%); color: #fff;">
+    <div class="banner-content">
+        <h2>Banner #10</h2>
+        <p>Tom: Preto</p>
+    </div>
+</div>
+
 </body>
 </html>
