@@ -1,0 +1,498 @@
+/* Estilização da Sidebar */
+.editor-sidebar {
+    width: 250px;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+    overflow-x: hidden; /* Evita que o texto vaze ao fechar */
+    white-space: nowrap;
+}
+
+/* Estado da sidebar fechada */
+.editor-sidebar.collapsed {
+    width: 60px; /* Largura apenas para os ícones aparecerem */
+}
+
+/* Esconde o texto dos botões grandes quando fechado */
+.editor-sidebar.collapsed .sidebar-menu-list {
+    display: none;
+}
+
+/* Garante que os 4 botões do topo fiquem alinhados verticalmente ou escondam o excesso */
+.editor-sidebar.collapsed .sidebar-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.editor-sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Container dos 3 botões superiores */
+.sidebar-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+/* Botões de ícone (quadrados azuis) */
+.nav-button {
+    background-color: #007bff;
+    border-radius: 4px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+.nav-button svg, .nav-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Container para os novos botões largos */
+.sidebar-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#languageOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilo das opções de idioma */
+.language-option {
+    background: #fff;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo do Botão Largo (Teste) */
+.menu-button-wide {
+    width: 100%;
+    padding: 12px;
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+
+.editor-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.editor-main {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* The ads are now inside .editor-main, so they follow the normal content flow */
+/* No additional width/margin adjustments needed */
+
+/* Dark Mode Styles - configurado no CSS local do EnglishCourse */
+.dark-mode .editor-main {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-mode .stat-card {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: #ffffff;
+}
+
+.dark-mode .welcome-header h2 {
+    color: #ffffff;
+}
+
+.dark-mode .welcome-header p {
+    color: #cccccc;
+}
+
+.dark-mode .editor-sidebar {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-mode .menu-button-wide {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+.dark-mode .menu-button-wide:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.dark-mode .sidebar-buttons .nav-button {
+    background-color: #007bff;
+}
+
+.dark-mode .sidebar-buttons .nav-button:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode .language-option {
+    background: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+.dark-mode .language-option:hover {
+    background: #333;
+}
+
+.dark-mode .progress-container {
+    background: #444;
+}
+
+.dark-mode .btn-resume {
+    background: #007bff;
+    color: #ffffff;
+}
+
+.dark-mode .btn-resume:hover {
+    background: #0056b3;
+}
+
+/* Mantendo a proporção e tipografia do seu site */
+.welcome-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.welcome-header p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Grid que se ajusta ao espaço central */
+.course-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #e0e0e0;
+}
+
+.stat-card h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* Barra de progresso interna */
+.progress-container {
+    background: #eee;
+    height: 8px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    background: #007bff; /* Cor azul do seu ícone na imagem */
+    height: 100%;
+    border-radius: 10px;
+}
+
+.btn-resume {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-resume:hover {
+    background: #0056b3;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================
+   MOBILE MENU STYLES
+   ============================================ */
+
+/* Mobile Menu Toggle Button */
+.mobile-menu-toggle {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+}
+
+.mobile-menu-btn {
+    background: #007bff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+.mobile-menu-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.mobile-menu-btn svg {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Hide sidebar by default on mobile */
+    .editor-sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        z-index: 1000;
+        transition: left 0.3s ease-in-out;
+        height: 100vh;
+        width: 250px;
+    }
+
+    /* Show sidebar when active */
+    .editor-sidebar.active {
+        left: 0;
+    }
+
+    /* Show mobile menu button */
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    /* Mobile starts collapsed like desktop */
+    .editor-sidebar {
+        width: 60px;
+        left: 0;
+        transition: width 0.3s ease;
+    }
+
+    .editor-sidebar.collapsed {
+        width: 60px;
+    }
+
+    .editor-sidebar:not(.collapsed) {
+        width: 250px;
+    }
+
+    .editor-sidebar:not(.collapsed) .sidebar-menu-list {
+        display: flex;
+    }
+
+    .editor-sidebar.collapsed .sidebar-menu-list {
+        display: none;
+    }
+
+    .editor-sidebar.collapsed .sidebar-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Adjust main content for mobile */
+    .editor-main {
+        padding: 20px;
+        margin-left: 60px;
+        width: calc(100% - 60px);
+        transition: margin-left 0.3s ease, width 0.3s ease;
+    }
+
+    /* When sidebar is expanded on mobile */
+    .editor-sidebar:not(.collapsed) ~ .editor-main {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+    }
+
+    /* Adjust welcome header for mobile */
+    .welcome-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .welcome-header p {
+        font-size: 1rem;
+    }
+
+    /* Stack stat cards vertically on mobile */
+    .course-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Make stat cards full width on mobile */
+    .stat-card {
+        padding: 15px;
+    }
+}
+
+/* ============================================
+   ADS SECTION STYLES
+   ============================================ */
+
+/* Container de Anúncios - Modo Claro por padrão */
+.home-bottom-ads {
+    margin-top: 30px;
+    /* Remove margens laterais para ocupar toda a largura */
+    margin-left: -40px;
+    margin-right: -40px;
+    /* Ajusta padding interno */
+    padding: 20px 40px;
+    border-radius: 12px;
+    background-color: transparent; /* Remove fundo branco */
+    transition: background-color 0.3s ease;
+}
+
+.home-bottom-ads h3 {
+    color: #333; /* Texto escuro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-bottom-ads__grid {
+    /* Flexbox para manter os 3 anúncios lado a lado */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Não quebra linha - mantém sempre 3 lado a lado */
+    flex-wrap: nowrap;
+}
+
+.ad-banner {
+    background: #ffffff; /* Fundo branco dos cards */
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    min-height: 150px;
+    transition: all 0.3s ease;
+    /* Mantém centralização */
+    text-align: center;
+    /* Remove padding interno */
+    padding: 0;
+    /* Largura igual para os 3 anúncios */
+    flex: 1;
+}
+
+/* Força os anúncios a seguirem apenas o modo da página, não do navegador */
+.home-bottom-ads {
+    color-scheme: light;
+}
+
+/* Ajustes para quando o Modo Escuro estiver ativo */
+.dark-mode .home-bottom-ads {
+    color-scheme: dark;
+    background-color: #1a1a1a; /* Fundo escuro */
+}
+
+.dark-mode .home-bottom-ads h3 {
+    color: #ffffff;
+}
+
+.dark-mode .ad-banner {
+    background: #2d2d2d;
+    border-color: #444;
+}
+
+/* Tenta forçar os iframes dos anúncios a seguirem o esquema de cores da página */
+.dark-mode .ad-banner iframe {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+    .home-bottom-ads {
+        /* Ajusta margens para mobile */
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 15px 20px;
+    }
+
+    .home-bottom-ads__grid {
+        /* Em mobile pode quebrar se necessário */
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .ad-banner {
+        /* Largura mínima menor no mobile */
+        min-width: 150px;
+        /* Altura ajustada para mobile */
+        min-height: 120px;
+    }
+}
