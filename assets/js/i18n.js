@@ -28,7 +28,39 @@
             'course.writing_practice': 'Prática de Escrita',
             'course.dictionary': 'Dicionário',
             'course.certificate': 'Certificado',
-            'ads.title': 'Anúncios'
+            'ads.title': 'Anúncios,
+                            // Begin from Zero Page
+            'begin.title': 'Começar do Zero',
+            'begin.subtitle': 'Inicie sua jornada de aprendizado de inglês desde o início.',
+            'begin.module_nav': 'Navegação de Módulos',
+            'begin.module_nav_desc': 'Clique em qualquer módulo para ir até ele',
+            // Módulo 1
+            'begin.module1.title': '📖 Módulo 1: Alfabeto e Sons',
+            'begin.module1.objective': 'Objetivo:',
+            'begin.module1.objective_desc': 'Aprenda as 26 letras do alfabeto inglês e seus sons. Domine as regras básicas de pronúncia.',
+            // Módulo 2  
+            'begin.module2.title': '👋 Módulo 2: Saudações e Apresentações',
+            'begin.module2.objective_desc': 'Aprenda a cumprimentar pessoas, se apresentar e fazer perguntas simples.',
+            // Módulo 3
+            'begin.module3.title': '🔢 Módulo 3: Números e Tempo',
+            'begin.module3.objective_desc': 'Aprenda números de 1-100, dias, meses e como dizer as horas em inglês.',
+            // Módulo 4
+            'begin.module4.title': '👨 Módulo 4: Verbo "To Be"',
+            'begin.module4.objective_desc': 'Domine o verbo mais importante em inglês: TO BE (am, is, are).',
+            // Módulo 5
+            'begin.module5.title': '🏠 Módulo 5: Família e Casa',
+            'begin.module5.objective_desc': 'Aprenda vocabulário sobre membros da família, cômodos e móveis.',
+            // Módulo 6
+            'begin.module6.title': '📅 Módulo 6: Rotinas Diárias e Atividades',
+            // Módulo 7
+            'begin.module7.title': '⌛ Módulo 7: Presente Simples',
+            'begin.module7.grammar': 'Regras Gramaticais',
+            'begin.module7.affirmative': 'Afirmativa:',
+            'begin.module7.negative': 'Negativa:',
+            'begin.module7.questions': 'Perguntas:',
+            // Módulo 8
+            'begin.module8.title': '👋 Módulo 8: Apresentando-se',
+            'begin.module8.phrases': 'Frases Comuns'
         },
         'en-US': {
             'maintenance.title': '🚧 Under Construction 🚧',
@@ -55,7 +87,39 @@
             'course.writing_practice': 'Writing Practice',
             'course.dictionary': 'Dictionary',
             'course.certificate': 'Certificate',
-            'ads.title': 'Ads'
+            'ads.title': 'Ads,
+            // Begin from Zero Page
+            'begin.title': 'Begin from Zero',
+            'begin.subtitle': 'Start your English learning journey from the very beginning.',
+            'begin.module_nav': 'Module Navigation',
+            'begin.module_nav_desc': 'Click on any module to jump to it',
+            // Module 1
+            'begin.module1.title': '📖 Module 1: Alphabet & Sounds',
+            'begin.module1.objective': 'Objective:',
+            'begin.module1.objective_desc': 'Learn the 26 letters of the English alphabet and their sounds. Master basic pronunciation rules.',
+            // Module 2
+            'begin.module2.title': '👋 Module 2: Greetings & Introductions',
+            'begin.module2.objective_desc': 'Learn how to greet people, introduce yourself, and ask simple questions.',
+            // Module 3
+            'begin.module3.title': '🔢 Module 3: Numbers & Time',
+            'begin.module3.objective_desc': 'Learn numbers 1-100, days, months, and how to tell time in English.',
+            // Module 4
+            'begin.module4.title': '👨 Module 4: Verb "To Be"',
+            'begin.module4.objective_desc': 'Master the most important verb in English: TO BE (am, is, are).',
+            // Module 5
+            'begin.module5.title': '🏠 Module 5: Family & Home',
+            'begin.module5.objective_desc': 'Learn vocabulary about family members, rooms, and furniture.',
+            // Module 6
+            'begin.module6.title': '📅 Module 6: Daily Routines & Activities',
+            // Module 7
+            'begin.module7.title': '⌛ Module 7: Present Simple',
+            'begin.module7.grammar': 'Grammar Rules',
+            'begin.module7.affirmative': 'Affirmative:',
+            'begin.module7.negative': 'Negative:',
+            'begin.module7.questions': 'Questions:',
+            // Module 8
+            'begin.module8.title': '👋 Module 8: Introducing Yourself',
+            'begin.module8.phrases': 'Common Phrases'
         },
         'es-ES': {
             'maintenance.title': '🚧 En Construcción 🚧',
@@ -82,7 +146,39 @@
             'course.writing_practice': 'Práctica de Escritura',
             'course.dictionary': 'Diccionario',
             'course.certificate': 'Certificado',
-            'ads.title': 'Anuncios'
+            'ads.title': 'Anuncios,
+            // Página Begin from Zero
+            'begin.title': 'Comenzar desde Cero',
+            'begin.subtitle': 'Comienza tu viaje de aprendizaje de inglés desde el principio.',
+            'begin.module_nav': 'Navegación de Módulos',
+            'begin.module_nav_desc': 'Haz clic en cualquier módulo para ir a él',
+            // Módulo 1
+            'begin.module1.title': '📖 Módulo 1: Alfabeto y Sonidos',
+            'begin.module1.objective': 'Objetivo:',
+            'begin.module1.objective_desc': 'Aprende las 26 letras del alfabeto inglés y sus sonidos. Domina las reglas básicas de pronunciación.',
+            // Módulo 2
+            'begin.module2.title': '👋 Módulo 2: Saludos y Presentaciones',
+            'begin.module2.objective_desc': 'Aprende a saludar a las personas, presentarte y hacer preguntas simples.',
+            // Módulo 3
+            'begin.module3.title': '🔢 Módulo 3: Números y Tiempo',
+            'begin.module3.objective_desc': 'Aprende números del 1-100, días, meses y cómo decir la hora en inglés.',
+            // Módulo 4
+            'begin.module4.title': '👨 Módulo 4: Verbo "To Be"',
+            'begin.module4.objective_desc': 'Domina el verbo más importante en inglés: TO BE (am, is, are).',
+            // Módulo 5
+            'begin.module5.title': '🏠 Módulo 5: Familia y Hogar',
+            'begin.module5.objective_desc': 'Aprende vocabulario sobre miembros de la familia, habitaciones y muebles.',
+            // Módulo 6
+            'begin.module6.title': '📅 Módulo 6: Rutinas Diarias y Actividades',
+            // Módulo 7
+            'begin.module7.title': '⌛ Módulo 7: Presente Simple',
+            'begin.module7.grammar': 'Reglas Gramaticales',
+            'begin.module7.affirmative': 'Afirmativo:',
+            'begin.module7.negative': 'Negativo:',
+            'begin.module7.questions': 'Preguntas:',
+            // Módulo 8
+            'begin.module8.title': '👋 Módulo 8: Presentándose',
+            'begin.module8.phrases': 'Frases Comunes'
         },
         'zh-CN': {
             'maintenance.title': '🚧 正在建设中 🚧',
@@ -109,7 +205,39 @@
             'course.writing_practice': '写作练习',
             'course.dictionary': '词典',
             'course.certificate': '证书',
-            'ads.title': '广告'
+            'ads.title': '广告,
+            // Begin from Zero 页面
+            'begin.title': '从零开始',
+            'begin.subtitle': '从头开始你的英语学习之旅。',
+            'begin.module_nav': '模块导航',
+            'begin.module_nav_desc': '点击任何模块跳转至该模块',
+            // 模块 1
+            'begin.module1.title': '📖 模块 1：字母与发音',
+            'begin.module1.objective': '目标：',
+            'begin.module1.objective_desc': '学习26个英文字母及其发音。掌握基本发音规则。',
+            // 模块 2
+            'begin.module2.title': '👋 模块 2：问候与介绍',
+            'begin.module2.objective_desc': '学习如何问候人、介绍自己和提出简单问题。',
+            // 模块 3
+            'begin.module3.title': '🔢 模块 3：数字与时间',
+            'begin.module3.objective_desc': '学习1-100的数字、天数、月份以及如何用英语说时间。',
+            // 模块 4
+            'begin.module4.title': '👨 模块 4：动词 "To Be"',
+            'begin.module4.objective_desc': '掌握英语中最重要的动词：TO BE (am, is, are)。',
+            // 模块 5
+            'begin.module5.title': '🏠 模块 5：家庭与家居',
+            'begin.module5.objective_desc': '学习关于家庭成员、房间和家具的词汇。',
+            // 模块 6
+            'begin.module6.title': '📅 模块 6：日常作息与活动',
+            // 模块 7
+            'begin.module7.title': '⌛ 模块 7：一般现在时',
+            'begin.module7.grammar': '语法规则',
+            'begin.module7.affirmative': '肯定句：',
+            'begin.module7.negative': '否定句：',
+            'begin.module7.questions': '疑问句：',
+            // 模块 8
+            'begin.module8.title': '👋 模块 8：自我介绍',
+            'begin.module8.phrases': '常用短语'
         }
     };
 
