@@ -84,540 +84,526 @@
 
             <!-- Content will be added here -->
 
-        </div>
-    </div>
+            <!-- NAVIGATION MODULE LIST -->
+            <nav class="module-navigation" style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+                <h3 style="margin-top: 0;">Module Navigation</h3>
+                <p style="font-size: 14px; color: #666;">Click on any module to jump to it</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px;">
+                    <a href="#module-1" style="padding: 10px; background: white; border-radius: 6px; text-decoration: none; color: #333; border-left: 4px solid #4CAF50;">📖 Module 1: Alphabet & Sounds</a>
+                    <a href="#module-2" style="padding: 10px; background: white; border-radius: 6px; text-decoration: none; color: #333; border-left: 4px solid #4CAF50;">👋 Module 2: Greetings & Introductions</a>
+                    <a href="#module-3" style="padding: 10px; background: white; border-radius: 6px; text-decoration: none; color: #333; border-left: 4px solid #4CAF50;">🔢 Module 3: Numbers & Time</a>
+                    <a href="#module-4" style="padding: 10px; background: white; border-radius: 6px; text-decoration: none; color: #333; border-left: 4px solid #4CAF50;">👨 Module 4: Verb "To Be"</a>
+                    <a href="#module-5" style="padding: 10px; background: white; border-radius: 6px; text-decoration: none; color: #333; border-left: 4px solid #4CAF50;">🏠 Module 5: Family & Home</a>
+                </div>
+            </nav>
 
-    
-        <!-- NAVIGATION MODULE LIST -->
-        <nav class="module-navigation" style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
-            <h3 style="margin-top:
-            </h3>
-            <p style="font-size: 14px; color: #666;">Click on any module to jump to it</p>
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px;">
-                <a href="#module-1" style="padding: 10px; background: white; border-radius: 6px; text-decoration: none; color: #333; border-left: 4px solid #4CAF50;">📖 Module 1: Alphabet & Sounds</a>
-                <a href="#module-2" style="padding: 10px; background: white; border-radius: 6px; text-decoration: none; color: #333; border-left: 4px solid #4CAF50;">👋 Module 2: Greetings & Introductions</a>
-                <a href="#module-3" style="padding: 10px; background: white; border-radius: 6px; text-decoration: none; color: #333; border-left: 4px solid #4CAF50;">🔢 Module 3: Numbers & Time</a>
-                <a href="#module-4" style="padding: 10px; background: white; border-radius: 6px; text-decoration: none; color: #333; border-left: 4px solid #4CAF50;">👨 Module 4: Verb "To Be"</a>
-                <a href="#module-5" style="padding: 10px; background: white; border-radius: 6px; text-decoration: none; color: #333; border-left: 4px solid #4CAF50;">🏠 Module 5: Family & Home</a>
-            </div>
-        </nav>
+            <style>
+                .module-section {
+                    background: white;
+                    border: 2px solid #e0e0e0;
+                    border-radius: 12px;
+                    padding: 30px;
+                    margin-bottom: 40px;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                }
+                .module-section h2 {
+                    color: #2196F3;
+                    border-bottom: 3px solid #2196F3;
+                    padding-bottom: 10px;
+                    margin-top: 0;
+                }
+                .video-container {
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    height: 0;
+                    overflow: hidden;
+                    max-width: 100%;
+                    background: #000;
+                    margin: 20px 0;
+                    border-radius: 8px;
+                }
+                .video-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                .audio-player {
+                    background: #f5f5f5;
+                    padding: 15px;
+                    border-radius: 8px;
+                    margin: 15px 0;
+                }
+                .speak-btn {
+                    background: #4CAF50;
+                    color: white;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    margin: 5px 5px 5px 0;
+                    transition: background 0.3s;
+                }
+                .speak-btn:hover {
+                    background: #45a049;
+                }
+                .speak-btn:active {
+                    transform: scale(0.98);
+                }
+                .exercise-box {
+                    background: #fff3e0;
+                    border-left: 4px solid #ff9800;
+                    padding: 20px;
+                    margin: 20px 0;
+                    border-radius: 6px;
+                }
+                .exercise-box h4 {
+                    margin-top: 0;
+                    color: #e65100;
+                }
+                .vocab-list {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                    gap: 15px;
+                    margin: 15px 0;
+                }
+                .vocab-item {
+                    background: #e3f2fd;
+                    padding: 15px;
+                    border-radius: 8px;
+                    border: 1px solid #90caf9;
+                }
+                .vocab-item strong {
+                    color: #1565c0;
+                    display: block;
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                }
+                .vocab-item em {
+                    color: #666;
+                    font-size: 14px;
+                }
+                .source-credit {
+                    background: #fffde7;
+                    border-left: 4px solid #fdd835;
+                    padding: 10px 15px;
+                    margin: 15px 0;
+                    font-size: 13px;
+                    border-radius: 4px;
+                }
+                .source-credit strong {
+                    color: #f57f17;
+                }
+                input[type="text"], textarea {
+                    padding: 8px 12px;
+                    border: 2px solid #ddd;
+                    border-radius: 6px;
+                    font-size: 14px;
+                    margin: 5px 0;
+                    width: 100%;
+                    max-width: 400px;
+                    box-sizing: border-box;
+                }
+                input[type="text"]:focus, textarea:focus {
+                    outline: none;
+                    border-color: #2196F3;
+                }
+            </style>
 
-        <style>
-            .module-section {
-                background: white;
-                border: 2px solid #e0e0e0;
-                border-radius: 12px;
-                padding: 30px;
-                margin-bottom: 40px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            }
-            .module-section h2 {
-                color: #2196F3;
-                border-bottom: 3px solid #2196F3;
-                padding-bottom: 10px;
-                margin-top: 0;
-            }
-            .video-container {
-                position: relative;
-                padding-bottom: 56.25%;
-                height: 0;
-                overflow: hidden;
-                max-width: 100%;
-                background: #000;
-                margin: 20px 0;
-                border-radius: 8px;
-            }
-            .video-container iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
-            .audio-player {
-                background: #f5f5f5;
-                padding: 15px;
-                border-radius: 8px;
-                margin: 15px 0;
-            }
-            .speak-btn {
-                background: #4CAF50;
-                color: white;
-                border: none;
-                padding: 10px 20px;
-                border-radius: 6px;
-                cursor: pointer;
-                font-size: 14px;
-                margin: 5px 5px 5px 0;
-                transition: background 0.3s;
-            }
-            .speak-btn:hover {
-                background: #45a049;
-            }
-            .speak-btn:active {
-                transform: scale(0.98);
-            }
-            .exercise-box {
-                background: #fff3e0;
-                border-left: 4px solid #ff9800;
-                padding: 20px;
-                margin: 20px 0;
-                border-radius: 6px;
-            }
-            .exercise-box h4 {
-                margin-top: 0;
-                color: #e65100;
-            }
-            .vocab-list {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                gap: 15px;
-                margin: 15px 0;
-            }
-            .vocab-item {
-                background: #e3f2fd;
-                padding: 15px;
-                border-radius: 8px;
-                border: 1px solid #90caf9;
-            }
-            .vocab-item strong {
-                color: #1565c0;
-                display: block;
-                font-size: 18px;
-                margin-bottom: 5px;
-            }
-            .vocab-item em {
-                color: #666;
-                font-size: 14px;
-            }
-            .source-credit {
-                background: #fffde7;
-                border-left: 4px solid #fdd835;
-                padding: 10px 15px;
-                margin: 15px 0;
-                font-size: 13px;
-                border-radius: 4px;
-            }
-            .source-credit strong {
-                color: #f57f17;
-            }
-            input[type="text"], textarea {
-                padding: 8px 12px;
-                border: 2px solid #ddd;
-                border-radius: 6px;
-                font-size: 14px;
-                margin: 5px 0;
-                width: 100%;
-                max-width: 400px;
-                box-sizing: border-box;
-            }
-            input[type="text"]:focus, textarea:focus {
-                outline: none;
-                border-color: #2196F3;
-            }
-        </style>
+            <!-- MODULE 1: ALPHABET & SOUNDS -->
+            <section id="module-1" class="module-section">
+                <h2>📖 Module 1: English Alphabet & Pronunciation</h2>
+                <p><strong>Objective:</strong> Learn the 26 letters of the English alphabet and their sounds. Master basic pronunciation rules.</p>
+                
+                <div class="source-credit">
+                    <strong>📌 Content Source:</strong> Public Domain educational materials. Audio pronunciation uses browser's built-in speech synthesis (no external dependencies).
+                </div>
 
-        <!-- MODULE 1: ALPHABET & SOUNDS -->
-        <section id="module-1" class="module-section">
-            <h2>📖 Module 1: English Alphabet & Pronunc
-            
-            <p><strong>Objective:</strong> Learn the 26 letters of the English alphabet and their sounds. Master basic pronunciation rules.</p>
-            
-            <div class="source-credit">
-                <strong>📌 Content Source:</strong> Public Domain educational materials. Audio pronunciation uses browser's built-in speech synthesis (no external dependencies).
-            </div>
-
-            <h3>Part 1: The English Alphabet</h3>
-            <div class="vocab-list">
-                <div class="vocab-item"><strong data-speak="A">A</strong><button class="speak-btn" onclick="speakText('A')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="B">B</strong><button class="speak-btn" onclick="speakText('B')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="C">C</strong><button class="speak-btn" onclick="speakText('C')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="D">D</strong><button class="speak-btn" onclick="speakText('D')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="E">E</strong><button class="speak-btn" onclick="speakText('E')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="F">F</strong><button class="speak-btn" onclick="speakText('F')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="G">G</strong><button class="speak-btn" onclick="speakText('G')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="H">H</strong><button class="speak-btn" onclick="speakText('H')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="I">I</strong><button class="speak-btn" onclick="speakText('I')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="J">J</strong><button class="speak-btn" onclick="speakText('J')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="K">K</strong><button class="speak-btn" onclick="speakText('K')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="L">L</strong><button class="speak-btn" onclick="speakText('L')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="M">M</strong><button class="speak-btn" onclick="speakText('M')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="N">N</strong><button class="speak-btn" onclick="speakText('N')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="O">O</strong><button class="speak-btn" onclick="speakText('O')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="P">P</strong><button class="speak-btn" onclick="speakText('P')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="Q">Q</strong><button class="speak-btn" onclick="speakText('Q')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="R">R</strong><button class="speak-btn" onclick="speakText('R')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="S">S</strong><button class="speak-btn" onclick="speakText('S')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="T">T</strong><button class="speak-btn" onclick="speakText('T')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="U">U</strong><button class="speak-btn" onclick="speakText('U')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="V">V</strong><button class="speak-btn" onclick="speakText('V')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="W">W</strong><button class="speak-btn" onclick="speakText('W')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="X">X</strong><button class="speak-btn" onclick="speakText('X')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="Y">Y</strong><button class="speak-btn" onclick="speakText('Y')">🔊 Hear</button></div>
-                <div class="vocab-item"><strong data-speak="Z">Z</strong><button class="speak-btn" onclick="speakText('Z')">🔊 Hear</button></div>
-            </div>
-
-            <div class="exercise-box">
-                <h4>✏️ Exercise 1.1: Write the Alphabet</h4>
-                <p>Practice writing the entire alphabet (uppercase and lowercase):</p>
-                <textarea rows="3" placeholder="Write: A B C D E..."></textarea>
-            </div>
-
-            <div class="exercise-box">
-                <h4>✏️ Exercise 1.2: Vowels and Consonants</h4>
-                <p>Vowels: <span data-speak="A E I O U"><strong>A, E, I, O, U</strong></span> <button class="speak-btn" onclick="speakText('A, E, I, O, U')">🔊 Hear Vowels</button></p>
-                <p>Consonants: All other letters</p>
-                <p><strong>Question:</strong> Circle the vowels in this word: APPLE</p>
-                <input type="text" placeholder="Your answer (e.g., A, E)" />
-            </div>
-        </section>
-
-        <!-- MODULE 2: GREETINGS & INTRODUCTIONS -->
-        <section id="module-2" class="module-section">
-       
-            </h2>
-            
-            <p><strong>Objective:</strong> Learn how to greet people, introduce yourself, and ask simple questions.</p>
-            
-            <div class="source-credit">
-                <strong>📌 Content Source:</strong> VOA Learning English (Public Domain - U.S. Government content). Embedded from learningenglish.voanews.com
-            </div>
-
-            <h3>Part 1: Basic Greetings</h3>
-            
-            <div class="audio-player">
-                <p><strong>🎧 Listen and Repeat:</strong></p>
+                <h3>Part 1: The English Alphabet</h3>
                 <div class="vocab-list">
-                    <div class="vocab-item">
-                        <strong>Hello</strong>
-                        <em>Olá</em>
-                        <button class="speak-btn" onclick="speakText('Hello')">🔊</button>
+                    <div class="vocab-item"><strong data-speak="A">A</strong><button class="speak-btn" onclick="speakText('A')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="B">B</strong><button class="speak-btn" onclick="speakText('B')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="C">C</strong><button class="speak-btn" onclick="speakText('C')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="D">D</strong><button class="speak-btn" onclick="speakText('D')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="E">E</strong><button class="speak-btn" onclick="speakText('E')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="F">F</strong><button class="speak-btn" onclick="speakText('F')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="G">G</strong><button class="speak-btn" onclick="speakText('G')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="H">H</strong><button class="speak-btn" onclick="speakText('H')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="I">I</strong><button class="speak-btn" onclick="speakText('I')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="J">J</strong><button class="speak-btn" onclick="speakText('J')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="K">K</strong><button class="speak-btn" onclick="speakText('K')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="L">L</strong><button class="speak-btn" onclick="speakText('L')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="M">M</strong><button class="speak-btn" onclick="speakText('M')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="N">N</strong><button class="speak-btn" onclick="speakText('N')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="O">O</strong><button class="speak-btn" onclick="speakText('O')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="P">P</strong><button class="speak-btn" onclick="speakText('P')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="Q">Q</strong><button class="speak-btn" onclick="speakText('Q')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="R">R</strong><button class="speak-btn" onclick="speakText('R')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="S">S</strong><button class="speak-btn" onclick="speakText('S')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="T">T</strong><button class="speak-btn" onclick="speakText('T')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="U">U</strong><button class="speak-btn" onclick="speakText('U')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="V">V</strong><button class="speak-btn" onclick="speakText('V')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="W">W</strong><button class="speak-btn" onclick="speakText('W')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="X">X</strong><button class="speak-btn" onclick="speakText('X')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="Y">Y</strong><button class="speak-btn" onclick="speakText('Y')">🔊 Hear</button></div>
+                    <div class="vocab-item"><strong data-speak="Z">Z</strong><button class="speak-btn" onclick="speakText('Z')">🔊 Hear</button></div>
+                </div>
+
+                <div class="exercise-box">
+                    <h4>✏️ Exercise 1.1: Write the Alphabet</h4>
+                    <p>Practice writing the entire alphabet (uppercase and lowercase):</p>
+                    <textarea rows="3" placeholder="Write: A B C D E..."></textarea>
+                </div>
+
+                <div class="exercise-box">
+                    <h4>✏️ Exercise 1.2: Vowels and Consonants</h4>
+                    <p>Vowels: <span data-speak="A E I O U"><strong>A, E, I, O, U</strong></span> <button class="speak-btn" onclick="speakText('A, E, I, O, U')">🔊 Hear Vowels</button></p>
+                    <p>Consonants: All other letters</p>
+                    <p><strong>Question:</strong> Circle the vowels in this word: APPLE</p>
+                    <input type="text" placeholder="Your answer (e.g., A, E)" />
+                </div>
+            </section>
+
+            <!-- MODULE 2: GREETINGS & INTRODUCTIONS -->
+            <section id="module-2" class="module-section">
+                <h2>👋 Module 2: Greetings & Introductions</h2>
+                <p><strong>Objective:</strong> Learn how to greet people, introduce yourself, and ask simple questions.</p>
+                
+                <div class="source-credit">
+                    <strong>📌 Content Source:</strong> VOA Learning English (Public Domain - U.S. Government content). Embedded from learningenglish.voanews.com
+                </div>
+
+                <h3>Part 1: Basic Greetings</h3>
+                
+                <div class="audio-player">
+                    <p><strong>🎧 Listen and Repeat:</strong></p>
+                    <div class="vocab-list">
+                        <div class="vocab-item">
+                            <strong>Hello</strong>
+                            <em>Olá</em>
+                            <button class="speak-btn" onclick="speakText('Hello')">🔊</button>
+                        </div>
+                        <div class="vocab-item">
+                            <strong>Hi</strong>
+                            <em>Oi</em>
+                            <button class="speak-btn" onclick="speakText('Hi')">🔊</button>
+                        </div>
+                        <div class="vocab-item">
+                            <strong>Good morning</strong>
+                            <em>Bom dia</em>
+                            <button class="speak-btn" onclick="speakText('Good morning')">🔊</button>
+                        </div>
+                        <div class="vocab-item">
+                            <strong>Good afternoon</strong>
+                            <em>Boa tarde</em>
+                            <button class="speak-btn" onclick="speakText('Good afternoon')">🔊</button>
+                        </div>
+                        <div class="vocab-item">
+                            <strong>Good evening</strong>
+                            <em>Boa noite (chegada)</em>
+                            <button class="speak-btn" onclick="speakText('Good evening')">🔊</button>
+                        </div>
+                        <div class="vocab-item">
+                            <strong>Good night</strong>
+                            <em>Boa noite (despedida)</em>
+                            <button class="speak-btn" onclick="speakText('Good night')">🔊</button>
+                        </div>
+                        <div class="vocab-item">
+                            <strong>Goodbye</strong>
+                            <em>Adeus / Tchau</em>
+                            <button class="speak-btn" onclick="speakText('Goodbye')">🔊</button>
+                        </div>
+                        <div class="vocab-item">
+                            <strong>See you later</strong>
+                            <em>Até logo</em>
+                            <button class="speak-btn" onclick="speakText('See you later')">🔊</button>
+                        </div>
                     </div>
-                    <div class="vocab-item">
-                        <strong>Hi</strong>
-                        <em>Oi</em>
-                        <button class="speak-btn" onclick="speakText('Hi')">🔊</button>
-                    </div>
-                    <div class="vocab-item">
-                        <strong>Good morning</strong>
-                        <em>Bom dia</em>
-                        <button class="speak-btn" onclick="speakText('Good morning')">🔊</button>
-                    </div>
-                    <div class="vocab-item">
-                        <strong>Good afternoon</strong>
-                        <em>Boa tarde</em>
-                        <button class="speak-btn" onclick="speakText('Good afternoon')">🔊</button>
-                    </div>
-                    <div class="vocab-item">
-                        <strong>Good evening</strong>
-                        <em>Boa noite (chegada)</em>
-                        <button class="speak-btn" onclick="speakText('Good evening')">🔊</button>
-                    </div>
-                    <div class="vocab-item">
-                        <strong>Good night</strong>
-                        <em>Boa noite (despedida)</em>
-                        <button class="speak-btn" onclick="speakText('Good night')">🔊</button>
-                    </div>
-                    <div class="vocab-item">
-                        <strong>Goodbye</strong>
-                        <em>Adeus / Tchau</em>
-                        <button class="speak-btn" onclick="speakText('Goodbye')">🔊</button>
-                    </div>
-                    <div class="vocab-item">
-                        <strong>See you later</strong>
-                        <em>Até logo</em>
-                        <button class="speak-btn" onclick="speakText('See you later')">🔊</button>
-                    </div>
+                </div>
+
+                <h3>Part 2: Introducing Yourself</h3>
+                
+                <p><strong>Key Phrases:</strong></p>
+                <ul>
+                    <li><span data-speak="My name is..."><strong>My name is...</strong></span> <button class="speak-btn" onclick="speakText('My name is John')">🔊 Example</button></li>
+                    <li><span data-speak="I am..."><strong>I am...</strong></span> (Eu sou...) <button class="speak-btn" onclick="speakText('I am Maria')">🔊 Example</button></li>
+                    <li><span data-speak="Nice to meet you"><strong>Nice to meet you</strong></span> (Prazer em conhecê-lo) <button class="speak-btn" onclick="speakText('Nice to meet you')">🔊</button></li>
+                    <li><span data-speak="How are you?"><strong>How are you?</strong></span> (Como você está?) <button class="speak-btn" onclick="speakText('How are you?')">🔊</button></li>
+                    <li><span data-speak="I'm fine, thank you"><strong>I'm fine, thank you</strong></span> (Estou bem, obrigado) <button class="speak-btn" onclick="speakText('I am fine, thank you')">🔊</button></li>
+                </ul>
+
+                <div class="exercise-box">
+                    <h4>✏️ Exercise 2.1: Complete the Dialogue</h4>
+                    <p><strong>Person A:</strong> Hello! My name is Sarah. What's your name?<br>
+                    <strong>Person B:</strong> <input type="text" placeholder="Hi! My name is..." /></p>
+                    <p><strong>Person A:</strong> Nice to meet you!<br>
+                    <strong>Person B:</strong> <input type="text" placeholder="Nice to meet you too!" /></p>
+                </div>
+
+                <div class="exercise-box">
+                    <h4>✏️ Exercise 2.2: Translate to English</h4>
+                    <p>1. Olá, meu nome é Carlos: <input type="text" /></p>
+                    <p>2. Prazer em conhecê-lo: <input type="text" /></p>
+                    <p>3. Como você está?: <input type="text" /></p>
+                </div>
+            </section>
+
+            <!-- MODULE 3: NUMBERS & TIME -->
+            <section id="module-3" class="module-section">
+                <h2>🔢 Module 3: Numbers & Time</h2>
+                <p><strong>Objective:</strong> Learn numbers 1-100, days, months, and how to tell time in English.</p>
+
+                <h3>Part 1: Numbers 1-20</h3>
+                <div class="vocab-list">
+                    <div class="vocab-item"><strong>1 - One</strong><button class="speak-btn" onclick="speakText('One')">🔊</button></div>
+                    <div class="vocab-item"><strong>2 - Two</strong><button class="speak-btn" onclick="speakText('Two')">🔊</button></div>
+                    <div class="vocab-item"><strong>3 - Three</strong><button class="speak-btn" onclick="speakText('Three')">🔊</button></div>
+                    <div class="vocab-item"><strong>4 - Four</strong><button class="speak-btn" onclick="speakText('Four')">🔊</button></div>
+                    <div class="vocab-item"><strong>5 - Five</strong><button class="speak-btn" onclick="speakText('Five')">🔊</button></div>
+                    <div class="vocab-item"><strong>10 - Ten</strong><button class="speak-btn" onclick="speakText('Ten')">🔊</button></div>
+                    <div class="vocab-item"><strong>20 - Twenty</strong><button class="speak-btn" onclick="speakText('Twenty')">🔊</button></div>
+                    <div class="vocab-item"><strong>50 - Fifty</strong><button class="speak-btn" onclick="speakText('Fifty')">🔊</button></div>
+                    <div class="vocab-item"><strong>100 - One Hundred</strong><button class="speak-btn" onclick="speakText('One Hundred')">🔊</button></div>
+                </div>
+
+                <h3>Part 2: Days of the Week</h3>
+                <ul>
+                    <li><strong>Monday</strong> (Segunda-feira) <button class="speak-btn" onclick="speakText('Monday')">🔊</button></li>
+                    <li><strong>Tuesday</strong> (Terça-feira) <button class="speak-btn" onclick="speakText('Tuesday')">🔊</button></li>
+                    <li><strong>Wednesday</strong> (Quarta-feira) <button class="speak-btn" onclick="speakText('Wednesday')">🔊</button></li>
+                    <li><strong>Thursday</strong> (Quinta-feira) <button class="speak-btn" onclick="speakText('Thursday')">🔊</button></li>
+                    <li><strong>Friday</strong> (Sexta-feira) <button class="speak-btn" onclick="speakText('Friday')">🔊</button></li>
+                    <li><strong>Saturday</strong> (Sábado) <button class="speak-btn" onclick="speakText('Saturday')">🔊</button></li>
+                    <li><strong>Sunday</strong> (Domingo) <button class="speak-btn" onclick="speakText('Sunday')">🔊</button></li>
+                </ul>
+
+                <div class="exercise-box">
+                    <h4>✏️ Exercise 3.1: Write the Numbers</h4>
+                    <p>7 = <input type="text" placeholder="Seven" /></p>
+                    <p>15 = <input type="text" /></p>
+                    <p>30 = <input type="text" /></p>
+                </div>
+            </section>
+
+            <!-- MODULE 4: VERB TO BE -->
+            <section id="module-4" class="module-section">
+                <h2>👨 Module 4: Verb "To Be"</h2>
+                <p><strong>Objective:</strong> Master the most important verb in English: TO BE (am, is, are).</p>
+
+                <h3>Part 1: Forms of "To Be"</h3>
+
+                <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                    <thead style="background: #2196F3; color: white;">
+                        <tr>
+                            <th style="padding: 10px; border: 1px solid #ddd;">Subject</th>
+                            <th style="padding: 10px; border: 1px solid #ddd;">Verb</th>
+                            <th style="padding: 10px; border: 1px solid #ddd;">Example</th>
+                            <th style="padding: 10px; border: 1px solid #ddd;">Audio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>I</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>am</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">I am a student</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><button class="speak-btn" onclick="speakText('I am a student')">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>You</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>are</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">You are my friend</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><button class="speak-btn" onclick="speakText('You are my friend')">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>He/She/It</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>is</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">She is a teacher</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><button class="speak-btn" onclick="speakText('She is a teacher')">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>We</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>are</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">We are happy</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><button class="speak-btn" onclick="speakText('We are happy')">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>They</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>are</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">They are students</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><button class="speak-btn" onclick="speakText('They are students')">🔊</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="exercise-box">
+                    <h4>✏️ Exercise 4.1: Fill in the Blanks</h4>
+                    <p>1. I ___ a doctor. <input type="text" placeholder="am/is/are" /></p>
+                    <p>2. They ___ from Brazil. <input type="text" /></p>
+                    <p>3. She ___ very smart. <input type="text" /></p>
+                    <p>4. We ___ friends. <input type="text" /></p>
+                </div>
+            </section>
+
+            <!-- MODULE 5: FAMILY & HOME -->
+            <section id="module-5" class="module-section">
+                <h2>🏠 Module 5: Family & Home</h2>
+                <p><strong>Objective:</strong> Learn vocabulary about family members, rooms, and furniture.</p>
+
+                <h3>Part 1: Family Members</h3>
+
+                <div class="vocab-list">
+                    <div class="vocab-item"><strong>Father / Dad</strong><em>Pai</em><button class="speak-btn" onclick="speakText('Father')">🔊</button></div>
+                    <div class="vocab-item"><strong>Mother / Mom</strong><em>Mãe</em><button class="speak-btn" onclick="speakText('Mother')">🔊</button></div>
+                    <div class="vocab-item"><strong>Brother</strong><em>Irmão</em><button class="speak-btn" onclick="speakText('Brother')">🔊</button></div>
+                    <div class="vocab-item"><strong>Sister</strong><em>Irmã</em><button class="speak-btn" onclick="speakText('Sister')">🔊</button></div>
+                    <div class="vocab-item"><strong>Grandfather</strong><em>Avô</em><button class="speak-btn" onclick="speakText('Grandfather')">🔊</button></div>
+                    <div class="vocab-item"><strong>Grandmother</strong><em>Avó</em><button class="speak-btn" onclick="speakText('Grandmother')">🔊</button></div>
+                </div>
+
+                <h3>Part 2: Rooms in a House</h3>
+                <ul>
+                    <li><strong>Bedroom</strong> (Quarto) <button class="speak-btn" onclick="speakText('Bedroom')">🔊</button></li>
+                    <li><strong>Kitchen</strong> (Cozinha) <button class="speak-btn" onclick="speakText('Kitchen')">🔊</button></li>
+                    <li><strong>Bathroom</strong> (Banheiro) <button class="speak-btn" onclick="speakText('Bathroom')">🔊</button></li>
+                    <li><strong>Living room</strong> (Sala de estar) <button class="speak-btn" onclick="speakText('Living room')">🔊</button></li>
+                </ul>
+
+                <div class="exercise-box">
+                    <h4>✏️ Exercise 5.1: Translate</h4>
+                    <p>Meu pai: <input type="text" placeholder="My father" /></p>
+                    <p>Minha irmã: <input type="text" /></p>
+                </div>
+            </section>
+
+            <!-- COMPLETION MESSAGE -->
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 12px; text-align: center; margin-top: 40px;">
+                <h2 style="margin: 0 0 15px 0;">🎉 Parabéns! Congratulations!</h2>
+                <p>You've completed the Begin from Zero course!</p>
+                <p style="margin: 15px 0 0 0; font-size: 14px; opacity: 0.9;">Continue practicing and move on to the Intermediate Level!</p>
+            </div>
+
+            <!-- TEXT-TO-SPEECH JAVASCRIPT -->
+            <script>
+                // Web Speech API - Text-to-Speech Function
+                function speakText(text, lang = 'en-US') {
+                    if ('speechSynthesis' in window) {
+                        // Cancel any ongoing speech
+                        window.speechSynthesis.cancel();
+                        
+                        // Create new utterance
+                        const utterance = new SpeechSynthesisUtterance(text);
+                        utterance.lang = lang;
+                        utterance.rate = 0.9; // Slightly slower for learning
+                        utterance.pitch = 1;
+                        utterance.volume = 1;
+                        
+                        // Speak
+                        window.speechSynthesis.speak(utterance);
+                    } else {
+                        alert('Sorry, your browser does not support text-to-speech. Please use Chrome, Edge, or Safari.');
+                    }
+                }
+
+                // Stop speech function (optional, for stop button if needed)
+                function stopSpeech() {
+                    if ('speechSynthesis' in window) {
+                        window.speechSynthesis.cancel();
+                    }
+                }
+
+                // Auto-scroll to module on page load if hash exists
+                document.addEventListener('DOMContentLoaded', function() {
+                    if (window.location.hash) {
+                        const element = document.querySelector(window.location.hash);
+                        if (element) {
+                            setTimeout(() => {
+                                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }, 100);
+                        }
+                    }
+                });
+            </script>
+
+            <!-- MODULE 6: DAILY ROUTINES -->
+            <div class="module" id="module6">
+                <h2>📅 Module 6: Daily Routines & Activities</h2>
+                
+                <h3>Part 1: Key Vocabulary</h3>
+                <div class="vocab-list">
+                    <div class="vocab-item"><strong>Wake up</strong><em>Acordar</em><button class="speak-btn" onclick="speakText('Wake up', 'en-US')">🔊</button></div>
+                    <div class="vocab-item"><strong>Have breakfast</strong><em>Tomar café da manhã</em><button class="speak-btn" onclick="speakText('Have breakfast', 'en-US')">🔊</button></div>
+                    <div class="vocab-item"><strong>Go to work</strong><em>Ir trabalhar</em><button class="speak-btn" onclick="speakText('Go to work', 'en-US')">🔊</button></div>
+                    <div class="vocab-item"><strong>Have lunch</strong><em>Almoçar</em><button class="speak-btn" onclick="speakText('Have lunch', 'en-US')">🔊</button></div>
+                    <div class="vocab-item"><strong>Go home</strong><em>Ir para casa</em><button class="speak-btn" onclick="speakText('Go home', 'en-US')">🔊</button></div>
+                    <div class="vocab-item"><strong>Have dinner</strong><em>Jantar</em><button class="speak-btn" onclick="speakText('Have dinner', 'en-US')">🔊</button></div>
+                    <div class="vocab-item"><strong>Go to sleep</strong><em>Ir dormir</em><button class="speak-btn" onclick="speakText('Go to sleep', 'en-US')">🔊</button></div>
+                    <div class="vocab-item"><strong>Exercise</strong><em>Exercitar-se</em><button class="speak-btn" onclick="speakText('Exercise', 'en-US')">🔊</button></div>
+                </div>
+
+                <div class="exercise-box">
+                    <h4>✏️ Exercise 6.1: Complete the Sentences</h4>
+                    <p>1. I ___ at 7 AM every morning. <input type="text" placeholder="wake up" /></p>
+                    <p>2. She ___ cereal for breakfast. <input type="text" /></p>
+                    <p>3. They ___ to the office by bus. <input type="text" /></p>
+                    <p>4. We ___ at 12 PM. <input type="text" /></p>
                 </div>
             </div>
 
-            <h3>Part 2: Introducing Yourself</h3>
-            
-            <p><strong>Key Phrases:</strong></p>
-            <ul>
-                <li><span data-speak="My name is..."><strong>My name is...</strong></span> <button class="speak-btn" onclick="speakText('My name is John')">🔊 Example</button></li>
-                <li><span data-speak="I am..."><strong>I am...</strong></span> (Eu sou...) <button class="speak-btn" onclick="speakText('I am Maria')">🔊 Example</button></li>
-                <li><span data-speak="Nice to meet you"><strong>Nice to meet you</strong></span> (Prazer em conhecê-lo) <button class="speak-btn" onclick="speakText('Nice to meet you')">🔊</button></li>
-                <li><span data-speak="How are you?"><strong>How are you?</strong></span> (Como você está?) <button class="speak-btn" onclick="speakText('How are you?')">🔊</button></li>
-                <li><span data-speak="I'm fine, thank you"><strong>I'm fine, thank you</strong></span> (Estou bem, obrigado) <button class="speak-btn" onclick="speakText('I am fine, thank you')">🔊</button></li>
-            </ul>
+            <!-- MODULE 7: PRESENT SIMPLE -->
+            <div class="module" id="module7">
+                <h2>⌛ Module 7: Present Simple</h2>
+                
+                <h3>Part 1: Grammar Rules</h3>
+                <div class="grammar-box">
+                    <p><strong>Affirmative:</strong></p>
+                    <p>• I/You/We/They + <em>verb</em> (work, play, study)</p>
+                    <p>• He/She/It + <em>verb + s</em> (works, plays, studies)</p>
+                    <br>
+                    <p><strong>Negative:</strong></p>
+                    <p>• I/You/We/They + <em>don't</em> + verb</p>
+                    <p>• He/She/It + <em>doesn't</em> + verb</p>
+                    <br>
+                    <p><strong>Questions:</strong></p>
+                    <p>• Do + I/you/we/they + verb?</p>
+                    <p>• Does + he/she/it + verb?</p>
+                </div>
 
-            <div class="exercise-box">
-                <h4>✏️ Exercise 2.1: Complete the Dialogue</h4>
-                <p><strong>Person A:</strong> Hello! My name is Sarah. What's your name?<br>
-                <strong>Person B:</strong> <input type="text" placeholder="Hi! My name is..." /></p>
-                <p><strong>Person A:</strong> Nice to meet you!<br>
-                <strong>Person B:</strong> <input type="text" placeholder="Nice to meet you too!" /></p>
+                <div class="exercise-box">
+                    <h4>✏️ Exercise 7.1: Choose the correct form</h4>
+                    <p>1. She ___ (work/works) in a hospital.</p>
+                    <p>2. They ___ (don't/doesn't) like coffee.</p>
+                    <p>3. ___ (Do/Does) he play soccer?</p>
+                    <p>4. I ___ (study/studies) English every day.</p>
+                </div>
             </div>
 
-            <div class="exercise-box">
-                <h4>✏️ Exercise 2.2: Translate to English</h4>
-                <p>1. Olá, meu nome é Carlos: <input type="text" /></p>
-                <p>2. Prazer em conhecê-lo: <input type="text" /></p>
-                <p>3. Como você está?: <input type="text" /></p>
-            </div>
-        </section>
+            <!-- MODULE 8: INTRODUCTIONS & CONVERSATION -->
+            <div class="module" id="module8">
+                <h2>👋 Module 8: Introducing Yourself</h2>
+                
+                <h3>Part 1: Common Phrases</h3>
+                <div class="vocab-list">
+                    <div class="vocab-item"><strong>Hello, my name is...</strong><em>Olá, meu nome é...</em><button class="speak-btn" onclick="speakText('Hello, my name is John', 'en-US')">🔊</button></div>
+                    <div class="vocab-item"><strong>What's your name?</strong><em>Qual é o seu nome?</em><button class="speak-btn" onclick="speakText('What is your name?', 'en-US')">🔊</button></div>
+                    <div class="vocab-item"><strong>Nice to meet you</strong><em>Prazer em conhecê-lo</em><button class="speak-btn" onclick="speakText('Nice to meet you', 'en-US')">🔊</button></div>
+                    <div class="vocab-item"><strong>Where are you from?</strong><em>De onde você é?</em><button class="speak-btn" onclick="speakText('Where are you from?', 'en-US')">🔊</button></div>
+                    <div class="vocab-item"><strong>I'm from Brazil</strong><em>Eu sou do Brasil</em><button class="speak-btn" onclick="speakText('I am from Brazil', 'en-US')">🔊</button></div>
+                </div>
 
-        <!-- MODULE 3: NUMBERS & TIME -->
-        <section id="module-3" class="module-section">
-       
-            </h2>
-            
-            <p><strong>Objective:</strong> Learn numbers 1-100, days, months, and how to tell time in English.</p>
-
-            <h3>Part 1: Numbers 1-20</h3>
-            <div class="vocab-list">
-                <div class="vocab-item"><strong>1 - One</strong><button class="speak-btn" onclick="speakText('One')">🔊</button></div>
-                <div class="vocab-item"><strong>2 - Two</strong><button class="speak-btn" onclick="speakText('Two')">🔊</button></div>
-                <div class="vocab-item"><strong>3 - Three</strong><button class="speak-btn" onclick="speakText('Three')">🔊</button></div>
-                <div class="vocab-item"><strong>4 - Four</strong><button class="speak-btn" onclick="speakText('Four')">🔊</button></div>
-                <div class="vocab-item"><strong>5 - Five</strong><button class="speak-btn" onclick="speakText('Five')">🔊</button></div>
-                <div class="vocab-item"><strong>10 - Ten</strong><button class="speak-btn" onclick="speakText('Ten')">🔊</button></div>
-                <div class="vocab-item"><strong>20 - Twenty</strong><button class="speak-btn" onclick="speakText('Twenty')">🔊</button></div>
-                <div class="vocab-item"><strong>50 - Fifty</strong><button class="speak-btn" onclick="speakText('Fifty')">🔊</button></div>
-                <div class="vocab-item"><strong>100 - One Hundred</strong><button class="speak-btn" onclick="speakText('One Hundred')">🔊</button></div>
+                <div class="exercise-box">
+                    <h4>✏️ Exercise 8.1: Complete the dialogue</h4>
+                    <p>A: Hello, ___ your name?</p>
+                    <p>B: My name ___ Maria. What's ___?</p>
+                    <p>A: I'm John. Nice ___ meet you.</p>
+                    <p>B: Nice to ___ you too. Where ___ you from?</p>
+                </div>
             </div>
 
-            <h3>Part 2: Days of the Week</h3>
-            <ul>
-                <li><strong>Monday</strong> (Segunda-feira) <button class="speak-btn" onclick="speakText('Monday')">🔊</button></li>
-                <li><strong>Tuesday</strong> (Terça-feira) <button class="speak-btn" onclick="speakText('Tuesday')">🔊</button></li>
-                <li><strong>Wednesday</strong> (Quarta-feira) <button class="speak-btn" onclick="speakText('Wednesday')">🔊</button></li>
-                <li><strong>Thursday</strong> (Quinta-feira) <button class="speak-btn" onclick="speakText('Thursday')">🔊</button></li>
-                <li><strong>Friday</strong> (Sexta-feira) <button class="speak-btn" onclick="speakText('Friday')">🔊</button></li>
-                <li><strong>Saturday</strong> (Sábado) <button class="speak-btn" onclick="speakText('Saturday')">🔊</button></li>
-                <li><strong>Sunday</strong> (Domingo) <button class="speak-btn" onclick="speakText('Sunday')">🔊</button></li>
-            </ul>
-
-            <div class="exercise-box">
-                <h4>✏️ Exercise 3.1: Write the Numbers</h4>
-                <p>7 = <input type="text" placeholder="Seven" /></p>
-                <p>15 = <input type="text" /></p>
-                <p>30 = <input type="text" /></p>
-            </div>
-        </section>
-
-        <!-- MODULE 4: VERB TO BE -->
-        <section id="module-4" class="module-section">
-       
-            </h2>
-            
-            <p><strong>Objective:</strong> Master the most important verb in English: TO BE (am, is, are).</p>
-
-            <h3>Part 1: Forms of "To Be"</h3>
-
-            <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-                <thead style="background: #2196F3; color: white;">
-                    <tr>
-                        <th style="padding: 10px; border: 1px solid #ddd;">Subject</th>
-                        <th style="padding: 10px; border: 1px solid #ddd;">Verb</th>
-                        <th style="padding: 10px; border: 1px solid #ddd;">Example</th>
-                        <th style="padding: 10px; border: 1px solid #ddd;">Audio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>I</strong></td>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>am</strong></td>
-                        <td style="padding: 10px; border: 1px solid #ddd;">I am a student</td>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><button class="speak-btn" onclick="speakText('I am a student')">🔊</button></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>You</strong></td>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>are</strong></td>
-                        <td style="padding: 10px; border: 1px solid #ddd;">You are my friend</td>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><button class="speak-btn" onclick="speakText('You are my friend')">🔊</button></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>He/She/It</strong></td>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>is</strong></td>
-                        <td style="padding: 10px; border: 1px solid #ddd;">She is a teacher</td>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><button class="speak-btn" onclick="speakText('She is a teacher')">🔊</button></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>We</strong></td>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>are</strong></td>
-                        <td style="padding: 10px; border: 1px solid #ddd;">We are happy</td>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><button class="speak-btn" onclick="speakText('We are happy')">🔊</button></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>They</strong></td>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>are</strong></td>
-                        <td style="padding: 10px; border: 1px solid #ddd;">They are students</td>
-                        <td style="padding: 10px; border: 1px solid #ddd;"><button class="speak-btn" onclick="speakText('They are students')">🔊</button></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="exercise-box">
-                <h4>✏️ Exercise 4.1: Fill in the Blanks</h4>
-                <p>1. I ___ a doctor. <input type="text" placeholder="am/is/are" /></p>
-                <p>2. They ___ from Brazil. <input type="text" /></p>
-                <p>3. She ___ very smart. <input type="text" /></p>
-                <p>4. We ___ friends. <input type="text" /></p>
-            </div>
-        </section>
-
-        <!-- MODULE 5: FAMILY & HOME -->
-        <section id="module-5" class="module-section">
-       
-            </h2>
-            
-            <p><strong>Objective:</strong> Learn vocabulary about family members, rooms, and furniture.</p>
-
-            <h3>Part 1: Family Members</h3>
-
-            <div class="vocab-list">
-                <div class="vocab-item"><strong>Father / Dad</strong><em>Pai</em><button class="speak-btn" onclick="speakText('Father')">🔊</button></div>
-                <div class="vocab-item"><strong>Mother / Mom</strong><em>Mãe</em><button class="speak-btn" onclick="speakText('Mother')">🔊</button></div>
-                <div class="vocab-item"><strong>Brother</strong><em>Irmão</em><button class="speak-btn" onclick="speakText('Brother')">🔊</button></div>
-                <div class="vocab-item"><strong>Sister</strong><em>Irmã</em><button class="speak-btn" onclick="speakText('Sister')">🔊</button></div>
-                <div class="vocab-item"><strong>Grandfather</strong><em>Avô</em><button class="speak-btn" onclick="speakText('Grandfather')">🔊</button></div>
-                <div class="vocab-item"><strong>Grandmother</strong><em>Avó</em><button class="speak-btn" onclick="speakText('Grandmother')">🔊</button></div>
-            </div>
-
-            <h3>Part 2: Rooms in a House</h3>
-            <ul>
-                <li><strong>Bedroom</strong> (Quarto) <button class="speak-btn" onclick="speakText('Bedroom')">🔊</button></li>
-                <li><strong>Kitchen</strong> (Cozinha) <button class="speak-btn" onclick="speakText('Kitchen')">🔊</button></li>
-                <li><strong>Bathroom</strong> (Banheiro) <button class="speak-btn" onclick="speakText('Bathroom')">🔊</button></li>
-                <li><strong>Living room</strong> (Sala de estar) <button class="speak-btn" onclick="speakText('Living room')">🔊</button></li>
-            </ul>
-
-            <div class="exercise-box">
-                <h4>✏️ Exercise 5.1: Translate</h4>
-                <p>Meu pai: <input type="text" placeholder="My father" /></p>
-                <p>Minha irmã: <input type="text" /></p>
-            </div>
-        </section>
-
-        <!-- COMPLETION MESSAGE -->
-        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 12px; text-align: center; margin-top: 40px;">
-            <h2 style="margin: 0 0 15px 0;">🎉 Parabéns! Congratulations!</h2>
-            You've completed the Begin from Zero course!eted the Begin from Zero course! 550
-                .</p>
-            <p style="margin: 15px 0 0 0; font-size: 14px; opacity: 0.9;">Continue practicing and move on to the Intermediate Level!</p>
         </div>
 
-        <!-- TEXT-TO-SPEECH JAVASCRIPT -->
-        <script>
-            // Web Speech API - Text-to-Speech Function
-            function speakText(text, lang = 'en-US') {
-                if ('speechSynthesis' in window) {
-                    // Cancel any ongoing speech
-                    window.speechSynthesis.cancel();
-                    
-                    // Create new utterance
-                    const utterance = new SpeechSynthesisUtterance(text);
-                    utterance.lang = lang;
-                    utterance.rate = 0.9; // Slightly slower for learning
-                    utterance.pitch = 1;
-                    utterance.volume = 1;
-                    
-                    // Speak
-                    window.speechSynthesis.speak(utterance);
-                } else {
-                    alert('Sorry, your browser does not support text-to-speech. Please use Chrome, Edge, or Safari.');
-                }
-            }
-
-            // Stop speech function (optional, for stop button if needed)
-            function stopSpeech() {
-                if ('speechSynthesis' in window) {
-                    window.speechSynthesis.cancel();
-                }
-            }
-
-            // Auto-scroll to module on page load if hash exists
-            document.addEventListener('DOMContentLoaded', function() {
-                if (window.location.hash) {
-                    const element = document.querySelector(window.location.hash);
-                    if (element) {
-                        setTimeout(() => {
-                            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        }, 100);
-                    }
-                }
-            });
-        </script>
-
-            </div> <!-- fecha editor-main -->
-
-            <!-- MODULE 6: DAILY ROUTINES -->
-        <div class="module" id="module6">
-            <h2>📅 Module 6: Daily Routines & Activities</h2>
-            
-            <h3>Part 1: Key Vocabulary</h3>
-            <div class="vocab-list">
-                <div class="vocab-item"><strong>Wake up</strong><em>Acordar</em><button class="speak-btn" onclick="speakText('Wake up', 'en-US')">🔊</button></div>
-                <div class="vocab-item"><strong>Have breakfast</strong><em>Tomar café da manhã</em><button class="speak-btn" onclick="speakText('Have breakfast', 'en-US')">🔊</button></div>
-                <div class="vocab-item"><strong>Go to work</strong><em>Ir trabalhar</em><button class="speak-btn" onclick="speakText('Go to work', 'en-US')">🔊</button></div>
-                <div class="vocab-item"><strong>Have lunch</strong><em>Almoçar</em><button class="speak-btn" onclick="speakText('Have lunch', 'en-US')">🔊</button></div>
-                <div class="vocab-item"><strong>Go home</strong><em>Ir para casa</em><button class="speak-btn" onclick="speakText('Go home', 'en-US')">🔊</button></div>
-                <div class="vocab-item"><strong>Have dinner</strong><em>Jantar</em><button class="speak-btn" onclick="speakText('Have dinner', 'en-US')">🔊</button></div>
-                <div class="vocab-item"><strong>Go to sleep</strong><em>Ir dormir</em><button class="speak-btn" onclick="speakText('Go to sleep', 'en-US')">🔊</button></div>
-                <div class="vocab-item"><strong>Exercise</strong><em>Exercitar-se</em><button class="speak-btn" onclick="speakText('Exercise', 'en-US')">🔊</button></div>
-            </div>
-
-            <div class="exercise-box">
-                <h4>✏️ Exercise 6.1: Complete the Sentences</h4>
-                <p>1. I ___ at 7 AM every morning. <input type="text" placeholder="wake up" /></p>
-                <p>2. She ___ cereal for breakfast. <input type="text" /></p>
-                <p>3. They ___ to the office by bus. <input type="text" /></p>
-                <p>4. We ___ at 12 PM. <input type="text" /></p>
-            </div>
-        </div>
-
-        <!-- MODULE 7: PRESENT SIMPLE -->
-        <div class="module" id="module7">
-            <h2>⌛ Module 7: Present Simple</h2>
-            
-            <h3>Part 1: Grammar Rules</h3>
-            <div class="grammar-box">
-                <p><strong>Affirmative:</strong></p>
-                <p>• I/You/We/They + <em>verb</em> (work, play, study)</p>
-                <p>• He/She/It + <em>verb + s</em> (works, plays, studies)</p>
-                <br>
-                <p><strong>Negative:</strong></p>
-                <p>• I/You/We/They + <em>don't</em> + verb</p>
-                <p>• He/She/It + <em>doesn't</em> + verb</p>
-                <br>
-                <p><strong>Questions:</strong></p>
-                <p>• Do + I/you/we/they + verb?</p>
-                <p>• Does + he/she/it + verb?</p>
-            </div>
-
-            <div class="exercise-box">
-                <h4>✏️ Exercise 7.1: Choose the correct form</h4>
-                <p>1. She ___ (work/works) in a hospital.</p>
-                <p>2. They ___ (don't/doesn't) like coffee.</p>
-                <p>3. ___ (Do/Does) he play soccer?</p>
-                <p>4. I ___ (study/studies) English every day.</p>
-            </div>
-        </div>
-
-        <!-- MODULE 8: INTRODUCTIONS & CONVERSATION -->
-        <div class="module" id="module8">
-            <h2>👋 Module 8: Introducing Yourself</h2>
-            
-            <h3>Part 1: Common Phrases</h3>
-            <div class="vocab-list">
-                <div class="vocab-item"><strong>Hello, my name is...</strong><em>Olá, meu nome é...</em><button class="speak-btn" onclick="speakText('Hello, my name is John', 'en-US')">🔊</button></div>
-                <div class="vocab-item"><strong>What's your name?</strong><em>Qual é o seu nome?</em><button class="speak-btn" onclick="speakText('What is your name?', 'en-US')">🔊</button></div>
-                <div class="vocab-item"><strong>Nice to meet you</strong><em>Prazer em conhecê-lo</em><button class="speak-btn" onclick="speakText('Nice to meet you', 'en-US')">🔊</button></div>
-                <div class="vocab-item"><strong>Where are you from?</strong><em>De onde você é?</em><button class="speak-btn" onclick="speakText('Where are you from?', 'en-US')">🔊</button></div>
-                <div class="vocab-item"><strong>I'm from Brazil</strong><em>Eu sou do Brasil</em><button class="speak-btn" onclick="speakText('I am from Brazil', 'en-US')">🔊</button></div>
-            </div>
-
-            <div class="exercise-box">
-                <h4>✏️ Exercise 8.1: Complete the dialogue</h4>
-                <p>A: Hello, ___ your name?</p>
-                <p>B: My name ___ Maria. What's ___?</p>
-                <p>A: I'm John. Nice ___ meet you.</p>
-                <p>B: Nice to ___ you too. Where ___ you from?</p>
-            </div>
-        </div>
-    </div> <!-- fecha editor-container -->
+    </div>
 
     <!-- Banners finais -->
     <section class="home-bottom-ads">

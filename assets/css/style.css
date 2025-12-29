@@ -1,7 +1,7 @@
 /* Estilização da Sidebar */
 .editor-sidebar {
     width: 250px;
-    height: 100vh;
+    min-height: 100vh;
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
