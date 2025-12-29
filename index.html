@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Workshop - Teste de Cores</title>
+    <link rel="icon" type="image/png" href="static/img/logo.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .banner-section {
+            margin: 40px 20px;
+            text-align: center;
+        }
+        .amazon-banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 30px 20px;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .amazon-banner:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+        .banner-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .model-container {
+            flex: 1;
+            min-width: 200px;
+        }
+        .text-container {
+            flex: 1;
+            min-width: 200px;
+        }
+        h2 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .subtitle {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        /* Filtros para cada banner */
+                /* Filtros melhorados para manter detalhes visíveis */
+        .filter-white { filter: grayscale(1) brightness(1.8) contrast(1.2); }
+        .filter-lightgray1 { filter: grayscale(1) brightness(1.5) contrast(1.2); }
+        .filter-lightgray2 { filter: grayscale(1) brightness(1.2) contrast(1.2); }
+        .filter-lightgray3 { filter: grayscale(1) brightness(1.0) contrast(1.2); }
+        .filter-gray { filter: grayscale(1) brightness(0.85) contrast(1.3); }
+        .filter-darkgray1 { filter: grayscale(1) brightness(0.7) contrast(1.3); }
+        .filter-darkgray2 { filter: grayscale(1) brightness(0.55) contrast(1.3); }
+        .filter-darkgray3 { filter: grayscale(1) brightness(0.45) contrast(1.3); }
+        .filter-almostblack { filter: grayscale(1) brightness(0.35) contrast(1.3); }
+        .filter-black { filter: grayscale(1) brightness(0.25) contrast(1.3); }yle>
+</head>
+<body>
+
+<!-- Banner #1: Branco -->
+<section class="banner-section">
+    <div class="amazon-banner">
+        <div class="banner-content">
+            <div class="model-container">
+                <model-viewer class="filter-white" src="static/img/Ranger.glb" alt="3D Model" camera-controls autoplay auto-rotate shadow-intensity="1" exposure="1" style="width: 100%; height: 200px;"></model-viewer>
+            </div>
+            <div class="text-container">
+                <h2>Banner #1</h2>
+                <p>Carro Branco</p>
+                <p class="subtitle">Ganhe 10% de desconto em modelos 3D!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Banner #2: Cinza Muito Claro -->
+<section class="banner-section">
+    <div class="amazon-banner">
+        <div class="banner-content">
+            <div class="model-container">
+                <model-viewer class="filter-lightgray1" src="static/img/Ranger.glb" alt="3D Model" camera-controls autoplay auto-rotate shadow-intensity="1" exposure="1" style="width: 100%; height: 200px;"></model-viewer>
+            </div>
+            <div class="text-container">
+                <h2>Banner #2</h2>
+                <p>Carro Cinza Muito Claro</p>
+                <p class="subtitle">Ganhe 10% de desconto em modelos 3D!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Banner #3: Cinza Claro -->
+<section class="banner-section">
+    <div class="amazon-banner">
+        <div class="banner-content">
+            <div class="model-container">
+                <model-viewer class="filter-lightgray2" src="static/img/Ranger.glb" alt="3D Model" camera-controls autoplay auto-rotate shadow-intensity="1" exposure="1" style="width: 100%; height: 200px;"></model-viewer>
+            </div>
+            <div class="text-container">
+                <h2>Banner #3</h2>
+                <p>Carro Cinza Claro</p>
+                <p class="subtitle">Ganhe 10% de desconto em modelos 3D!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Banner #4: Cinza Claro-Médio -->
+<section class="banner-section">
+    <div class="amazon-banner">
+        <div class="banner-content">
+            <div class="model-container">
+                <model-viewer class="filter-lightgray3" src="static/img/Ranger.glb" alt="3D Model" camera-controls autoplay auto-rotate shadow-intensity="1" exposure="1" style="width: 100%; height: 200px;"></model-viewer>
+            </div>
+            <div class="text-container">
+                <h2>Banner #4</h2>
+                <p>Carro Cinza Claro-Médio</p>
+                <p class="subtitle">Ganhe 10% de desconto em modelos 3D!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Banner #5: Cinza Médio -->
+<section class="banner-section">
+    <div class="amazon-banner">
+        <div class="banner-content">
+            <div class="model-container">
+                <model-viewer class="filter-gray" src="static/img/Ranger.glb" alt="3D Model" camera-controls autoplay auto-rotate shadow-intensity="1" exposure="1" style="width: 100%; height: 200px;"></model-viewer>
+            </div>
+            <div class="text-container">
+                <h2>Banner #5</h2>
+                <p>Carro Cinza Médio</p>
+                <p class="subtitle">Ganhe 10% de desconto em modelos 3D!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Banner #6: Cinza Médio-Escuro -->
+<section class="banner-section">
+    <div class="amazon-banner">
+        <div class="banner-content">
+            <div class="model-container">
+                <model-viewer class="filter-darkgray1" src="static/img/Ranger.glb" alt="3D Model" camera-controls autoplay auto-rotate shadow-intensity="1" exposure="1" style="width: 100%; height: 200px;"></model-viewer>
+            </div>
+            <div class="text-container">
+                <h2>Banner #6</h2>
+                <p>Carro Cinza Médio-Escuro</p>
+                <p class="subtitle">Ganhe 10% de desconto em modelos 3D!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Banner #7: Cinza Escuro -->
+<section class="banner-section">
+    <div class="amazon-banner">
+        <div class="banner-content">
+            <div class="model-container">
+                <model-viewer class="filter-darkgray2" src="static/img/Ranger.glb" alt="3D Model" camera-controls autoplay auto-rotate shadow-intensity="1" exposure="1" style="width: 100%; height: 200px;"></model-viewer>
+            </div>
+            <div class="text-container">
+                <h2>Banner #7</h2>
+                <p>Carro Cinza Escuro</p>
+                <p class="subtitle">Ganhe 10% de desconto em modelos 3D!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Banner #8: Cinza Muito Escuro -->
+<section class="banner-section">
+    <div class="amazon-banner">
+        <div class="banner-content">
+            <div class="model-container">
+                <model-viewer class="filter-darkgray3" src="static/img/Ranger.glb" alt="3D Model" camera-controls autoplay auto-rotate shadow-intensity="1" exposure="1" style="width: 100%; height: 200px;"></model-viewer>
+            </div>
+            <div class="text-container">
+                <h2>Banner #8</h2>
+                <p>Carro Cinza Muito Escuro</p>
+                <p class="subtitle">Ganhe 10% de desconto em modelos 3D!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Banner #9: Quase Preto -->
+<section class="banner-section">
+    <div class="amazon-banner">
+        <div class="banner-content">
+            <div class="model-container">
+                <model-viewer class="filter-almostblack" src="static/img/Ranger.glb" alt="3D Model" camera-controls autoplay auto-rotate shadow-intensity="1" exposure="1" style="width: 100%; height: 200px;"></model-viewer>
+            </div>
+            <div class="text-container">
+                <h2>Banner #9</h2>
+                <p>Carro Quase Preto</p>
+                <p class="subtitle">Ganhe 10% de desconto em modelos 3D!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Banner #10: Preto -->
+<section class="banner-section">
+    <div class="amazon-banner">
+        <div class="banner-content">
+            <div class="model-container">
+                <model-viewer class="filter-black" src="static/img/Ranger.glb" alt="3D Model" camera-controls autoplay auto-rotate shadow-intensity="1" exposure="1" style="width: 100%; height: 200px;"></model-viewer>
+            </div>
+            <div class="text-container">
+                <h2>Banner #10</h2>
+                <p>Carro Preto</p>
+                <p class="subtitle">Ganhe 10% de desconto em modelos 3D!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
