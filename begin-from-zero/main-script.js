@@ -3,7 +3,13 @@ let currentLang = 'pt-BR'; // Default to Portuguese
 
 // Function to map currentLang to JSON keys
 function getLangKey(lang) {
-    return lang === 'pt-BR' ? 'pt' : 'en';
+    switch(lang) {
+        case 'pt-BR': return 'pt';
+        case 'en-US': return 'en';
+        case 'es-ES': return 'es';
+        case 'zh-CN': return 'zh';
+        default: return 'en';
+    }
 }
 
 // Modules data - EMBEDDED DIRECTLY for offline functionality
@@ -154,6 +160,152 @@ let modulesData = {
           ]
         }
       ]
+    },
+    "es": {
+      "title": "📖 Módulo 1: Alfabeto Inglés & Pronunciación",
+      "objective": "Aprende las 26 letras del alfabeto inglés y sus sonidos. Domina reglas básicas de pronunciación.",
+      "parts": [
+        {
+          "title": "Parte 1: El Alfabeto Inglés",
+          "content": "Practica las 26 letras con audio:",
+          "vocabulary": [
+            {"letter": "A", "sound": "A"},
+            {"letter": "B", "sound": "B"},
+            {"letter": "C", "sound": "C"},
+            {"letter": "D", "sound": "D"},
+            {"letter": "E", "sound": "E"},
+            {"letter": "F", "sound": "F"},
+            {"letter": "G", "sound": "G"},
+            {"letter": "H", "sound": "H"},
+            {"letter": "I", "sound": "I"},
+            {"letter": "J", "sound": "J"},
+            {"letter": "K", "sound": "K"},
+            {"letter": "L", "sound": "L"},
+            {"letter": "M", "sound": "M"},
+            {"letter": "N", "sound": "N"},
+            {"letter": "O", "sound": "O"},
+            {"letter": "P", "sound": "P"},
+            {"letter": "Q", "sound": "Q"},
+            {"letter": "R", "sound": "R"},
+            {"letter": "S", "sound": "S"},
+            {"letter": "T", "sound": "T"},
+            {"letter": "U", "sound": "U"},
+            {"letter": "V", "sound": "V"},
+            {"letter": "W", "sound": "W"},
+            {"letter": "X", "sound": "X"},
+            {"letter": "Y", "sound": "Y"},
+            {"letter": "Z", "sound": "Z"}
+          ]
+        },
+        {
+          "title": "Parte 2: Combinaciones Comunes de Letras",
+          "content": "Equipos Vocálicos: AI/AY: rain, day, play; EE/EA: tree, sea, read; OA/OW: boat, snow, grow. Letras Silenciosas: K Silenciosa: knife, knee, know; W Silenciosa: write, wrong, wrap."
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 1.1: Escribe el Alfabeto",
+          "description": "Practica escribiendo el alfabeto entero (mayúscula y minúscula):",
+          "type": "textarea"
+        },
+        {
+          "title": "Ejercicio 1.2: Vocales y Consonantes",
+          "description": "Vocales: A, E, I, O, U. Consonantes: Todas las otras letras. Pregunta: Circula las vocales en esta palabra: APPLE",
+          "type": "input"
+        },
+        {
+          "title": "Ejercicio 1.3: Práctica de Pronunciación",
+          "description": "Practica diciendo estos sonidos comunes en inglés:",
+          "vocabulary": [
+            {"sound": "TH", "examples": "Think, Thank, Three"},
+            {"sound": "CH", "examples": "Chair, Church, Cheese"},
+            {"sound": "SH", "examples": "She, Ship, Shop"},
+            {"sound": "R", "examples": "Red, Run, Right"}
+          ]
+        },
+        {
+          "title": "Ejercicio 1.4: Identifica el Sonido",
+          "description": "¿Qué letra hace el sonido 'K' en estas palabras?",
+          "questions": [
+            {"word": "Cat", "options": ["C", "K"]},
+            {"word": "Kite", "options": ["C", "K"]},
+            {"word": "Clock", "options": ["C", "K"]}
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "title": "📖 模块 1：英语字母与发音",
+      "objective": "学习26个英文字母及其发音。掌握基本发音规则。",
+      "parts": [
+        {
+          "title": "第1部分：英语字母",
+          "content": "用音频练习26个字母：",
+          "vocabulary": [
+            {"letter": "A", "sound": "A"},
+            {"letter": "B", "sound": "B"},
+            {"letter": "C", "sound": "C"},
+            {"letter": "D", "sound": "D"},
+            {"letter": "E", "sound": "E"},
+            {"letter": "F", "sound": "F"},
+            {"letter": "G", "sound": "G"},
+            {"letter": "H", "sound": "H"},
+            {"letter": "I", "sound": "I"},
+            {"letter": "J", "sound": "J"},
+            {"letter": "K", "sound": "K"},
+            {"letter": "L", "sound": "L"},
+            {"letter": "M", "sound": "M"},
+            {"letter": "N", "sound": "N"},
+            {"letter": "O", "sound": "O"},
+            {"letter": "P", "sound": "P"},
+            {"letter": "Q", "sound": "Q"},
+            {"letter": "R", "sound": "R"},
+            {"letter": "S", "sound": "S"},
+            {"letter": "T", "sound": "T"},
+            {"letter": "U", "sound": "U"},
+            {"letter": "V", "sound": "V"},
+            {"letter": "W", "sound": "W"},
+            {"letter": "X", "sound": "X"},
+            {"letter": "Y", "sound": "Y"},
+            {"letter": "Z", "sound": "Z"}
+          ]
+        },
+        {
+          "title": "第2部分：常见字母组合",
+          "content": "元音队：AI/AY：rain, day, play；EE/EA：tree, sea, read；OA/OW：boat, snow, grow。无声字母：无声K：knife, knee, know；无声W：write, wrong, wrap。"
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 1.1：写字母",
+          "description": "练习写完整的字母（大写和小写）：",
+          "type": "textarea"
+        },
+        {
+          "title": "练习 1.2：元音和辅音",
+          "description": "元音：A, E, I, O, U。辅音：所有其他字母。问题：在单词APPLE中圈出元音",
+          "type": "input"
+        },
+        {
+          "title": "练习 1.3：发音练习",
+          "description": "练习说出这些常见的英语发音：",
+          "vocabulary": [
+            {"sound": "TH", "examples": "Think, Thank, Three"},
+            {"sound": "CH", "examples": "Chair, Church, Cheese"},
+            {"sound": "SH", "examples": "She, Ship, Shop"},
+            {"sound": "R", "examples": "Red, Run, Right"}
+          ]
+        },
+        {
+          "title": "练习 1.4：识别发音",
+          "description": "在这些单词中，哪个字母发'K'音？",
+          "questions": [
+            {"word": "Cat", "options": ["C", "K"]},
+            {"word": "Kite", "options": ["C", "K"]},
+            {"word": "Clock", "options": ["C", "K"]}
+          ]
+        }
+      ]
     }
   },
   "module-2": {
@@ -272,6 +424,124 @@ let modulesData = {
         {
           "title": "Exercício 2.3: Complete a Conversa",
           "description": "Situação: Conhecendo alguém em uma festa A: Boa noite! Eu sou Maria. Qual é o seu nome? B: [input] A: Prazer em conhecê-la! De onde você é? B: [input] A: Que ótimo! Você está gostando da festa? B: [input]"
+        }
+      ]
+    },
+    "es": {
+      "title": "👋 Módulo 2: Saludos y Presentaciones",
+      "objective": "Aprende a saludar a las personas, presentarte y hacer preguntas simples.",
+      "parts": [
+        {
+          "title": "Saludos",
+          "content": "Saludos básicos:",
+          "vocabulary": [
+            {"word": "Hello", "translation": "Hola"},
+            {"word": "Hi", "translation": "Hola"},
+            {"word": "Good morning", "translation": "Buenos días"},
+            {"word": "Good afternoon", "translation": "Buenas tardes"},
+            {"word": "Good evening", "translation": "Buenas noches (llegada)"},
+            {"word": "Good night", "translation": "Buenas noches (despedida)"},
+            {"word": "Goodbye", "translation": "Adiós / Chau"},
+            {"word": "See you later", "translation": "Hasta luego"}
+          ]
+        },
+        {
+          "title": "Presentándote",
+          "content": "Frases clave:",
+          "vocabulary": [
+            {"phrase": "My name is...", "translation": "Mi nombre es..."},
+            {"phrase": "I am...", "translation": "Yo soy..."},
+            {"phrase": "Nice to meet you", "translation": "Encantado de conocerte"},
+            {"phrase": "How are you?", "translation": "¿Cómo estás?"},
+            {"phrase": "I'm fine, thank you", "translation": "Estoy bien, gracias"}
+          ]
+        },
+        {
+          "title": "Más Expresiones Útiles",
+          "vocabulary": [
+            {"word": "Thank you", "translation": "Gracias"},
+            {"word": "You're welcome", "translation": "De nada"},
+            {"word": "Excuse me / Sorry", "translation": "Disculpe / Lo siento"},
+            {"word": "Please", "translation": "Por favor"},
+            {"word": "Yes / No", "translation": "Sí / No"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 2.1: Completa el Diálogo",
+          "description": "Persona A: Hola! Mi nombre es Sarah. ¿Cuál es tu nombre? Persona B: [input] Persona A: Encantado de conocerte! Persona B: [input]"
+        },
+        {
+          "title": "Ejercicio 2.2: Traduce al Inglés",
+          "questions": [
+            {"pt": "Hola, mi nombre es Carlos", "en": "Hello, my name is Carlos"},
+            {"pt": "Encantado de conocerte", "en": "Nice to meet you"},
+            {"pt": "¿Cómo estás?", "en": "How are you?"}
+          ]
+        },
+        {
+          "title": "Ejercicio 2.3: Completa la Conversación",
+          "description": "Situación: Conociendo a alguien en una fiesta A: Buenas noches! Soy María. ¿Cuál es tu nombre? B: [input] A: Encantada de conocerte! ¿De dónde eres? B: [input] A: Qué genial! ¿Estás disfrutando de la fiesta? B: [input]"
+        }
+      ]
+    },
+    "zh": {
+      "title": "👋 模块 2：问候与介绍",
+      "objective": "学习如何问候他人、自我介绍和提出简单问题。",
+      "parts": [
+        {
+          "title": "问候",
+          "content": "基本问候语：",
+          "vocabulary": [
+            {"word": "Hello", "translation": "你好"},
+            {"word": "Hi", "translation": "嗨"},
+            {"word": "Good morning", "translation": "早上好"},
+            {"word": "Good afternoon", "translation": "下午好"},
+            {"word": "Good evening", "translation": "晚上好（到达）"},
+            {"word": "Good night", "translation": "晚安（告别）"},
+            {"word": "Goodbye", "translation": "再见 / 拜拜"},
+            {"word": "See you later", "translation": "再见"}
+          ]
+        },
+        {
+          "title": "自我介绍",
+          "content": "关键短语：",
+          "vocabulary": [
+            {"phrase": "My name is...", "translation": "我的名字是..."},
+            {"phrase": "I am...", "translation": "我是..."},
+            {"phrase": "Nice to meet you", "translation": "很高兴认识你"},
+            {"phrase": "How are you?", "translation": "你怎么样？"},
+            {"phrase": "I'm fine, thank you", "translation": "我很好，谢谢"}
+          ]
+        },
+        {
+          "title": "更多有用的表达",
+          "vocabulary": [
+            {"word": "Thank you", "translation": "谢谢"},
+            {"word": "You're welcome", "translation": "不客气"},
+            {"word": "Excuse me / Sorry", "translation": "打扰了 / 对不起"},
+            {"word": "Please", "translation": "请"},
+            {"word": "Yes / No", "translation": "是 / 不是"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 2.1：完成对话",
+          "description": "人A：你好！我的名字是Sarah。你叫什么名字？人B：[input] 人A：很高兴认识你！人B：[input]"
+        },
+        {
+          "title": "练习 2.2：翻译成英语",
+          "questions": [
+            {"pt": "你好，我的名字是Carlos", "en": "Hello, my name is Carlos"},
+            {"pt": "很高兴认识你", "en": "Nice to meet you"},
+            {"pt": "你怎么样？", "en": "How are you?"}
+          ]
+        },
+        {
+          "title": "练习 2.3：完成对话",
+          "description": "情境：在派对上认识某人 A：晚上好！我叫María。你叫什么名字？B：[input] A：很高兴认识你！你来自哪里？B：[input] A：太棒了！你玩得开心吗？B：[input]"
         }
       ]
     }

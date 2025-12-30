@@ -76,10 +76,10 @@
             </div>
         </div>
         <div class="editor-main">
-            <div class="85
-                ">
-                <h2>Begin from Zero</h2>
-            <p class="lead" style="color: #666; font-size: 1.1em; margin: 15px 0;">🇧🇷 Este curso é especialmente projetado para brasileiros que querem aprender inglês começando do básico. Cada lição tem tradução em português para facilitar seu aprendizado!</p>            </div>
+            <div class="welcome-header">
+                <h2 data-i18n="begin.title">Begin from Zero</h2>
+                <p data-i18n="begin.subtitle">Start your English learning journey from the very beginning.</p>
+            </div>
 
             <!-- Content will be added here -->
 
@@ -334,5 +334,131 @@
 
     <script src="./begin-from-zero/main-script.js"></script>
     <script src="./assets/js/i18n.js"></script>
+
+    <script>
+        function toggleLanguage() {
+            let options = document.getElementById('languageOptions');
+            options.style.display = options.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function changeLanguage(lang) {
+            if (window.I18N && window.I18N.setLanguage) {
+                window.I18N.setLanguage(lang);
+                // Hide the language options after selection
+                document.getElementById('languageOptions').style.display = 'none';
+            } else {
+                alert('Language changed to: ' + lang);
+            }
+        }
+
+        // Load user data from localStorage
+        function loadUserData() {
+            const progress = localStorage.getItem('userProgress') || '0';
+            const streak = localStorage.getItem('userStreak') || '0';
+            const nextLesson = localStorage.getItem('nextLesson') || 'Unidade 1: Introdução ao Inglês';
+
+            document.getElementById('progress-bar').style.width = progress + '%';
+            document.getElementById('progress-percent').textContent = progress;
+            document.getElementById('streak-number').textContent = streak;
+            // Next lesson is static for now
+        }
+
+        // Save user data to localStorage
+        function saveUserData() {
+            const progress = document.getElementById('progress-percent').textContent;
+            const streak = document.getElementById('streak-number').textContent;
+            localStorage.setItem('userProgress', progress);
+            localStorage.setItem('userStreak', streak);
+        }
+
+        // Simulate progress update (for demo)
+        document.querySelector('.btn-resume').addEventListener('click', () => {
+            let currentProgress = parseInt(document.getElementById('progress-percent').textContent);
+            if (currentProgress < 100) {
+                currentProgress += 5;
+                document.getElementById('progress-bar').style.width = currentProgress + '%';
+                document.getElementById('progress-percent').textContent = currentProgress;
+                saveUserData();
+            }
+        });
+
+        // Dark mode is now handled by the global dark-mode.js script
+
+        // Load data on page load
+        loadUserData();
+
+        // Desktop and Mobile Sidebar Toggle Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebar = document.getElementById('editor-sidebar');
+            const toggleBtn = document.getElementById('sidebar-toggle');
+
+            // Function to toggle sidebar
+            function toggleSidebar() {
+                // Check if mobile
+                if (window.innerWidth <= 768) {
+                    // Mobile behavior: expand/collapse width
+                    sidebar.classList.toggle('collapsed');
+                } else {
+                    // Desktop behavior: collapse/expand
+                    sidebar.classList.toggle('collapsed');
+
+                    // Opcional: Salvar a preferência do usuário no localStorage
+                    const isCollapsed = sidebar.classList.contains('collapsed');
+                    localStorage.setItem('sidebarState', isCollapsed ? 'closed' : 'open');
+                }
+            }
+
+            // Toggle button
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', toggleSidebar);
+            }
+
+            // Opcional: Manter o estado ao recarregar a página
+            if (localStorage.getItem('sidebarState') === 'closed') {
+                sidebar.classList.add('collapsed');
+            } else if (window.innerWidth > 768) {
+                // Desktop: start expanded by default
+                sidebar.classList.remove('collapsed');
+            } else {
+                // Mobile: start collapsed by default
+                sidebar.classList.add('collapsed');
+            }
+        });
+    </script>
+
+    <script>
+        // Script de correção para fazer ambos os botões de dark mode funcionarem
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('theme-toggle'); // Botão Sidebar
+            const darkToggleTop = document.getElementById('dark-mode-toggle'); // Botão Topo
+            const htmlElement = document.documentElement;
+            const moonIcon = document.getElementById('moon-icon');
+            const sunIcon = document.getElementById('sun-icon');
+
+            function toggleDarkMode() {
+                const isDark = htmlElement.classList.toggle('dark-mode');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                updateIcons(isDark);
+            }
+
+            function updateIcons(isDark) {
+                if (moonIcon && sunIcon) {
+                    moonIcon.style.display = isDark ? 'none' : 'block';
+                    sunIcon.style.display = isDark ? 'block' : 'none';
+                }
+            }
+
+            // Eventos de clique
+            if (themeToggle) themeToggle.addEventListener('click', toggleDarkMode);
+            if (darkToggleTop) darkToggleTop.addEventListener('click', toggleDarkMode);
+
+            // Persistência ao carregar a página
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                htmlElement.classList.add('dark-mode');
+                updateIcons(true);
+            }
+        });
+    </script>
 </body>
 </html>
