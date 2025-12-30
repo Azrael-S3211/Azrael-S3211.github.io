@@ -340,6 +340,18 @@
         if (window.I18N) {
             I18N.setLanguage('pt-BR');
         }
+
+        // Global sidebar toggle function
+        function toggleSidebar() {
+            const sidebar = document.getElementById('editor-sidebar');
+            if (window.innerWidth <= 768) {
+                sidebar.classList.toggle('collapsed');
+            } else {
+                sidebar.classList.toggle('collapsed');
+                const isCollapsed = sidebar.classList.contains('collapsed');
+                localStorage.setItem('sidebarState', isCollapsed ? 'closed' : 'open');
+            }
+        }
     </script>
 
     <script>
