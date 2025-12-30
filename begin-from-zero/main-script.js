@@ -1,5 +1,10 @@
 // Global variable for current language
-let currentLang = 'pt-BR'; // Default to Portuguese - matches JSON keys
+let currentLang = 'pt-BR'; // Default to Portuguese
+
+// Function to map currentLang to JSON keys
+function getLangKey(lang) {
+    return lang === 'pt-BR' ? 'pt' : 'en';
+}
 
 // Modules data - EMBEDDED DIRECTLY for offline functionality
 let modulesData = {
@@ -549,7 +554,7 @@ let dataLoaded = true;
 // Initialize immediately since data is embedded
 console.log('🚀 Initializing application with embedded data...');
 console.log(`✅ Embedded modules loaded: ${Object.keys(modulesData).length} modules`);
-generateModuleNavigation();
+// generateModuleNavigation(); // Commented out since navigation is now static in HTML
 
 // Text-to-speech function
 function speakText(text) {
@@ -597,12 +602,12 @@ function renderModuleToDiv(moduleId, container) {
     }
 
     try {
-        // Use currentLang directly since it matches JSON keys ('pt-BR' or 'en-US')
-        if (!modulesData[moduleId] || !modulesData[moduleId][currentLang]) {
-            throw new Error(`Module ${moduleId} or language ${currentLang} not found`);
+        const langKey = getLangKey(currentLang);
+        if (!modulesData[moduleId] || !modulesData[moduleId][langKey]) {
+            throw new Error(`Module ${moduleId} or language ${langKey} not found`);
         }
 
-        const moduleData = modulesData[moduleId][currentLang];
+        const moduleData = modulesData[moduleId][langKey];
 
         // Generate HTML
         let html = `
@@ -796,12 +801,12 @@ function renderModule(moduleId, lang = currentLang) {
 
 // DOM Content Loaded - ensure navigation is generated if not already done
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM loaded - checking if navigation needs to be generated...');
-    if (dataLoaded && modulesData) {
-        const accordionDiv = document.getElementById('module-accordion');
-        if (accordionDiv && !accordionDiv.innerHTML.trim()) {
-            console.log('Generating navigation on DOM load...');
-            generateModuleNavigation();
-        }
-    }
+    console.log('DOM loaded - navigation is static, no generation needed.');
+    // if (dataLoaded && modulesData) {
+    //     const accordionDiv = document.getElementById('module-accordion');
+    //     if (accordionDiv && !accordionDiv.innerHTML.trim()) {
+    //         console.log('Generating navigation on DOM load...');
+    //         generateModuleNavigation();
+    //     }
+    // }
 });

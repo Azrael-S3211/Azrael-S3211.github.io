@@ -87,13 +87,30 @@
             <h3 style="margin-top: 0;">Module Navigation</h3>
             <p style="font-size: 14px; color: #666;">Click on any module to open it</p>
 
-            <!-- Modules as accordion - dynamically generated -->
-            <div class="module-accordion" id="module-accordion">
-                <!-- Modules will be loaded here by JavaScript -->
+            <!-- Static Module Buttons -->
+            <div class="module-buttons-container">
+                <button class="module-btn-static" onclick="toggleModule('module-1')" data-i18n="begin.module1.title">📖 Module 1: English Alphabet & Pronunciation</button>
+                <div id="content-module-1" class="module-content-static" style="display: none;"></div>
+
+                <button class="module-btn-static" onclick="toggleModule('module-2')" data-i18n="begin.module2.title">👋 Module 2: Greetings & Introductions</button>
+                <div id="content-module-2" class="module-content-static" style="display: none;"></div>
+
+                <button class="module-btn-static" onclick="toggleModule('module-3')" data-i18n="begin.module3.title">🔢 Module 3: Numbers & Time</button>
+                <div id="content-module-3" class="module-content-static" style="display: none;"></div>
+
+                <button class="module-btn-static" onclick="toggleModule('module-4')" data-i18n="begin.module4.title">👨 Module 4: Verb 'To Be'</button>
+                <div id="content-module-4" class="module-content-static" style="display: none;"></div>
+
+                <button class="module-btn-static" onclick="toggleModule('module-5')" data-i18n="begin.module5.title">🏠 Module 5: Family & Home</button>
+                <div id="content-module-5" class="module-content-static" style="display: none;"></div>
             </div>
 
-            <!-- Remove the old module-content div -->
-            <!-- <div id="module-content"></div> -->
+            <!-- Remove the old module content areas -->
+
+            <!-- Remove the old module-accordion div -->
+            <!-- <div class="module-accordion" id="module-accordion">
+                <!-- Modules will be loaded here by JavaScript -->
+            </div> -->
 
             <style>
                 .module-section {
@@ -220,12 +237,36 @@
                 .module-btn:hover {
                     background: #f5f5f5;
                 }
+                .module-btn-static {
+                    width: 100%;
+                    padding: 15px;
+                    background: white;
+                    border: 2px solid #e0e0e0;
+                    border-radius: 8px;
+                    text-align: left;
+                    font-size: 16px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                    transition: background 0.3s;
+                }
+                .module-btn-static:hover {
+                    background: #f5f5f5;
+                }
                 .module-content {
                     padding: 15px;
                     border: 1px solid #ddd;
                     border-radius: 8px;
                     margin-bottom: 10px;
                     background: #fafafa;
+                }
+                .module-content-static {
+                    padding: 15px;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    margin-bottom: 20px;
+                    background: #fafafa;
+                    border-left: 4px solid #2196F3;
                 }
             </style>
         </div>
