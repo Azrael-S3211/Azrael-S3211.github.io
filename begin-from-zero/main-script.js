@@ -640,6 +640,100 @@ let modulesData = {
           ]
         }
       ]
+    },
+    "es": {
+      "title": "🔢 Módulo 3: Números y Hora",
+      "objective": "Aprende números del 1-100, decir la hora y operaciones básicas de matemática.",
+      "parts": [
+        {
+          "title": "Números 1-20",
+          "content": "Aprende los números básicos:",
+          "vocabulary": [
+            {"word": "One", "translation": "Uno"},
+            {"word": "Two", "translation": "Dos"},
+            {"word": "Three", "translation": "Tres"},
+            {"word": "Four", "translation": "Cuatro"},
+            {"word": "Five", "translation": "Cinco"},
+            {"word": "Six", "translation": "Seis"},
+            {"word": "Seven", "translation": "Siete"},
+            {"word": "Eight", "translation": "Ocho"},
+            {"word": "Nine", "translation": "Nueve"},
+            {"word": "Ten", "translation": "Diez"}
+          ]
+        },
+        {
+          "title": "Decir la Hora",
+          "content": "Expresiones básicas de tiempo:",
+          "vocabulary": [
+            {"phrase": "What time is it?", "translation": "¿Qué hora es?"},
+            {"phrase": "It's 3 o'clock", "translation": "Son las 3 en punto"},
+            {"phrase": "Half past three", "translation": "Las tres y media"},
+            {"phrase": "Quarter past three", "translation": "Las tres y cuarto"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 3.1: Cuenta hasta 20",
+          "description": "Practica contar del 1 al 20:",
+          "type": "textarea"
+        },
+        {
+          "title": "Ejercicio 3.2: Di la Hora",
+          "description": "Escribe la hora en palabras:",
+          "questions": [
+            {"word": "2:00", "options": []},
+            {"word": "4:30", "options": []}
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "title": "🔢 模块 3：数字与时间",
+      "objective": "学习1-100的数字、说时间和基本数学运算。",
+      "parts": [
+        {
+          "title": "数字1-20",
+          "content": "学习基本数字：",
+          "vocabulary": [
+            {"word": "One", "translation": "一"},
+            {"word": "Two", "translation": "二"},
+            {"word": "Three", "translation": "三"},
+            {"word": "Four", "translation": "四"},
+            {"word": "Five", "translation": "五"},
+            {"word": "Six", "translation": "六"},
+            {"word": "Seven", "translation": "七"},
+            {"word": "Eight", "translation": "八"},
+            {"word": "Nine", "translation": "九"},
+            {"word": "Ten", "translation": "十"}
+          ]
+        },
+        {
+          "title": "说时间",
+          "content": "基本时间表达：",
+          "vocabulary": [
+            {"phrase": "What time is it?", "translation": "几点了？"},
+            {"phrase": "It's 3 o'clock", "translation": "3点整"},
+            {"phrase": "Half past three", "translation": "3点半"},
+            {"phrase": "Quarter past three", "translation": "3点一刻"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 3.1：数到20",
+          "description": "练习从1数到20：",
+          "type": "textarea"
+        },
+        {
+          "title": "练习 3.2：说时间",
+          "description": "用文字写出时间：",
+          "questions": [
+            {"word": "2:00", "options": []},
+            {"word": "4:30", "options": []}
+          ]
+        }
+      ]
     }
   },
   "module-4": {
@@ -732,6 +826,96 @@ let modulesData = {
           ]
         }
       ]
+    },
+    "es": {
+      "title": "👨 Módulo 4: Verbo 'To Be'",
+      "objective": "Aprende el verbo 'to be' en presente, contracciones y formas negativas.",
+      "parts": [
+        {
+          "title": "El Verbo 'To Be'",
+          "content": "Formas en presente:",
+          "vocabulary": [
+            {"form": "I am", "contraction": "I'm", "example": "I am a student"},
+            {"form": "You are", "contraction": "You're", "example": "You are tall"},
+            {"form": "He is", "contraction": "He's", "example": "He is happy"},
+            {"form": "She is", "contraction": "She's", "example": "She is a teacher"},
+            {"form": "It is", "contraction": "It's", "example": "It is cold"},
+            {"form": "We are", "contraction": "We're", "example": "We are friends"},
+            {"form": "They are", "contraction": "They're", "example": "They are here"}
+          ]
+        },
+        {
+          "title": "Formas Negativas",
+          "content": "Agrega 'not' después del verbo:",
+          "examples": [
+            "I am not (I'm not) tired",
+            "You are not (You're not) late",
+            "He is not (He's not) sick"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 4.1: Completa los espacios",
+          "questions": [
+            "I ___ a student.",
+            "She ___ happy.",
+            "We ___ friends."
+          ]
+        },
+        {
+          "title": "Ejercicio 4.2: Haz negativo",
+          "questions": [
+            "I am tired → I ___ tired",
+            "She is happy → She ___ happy"
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "title": "👨 模块 4：动词 'To Be'",
+      "objective": "学习动词 'to be' 在现在时、缩写和否定形式。",
+      "parts": [
+        {
+          "title": "动词 'To Be'",
+          "content": "现在时形式：",
+          "vocabulary": [
+            {"form": "I am", "contraction": "I'm", "example": "I am a student"},
+            {"form": "You are", "contraction": "You're", "example": "You are tall"},
+            {"form": "He is", "contraction": "He's", "example": "He is happy"},
+            {"form": "She is", "contraction": "She's", "example": "She is a teacher"},
+            {"form": "It is", "contraction": "It's", "example": "It is cold"},
+            {"form": "We are", "contraction": "We're", "example": "We are friends"},
+            {"form": "They are", "contraction": "They're", "example": "They are here"}
+          ]
+        },
+        {
+          "title": "否定形式",
+          "content": "在动词后加 'not'：",
+          "examples": [
+            "I am not (I'm not) tired",
+            "You are not (You're not) late",
+            "He is not (He's not) sick"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 4.1：填空",
+          "questions": [
+            "I ___ a student.",
+            "She ___ happy.",
+            "We ___ friends."
+          ]
+        },
+        {
+          "title": "练习 4.2：变成否定",
+          "questions": [
+            "I am tired → I ___ tired",
+            "She is happy → She ___ happy"
+          ]
+        }
+      ]
     }
   },
   "module-5": {
@@ -814,6 +998,86 @@ let modulesData = {
           "type": "textarea"
         }
       ]
+    },
+    "es": {
+      "title": "🏠 Módulo 5: Familia y Hogar",
+      "objective": "Aprende nombres de miembros de la familia, vocabulario del hogar y describe tu espacio vital.",
+      "parts": [
+        {
+          "title": "Miembros de la Familia",
+          "content": "Aprende vocabulario familiar:",
+          "vocabulary": [
+            {"word": "Father", "translation": "Padre"},
+            {"word": "Mother", "translation": "Madre"},
+            {"word": "Brother", "translation": "Hermano"},
+            {"word": "Sister", "translation": "Hermana"},
+            {"word": "Grandfather", "translation": "Abuelo"},
+            {"word": "Grandmother", "translation": "Abuela"}
+          ]
+        },
+        {
+          "title": "Vocabulario del Hogar",
+          "content": "Habitaciones y muebles:",
+          "vocabulary": [
+            {"word": "Kitchen", "translation": "Cocina"},
+            {"word": "Bedroom", "translation": "Dormitorio"},
+            {"word": "Living room", "translation": "Sala de estar"},
+            {"word": "Bathroom", "translation": "Baño"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 5.1: Describe tu Familia",
+          "description": "Escribe un párrafo corto sobre tu familia:",
+          "type": "textarea"
+        },
+        {
+          "title": "Ejercicio 5.2: Mi Hogar",
+          "description": "Describe las habitaciones de tu hogar:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "🏠 模块 5：家庭与家居",
+      "objective": "学习家庭成员的名字、家居词汇，并描述你的生活空间。",
+      "parts": [
+        {
+          "title": "家庭成员",
+          "content": "学习家庭词汇：",
+          "vocabulary": [
+            {"word": "Father", "translation": "父亲"},
+            {"word": "Mother", "translation": "母亲"},
+            {"word": "Brother", "translation": "兄弟"},
+            {"word": "Sister", "translation": "姐妹"},
+            {"word": "Grandfather", "translation": "祖父"},
+            {"word": "Grandmother", "translation": "祖母"}
+          ]
+        },
+        {
+          "title": "家居词汇",
+          "content": "房间和家具：",
+          "vocabulary": [
+            {"word": "Kitchen", "translation": "厨房"},
+            {"word": "Bedroom", "translation": "卧室"},
+            {"word": "Living room", "translation": "客厅"},
+            {"word": "Bathroom", "translation": "浴室"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 5.1：描述你的家庭",
+          "description": "写一段简短的关于你家庭的段落：",
+          "type": "textarea"
+        },
+        {
+          "title": "练习 5.2：我的家",
+          "description": "描述你家中的房间：",
+          "type": "textarea"
+        }
+      ]
     }
   },
   "module-6": {
@@ -857,6 +1121,50 @@ let modulesData = {
         {
           "title": "Exercício 6.1: Minha Rotina Diária",
           "description": "Descreva sua rotina diária:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "es": {
+      "title": "📅 Módulo 6: Rutinas Diarias y Actividades",
+      "objective": "Aprende sobre actividades y rutinas diarias.",
+      "parts": [
+        {
+          "title": "Rutinas Diarias",
+          "content": "Actividades comunes del día:",
+          "vocabulary": [
+            {"word": "Wake up", "translation": "Despertar"},
+            {"word": "Brush teeth", "translation": "Cepillarse los dientes"},
+            {"word": "Eat breakfast", "translation": "Desayunar"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 6.1: Mi Rutina Diaria",
+          "description": "Describe tu rutina diaria:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "📅 模块 6：日常作息与活动",
+      "objective": "学习日常活动和作息。",
+      "parts": [
+        {
+          "title": "日常作息",
+          "content": "常见的日常活动：",
+          "vocabulary": [
+            {"word": "Wake up", "translation": "醒来"},
+            {"word": "Brush teeth", "translation": "刷牙"},
+            {"word": "Eat breakfast", "translation": "吃早餐"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 6.1：我的日常作息",
+          "description": "描述你的日常作息：",
           "type": "textarea"
         }
       ]
@@ -907,6 +1215,58 @@ let modulesData = {
         {
           "title": "Exercício 7.1: Conjugue os Verbos",
           "description": "Conjugue o verbo 'to eat' no presente simples:",
+          "questions": [
+            "I ___",
+            "You ___",
+            "He ___"
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "⌛ Módulo 7: Presente Simple",
+      "objective": "Aprende el tiempo presente simple.",
+      "parts": [
+        {
+          "title": "Gramática del Presente Simple",
+          "content": "Reglas básicas del presente simple:",
+          "vocabulary": [
+            {"word": "I eat", "translation": "Yo como"},
+            {"word": "You work", "translation": "Tú trabajas"},
+            {"word": "He/She runs", "translation": "Él/Ella corre"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 7.1: Conjuga los Verbos",
+          "description": "Conjuga el verbo 'to eat' en presente simple:",
+          "questions": [
+            "I ___",
+            "You ___",
+            "He ___"
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "title": "⌛ 模块 7：一般现在时",
+      "objective": "学习一般现在时。",
+      "parts": [
+        {
+          "title": "一般现在时语法",
+          "content": "一般现在时的基本规则：",
+          "vocabulary": [
+            {"word": "I eat", "translation": "我吃"},
+            {"word": "You work", "translation": "你工作"},
+            {"word": "He/She runs", "translation": "他/她跑"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 7.1：动词变位",
+          "description": "将动词 'to eat' 变位为一般现在时：",
           "questions": [
             "I ___",
             "You ___",
@@ -1016,6 +1376,106 @@ let modulesData = {
           "type": "textarea"
         }
       ]
+    },
+    "es": {
+      "title": "👋 Módulo 8: Presentándote",
+      "objective": "Aprende a presentarte y pedir direcciones.",
+      "parts": [
+        {
+          "title": "Parte 1: Frases Comunes",
+          "content": "Frases clave para presentaciones:",
+          "vocabulary": [
+            {"word": "Hello, my name is...", "translation": "Hola, mi nombre es..."},
+            {"word": "What's your name?", "translation": "¿Cuál es tu nombre?"},
+            {"word": "Nice to meet you", "translation": "Encantado de conocerte"},
+            {"word": "Where are you from?", "translation": "¿De dónde eres?"},
+            {"word": "I'm from Brazil", "translation": "Soy de Brasil"}
+          ]
+        },
+        {
+          "title": "Parte 2: Localizaciones Comunes",
+          "content": "Lugares en la ciudad:",
+          "vocabulary": [
+            {"word": "Bank", "translation": "Banco"},
+            {"word": "Hospital", "translation": "Hospital"},
+            {"word": "Restaurant", "translation": "Restaurante"},
+            {"word": "Supermarket", "translation": "Supermercado"},
+            {"word": "Post office", "translation": "Correo"},
+            {"word": "Train station", "translation": "Estación de tren"},
+            {"word": "Bus stop", "translation": "Parada de autobús"},
+            {"word": "Airport", "translation": "Aeropuerto"}
+          ]
+        },
+        {
+          "title": "Parte 3: Pidiendo Direcciones",
+          "content": "Frases útiles para navegación:",
+          "vocabulary": [
+            {"word": "Where is...?", "translation": "¿Dónde está...?"},
+            {"word": "How do I get to...?", "translation": "¿Cómo llego a...?"},
+            {"word": "Is it far?", "translation": "¿Está lejos?"},
+            {"word": "Can you show me on the map?", "translation": "¿Puedes mostrarme en el mapa?"},
+            {"word": "I'm lost", "translation": "Estoy perdido"},
+            {"word": "Thank you for your help", "translation": "Gracias por tu ayuda"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 8.1: Completa el diálogo",
+          "description": "A: Hello, ___ your name?\nB: My name ___ Maria. What's ___?\nA: I'm John. Nice ___ meet you.\nB: Nice to ___ you too. Where ___ you from?",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "👋 模块 8：自我介绍",
+      "objective": "学习自我介绍和询问方向。",
+      "parts": [
+        {
+          "title": "第1部分：常用短语",
+          "content": "介绍的关键短语：",
+          "vocabulary": [
+            {"word": "Hello, my name is...", "translation": "你好，我叫..."},
+            {"word": "What's your name?", "translation": "你叫什么名字？"},
+            {"word": "Nice to meet you", "translation": "很高兴认识你"},
+            {"word": "Where are you from?", "translation": "你来自哪里？"},
+            {"word": "I'm from Brazil", "translation": "我来自巴西"}
+          ]
+        },
+        {
+          "title": "第2部分：常见地点",
+          "content": "城市里的地方：",
+          "vocabulary": [
+            {"word": "Bank", "translation": "银行"},
+            {"word": "Hospital", "translation": "医院"},
+            {"word": "Restaurant", "translation": "餐厅"},
+            {"word": "Supermarket", "translation": "超市"},
+            {"word": "Post office", "translation": "邮局"},
+            {"word": "Train station", "translation": "火车站"},
+            {"word": "Bus stop", "translation": "公交车站"},
+            {"word": "Airport", "translation": "机场"}
+          ]
+        },
+        {
+          "title": "第3部分：询问方向",
+          "content": "导航的有用短语：",
+          "vocabulary": [
+            {"word": "Where is...?", "translation": "...在哪里？"},
+            {"word": "How do I get to...?", "translation": "怎么去...？"},
+            {"word": "Is it far?", "translation": "远吗？"},
+            {"word": "Can you show me on the map?", "translation": "你能在地图上给我看看吗？"},
+            {"word": "I'm lost", "translation": "我迷路了"},
+            {"word": "Thank you for your help", "translation": "谢谢你的帮助"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 8.1：完成对话",
+          "description": "A: Hello, ___ your name?\nB: My name ___ Maria. What's ___?\nA: I'm John. Nice ___ meet you.\nB: Nice to ___ you too. Where ___ you from?",
+          "type": "textarea"
+        }
+      ]
     }
   },
   "module-9": {
@@ -1065,6 +1525,56 @@ let modulesData = {
         {
           "title": "Exercício 9.1: Descreva Objetos",
           "description": "Use adjetivos para descrever: uma casa grande, um carro pequeno, pessoas felizes.",
+          "type": "textarea"
+        }
+      ]
+    },
+    "es": {
+      "title": "📚 Módulo 9: Adjetivos Básicos",
+      "objective": "Aprende adjetivos comunes para describir cosas.",
+      "parts": [
+        {
+          "title": "Adjetivos Comunes",
+          "content": "Palabras descriptivas básicas:",
+          "vocabulary": [
+            {"word": "Big", "translation": "Grande"},
+            {"word": "Small", "translation": "Pequeño"},
+            {"word": "Happy", "translation": "Feliz"},
+            {"word": "Sad", "translation": "Triste"},
+            {"word": "Hot", "translation": "Caliente"},
+            {"word": "Cold", "translation": "Frío"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 9.1: Describe Objetos",
+          "description": "Usa adjetivos para describir: una casa grande, un carro pequeño, personas felices.",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "📚 模块 9：基本形容词",
+      "objective": "学习常用的形容词来描述事物。",
+      "parts": [
+        {
+          "title": "常用形容词",
+          "content": "基本的描述性词语：",
+          "vocabulary": [
+            {"word": "Big", "translation": "大的"},
+            {"word": "Small", "translation": "小的"},
+            {"word": "Happy", "translation": "快乐的"},
+            {"word": "Sad", "translation": "悲伤的"},
+            {"word": "Hot", "translation": "热的"},
+            {"word": "Cold", "translation": "冷的"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 9.1：描述物体",
+          "description": "使用形容词描述：一栋大房子、一辆小汽车、快乐的人们。",
           "type": "textarea"
         }
       ]
@@ -1176,6 +1686,56 @@ Object.assign(modulesData, {
           "type": "textarea"
         }
       ]
+    },
+    "es": {
+      "title": "💼 Módulo 11: Trabajo y Profesiones",
+      "objective": "Aprende vocabulario relacionado con empleos y lugares de trabajo.",
+      "parts": [
+        {
+          "title": "Profesiones",
+          "content": "Empleos y ocupaciones comunes:",
+          "vocabulary": [
+            {"word": "Teacher", "translation": "Profesor"},
+            {"word": "Doctor", "translation": "Médico"},
+            {"word": "Engineer", "translation": "Ingeniero"},
+            {"word": "Nurse", "translation": "Enfermero"},
+            {"word": "Chef", "translation": "Cocinero"},
+            {"word": "Driver", "translation": "Conductor"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 11.1: ¿Qué hacen?",
+          "description": "Relaciona profesiones con sus descripciones:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "💼 模块 11：工作和职业",
+      "objective": "学习与工作和职业相关的词汇。",
+      "parts": [
+        {
+          "title": "职业",
+          "content": "常见的工作和职业：",
+          "vocabulary": [
+            {"word": "Teacher", "translation": "老师"},
+            {"word": "Doctor", "translation": "医生"},
+            {"word": "Engineer", "translation": "工程师"},
+            {"word": "Nurse", "translation": "护士"},
+            {"word": "Chef", "translation": "厨师"},
+            {"word": "Driver", "translation": "司机"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 11.1：他们做什么？",
+          "description": "将职业与它们的描述联系起来：",
+          "type": "textarea"
+        }
+      ]
     }
   },
   "module-12": {
@@ -1225,6 +1785,56 @@ Object.assign(modulesData, {
         {
           "title": "Exercício 12.1: Planos de Viagem",
           "description": "Descreva como você viajaria para diferentes lugares:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "es": {
+      "title": "✈️ Módulo 12: Viaje y Transporte",
+      "objective": "Aprende vocabulario para viajes y transporte.",
+      "parts": [
+        {
+          "title": "Transporte",
+          "content": "Formas de viajar:",
+          "vocabulary": [
+            {"word": "Car", "translation": "Carro"},
+            {"word": "Bus", "translation": "Autobús"},
+            {"word": "Train", "translation": "Tren"},
+            {"word": "Plane", "translation": "Avión"},
+            {"word": "Bike", "translation": "Bicicleta"},
+            {"word": "Taxi", "translation": "Taxi"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 12.1: Planes de Viaje",
+          "description": "Describe cómo viajarías a diferentes lugares:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "✈️ 模块 12：旅行和交通",
+      "objective": "学习旅行和交通的词汇。",
+      "parts": [
+        {
+          "title": "交通",
+          "content": "旅行方式：",
+          "vocabulary": [
+            {"word": "Car", "translation": "汽车"},
+            {"word": "Bus", "translation": "公共汽车"},
+            {"word": "Train", "translation": "火车"},
+            {"word": "Plane", "translation": "飞机"},
+            {"word": "Bike", "translation": "自行车"},
+            {"word": "Taxi", "translation": "出租车"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 12.1：旅行计划",
+          "description": "描述你如何去不同的地方：",
           "type": "textarea"
         }
       ]
@@ -1280,6 +1890,56 @@ Object.assign(modulesData, {
           "type": "textarea"
         }
       ]
+    },
+    "es": {
+      "title": "⚕️ Módulo 13: Salud y Partes del Cuerpo",
+      "objective": "Aprende vocabulario relacionado con la salud y el cuerpo humano.",
+      "parts": [
+        {
+          "title": "Partes del Cuerpo",
+          "content": "Partes del cuerpo:",
+          "vocabulary": [
+            {"word": "Head", "translation": "Cabeza"},
+            {"word": "Arm", "translation": "Brazo"},
+            {"word": "Leg", "translation": "Pierna"},
+            {"word": "Hand", "translation": "Mano"},
+            {"word": "Foot", "translation": "Pie"},
+            {"word": "Eye", "translation": "Ojo"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 13.1: Partes del Cuerpo",
+          "description": "Identifica las partes del cuerpo:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "⚕️ 模块 13：健康和身体部位",
+      "objective": "学习与健康和人体相关的词汇。",
+      "parts": [
+        {
+          "title": "身体部位",
+          "content": "身体部位：",
+          "vocabulary": [
+            {"word": "Head", "translation": "头部"},
+            {"word": "Arm", "translation": "手臂"},
+            {"word": "Leg", "translation": "腿"},
+            {"word": "Hand", "translation": "手"},
+            {"word": "Foot", "translation": "脚"},
+            {"word": "Eye", "translation": "眼睛"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 13.1：身体部位",
+          "description": "识别身体部位：",
+          "type": "textarea"
+        }
+      ]
     }
   },
   "module-14": {
@@ -1332,6 +1992,56 @@ Object.assign(modulesData, {
           "type": "textarea"
         }
       ]
+    },
+    "es": {
+      "title": "🌤️ Módulo 14: Clima y Estaciones",
+      "objective": "Aprende vocabulario para condiciones climáticas y estaciones.",
+      "parts": [
+        {
+          "title": "Clima",
+          "content": "Condiciones climáticas:",
+          "vocabulary": [
+            {"word": "Sunny", "translation": "Soleado"},
+            {"word": "Rainy", "translation": "Lluvioso"},
+            {"word": "Cloudy", "translation": "Nublado"},
+            {"word": "Windy", "translation": "Ventoso"},
+            {"word": "Snowy", "translation": "Nevado"},
+            {"word": "Hot", "translation": "Caliente"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 14.1: Informe del Clima",
+          "description": "Describe el clima en tu ciudad:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "🌤️ 模块 14：天气和季节",
+      "objective": "学习天气状况和季节的词汇。",
+      "parts": [
+        {
+          "title": "天气",
+          "content": "天气状况：",
+          "vocabulary": [
+            {"word": "Sunny", "translation": "晴朗的"},
+            {"word": "Rainy", "translation": "雨天的"},
+            {"word": "Cloudy", "translation": "多云的"},
+            {"word": "Windy", "translation": "有风的"},
+            {"word": "Snowy", "translation": "下雪的"},
+            {"word": "Hot", "translation": "热的"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 14.1：天气报告",
+          "description": "描述你城市的天气：",
+          "type": "textarea"
+        }
+      ]
     }
   },
   "module-15": {
@@ -1381,6 +2091,56 @@ Object.assign(modulesData, {
         {
           "title": "Exercício 15.1: Lista de Compras",
           "description": "Faça uma lista de compras com preços:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "es": {
+      "title": "🛒 Módulo 15: Compras y Dinero",
+      "objective": "Aprende vocabulario para compras y términos financieros.",
+      "parts": [
+        {
+          "title": "Compras",
+          "content": "Vocabulario de compras:",
+          "vocabulary": [
+            {"word": "Store", "translation": "Tienda"},
+            {"word": "Buy", "translation": "Comprar"},
+            {"word": "Sell", "translation": "Vender"},
+            {"word": "Price", "translation": "Precio"},
+            {"word": "Cheap", "translation": "Barato"},
+            {"word": "Expensive", "translation": "Caro"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 15.1: Lista de Compras",
+          "description": "Haz una lista de compras con precios:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "🛒 模块 15：购物和金钱",
+      "objective": "学习购物和金融术语的词汇。",
+      "parts": [
+        {
+          "title": "购物",
+          "content": "购物词汇：",
+          "vocabulary": [
+            {"word": "Store", "translation": "商店"},
+            {"word": "Buy", "translation": "买"},
+            {"word": "Sell", "translation": "卖"},
+            {"word": "Price", "translation": "价格"},
+            {"word": "Cheap", "translation": "便宜的"},
+            {"word": "Expensive", "translation": "贵的"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 15.1：购物清单",
+          "description": "制作购物清单和价格：",
           "type": "textarea"
         }
       ]
