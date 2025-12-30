@@ -545,10 +545,259 @@ let modulesData = {
         }
       ]
     }
+  },
+  "module-6": {
+    "en": {
+      "title": "📅 Module 6: Daily Routines & Activities",
+      "objective": "Learn about daily activities and routines.",
+      "parts": [
+        {
+          "title": "Daily Routines",
+          "content": "Common daily activities:",
+          "vocabulary": [
+            {"word": "Wake up", "translation": "Acordar"},
+            {"word": "Brush teeth", "translation": "Escovar os dentes"},
+            {"word": "Eat breakfast", "translation": "Tomar café da manhã"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 6.1: My Daily Routine",
+          "description": "Describe your daily routine:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "📅 Módulo 6: Rotinas Diárias e Atividades",
+      "objective": "Aprenda sobre atividades e rotinas diárias.",
+      "parts": [
+        {
+          "title": "Rotinas Diárias",
+          "content": "Atividades comuns do dia:",
+          "vocabulary": [
+            {"word": "Wake up", "translation": "Acordar"},
+            {"word": "Brush teeth", "translation": "Escovar os dentes"},
+            {"word": "Eat breakfast", "translation": "Tomar café da manhã"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 6.1: Minha Rotina Diária",
+          "description": "Descreva sua rotina diária:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-7": {
+    "en": {
+      "title": "⌛ Module 7: Present Simple",
+      "objective": "Learn the present simple tense.",
+      "parts": [
+        {
+          "title": "Present Simple Grammar",
+          "content": "Basic rules for present simple:",
+          "vocabulary": [
+            {"word": "I eat", "translation": "Eu como"},
+            {"word": "You work", "translation": "Você trabalha"},
+            {"word": "He/She runs", "translation": "Ele/Ela corre"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 7.1: Conjugate Verbs",
+          "description": "Conjugate the verb 'to eat' in present simple:",
+          "questions": [
+            "I ___",
+            "You ___",
+            "He ___"
+          ]
+        }
+      ]
+    },
+    "pt": {
+      "title": "⌛ Módulo 7: Presente Simples",
+      "objective": "Aprenda o tempo presente simples.",
+      "parts": [
+        {
+          "title": "Gramática do Presente Simples",
+          "content": "Regras básicas do presente simples:",
+          "vocabulary": [
+            {"word": "I eat", "translation": "Eu como"},
+            {"word": "You work", "translation": "Você trabalha"},
+            {"word": "He/She runs", "translation": "Ele/Ela corre"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 7.1: Conjugue os Verbos",
+          "description": "Conjugue o verbo 'to eat' no presente simples:",
+          "questions": [
+            "I ___",
+            "You ___",
+            "He ___"
+          ]
+        }
+      ]
+    }
+  },
+  "module-8": {
+    "en": {
+      "title": "👋 Module 8: Introducing Yourself",
+      "objective": "Learn how to introduce yourself properly.",
+      "parts": [
+        {
+          "title": "Self Introduction",
+          "content": "Key phrases for introduction:",
+          "vocabulary": [
+            {"phrase": "My name is...", "translation": "Meu nome é..."},
+            {"phrase": "I am from...", "translation": "Eu sou de..."},
+            {"phrase": "I work as...", "translation": "Eu trabalho como..."}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 8.1: Introduce Yourself",
+          "description": "Write a short introduction about yourself:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "👋 Módulo 8: Apresentando-se",
+      "objective": "Aprenda a se apresentar adequadamente.",
+      "parts": [
+        {
+          "title": "Apresentação Pessoal",
+          "content": "Frases chave para apresentação:",
+          "vocabulary": [
+            {"phrase": "My name is...", "translation": "Meu nome é..."},
+            {"phrase": "I am from...", "translation": "Eu sou de..."},
+            {"phrase": "I work as...", "translation": "Eu trabalho como..."}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 8.1: Apresente-se",
+          "description": "Escreva uma breve apresentação sobre você:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-9": {
+    "en": {
+      "title": "📚 Module 9: Basic Adjectives",
+      "objective": "Learn common adjectives to describe things.",
+      "parts": [
+        {
+          "title": "Common Adjectives",
+          "content": "Basic descriptive words:",
+          "vocabulary": [
+            {"word": "Big", "translation": "Grande"},
+            {"word": "Small", "translation": "Pequeno"},
+            {"word": "Happy", "translation": "Feliz"},
+            {"word": "Sad", "translation": "Triste"},
+            {"word": "Hot", "translation": "Quente"},
+            {"word": "Cold", "translation": "Frio"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 9.1: Describe Objects",
+          "description": "Use adjectives to describe: a big house, a small car, happy people.",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "📚 Módulo 9: Adjetivos Básicos",
+      "objective": "Aprenda adjetivos comuns para descrever coisas.",
+      "parts": [
+        {
+          "title": "Adjetivos Comuns",
+          "content": "Palavras descritivas básicas:",
+          "vocabulary": [
+            {"word": "Big", "translation": "Grande"},
+            {"word": "Small", "translation": "Pequeno"},
+            {"word": "Happy", "translation": "Feliz"},
+            {"word": "Sad", "translation": "Triste"},
+            {"word": "Hot", "translation": "Quente"},
+            {"word": "Cold", "translation": "Frio"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 9.1: Descreva Objetos",
+          "description": "Use adjetivos para descrever: uma casa grande, um carro pequeno, pessoas felizes.",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-10": {
+    "en": {
+      "title": "🍽️ Module 10: Food & Drinks",
+      "objective": "Learn vocabulary related to food and beverages.",
+      "parts": [
+        {
+          "title": "Food Vocabulary",
+          "content": "Common foods and drinks:",
+          "vocabulary": [
+            {"word": "Apple", "translation": "Maçã"},
+            {"word": "Bread", "translation": "Pão"},
+            {"word": "Water", "translation": "Água"},
+            {"word": "Milk", "translation": "Leite"},
+            {"word": "Coffee", "translation": "Café"},
+            {"word": "Rice", "translation": "Arroz"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 10.1: Favorite Foods",
+          "description": "List your 5 favorite foods and drinks:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "🍽️ Módulo 10: Comida e Bebidas",
+      "objective": "Aprenda vocabulário relacionado a comida e bebidas.",
+      "parts": [
+        {
+          "title": "Vocabulário de Comida",
+          "content": "Alimentos e bebidas comuns:",
+          "vocabulary": [
+            {"word": "Apple", "translation": "Maçã"},
+            {"word": "Bread", "translation": "Pão"},
+            {"word": "Water", "translation": "Água"},
+            {"word": "Milk", "translation": "Leite"},
+            {"word": "Coffee", "translation": "Café"},
+            {"word": "Rice", "translation": "Arroz"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 10.1: Comidas Favoritas",
+          "description": "Liste suas 5 comidas e bebidas favoritas:",
+          "type": "textarea"
+        }
+      ]
+    }
   }
 };
 
-// Data is already loaded since it's embedded
 let dataLoaded = true;
 
 // Initialize immediately since data is embedded
@@ -719,8 +968,23 @@ function renderModuleToDiv(moduleId, container) {
         container.innerHTML = html;
 
     } catch (error) {
-        console.error('Error rendering module:', error);
-        container.innerHTML = '<p>Error loading module.</p>';
+        console.warn('Module not found:', moduleId, error);
+        const moduleNumber = moduleId.replace('module-', '');
+        container.innerHTML = `
+            <div class="module-section" style="text-align: center; padding: 20px;">
+                <h3>� Module ${moduleNumber}: Coming Soon</h3>
+                <p>This module is under preparation. Basic content will be available soon!</p>
+                <p style="font-size: 14px; color: #666;">🇧🇷 Este módulo está sendo preparado. Conteúdo básico estará disponível em breve!</p>
+                <div style="text-align: left; margin-top: 20px;">
+                    <h4>Quick Practice:</h4>
+                    <p>Try writing 5 English words you know:</p>
+                    <textarea rows="3" placeholder="Write your words here..." style="width: 100%; padding: 8px;"></textarea>
+                    <br><br>
+                    <p>Translate: "Hello, how are you?"</p>
+                    <input type="text" placeholder="Your translation..." style="width: 100%; padding: 8px;">
+                </div>
+            </div>
+        `;
     }
 }
 
