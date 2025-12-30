@@ -62,7 +62,37 @@
             'begin.module7.questions': 'Perguntas:',
             // Módulo 8
             'begin.module8.title': '👋 Módulo 8: Apresentando-se',
-            'begin.module8.phrases': 'Frases Comuns'
+            'begin.module8.phrases': 'Frases Comuns',
+            // Módulo 9
+            'begin.module9.title': '📚 Módulo 9: Adjetivos Básicos',
+            // Módulo 10
+            'begin.module10.title': '🍽️ Módulo 10: Comida e Bebidas',
+            // Módulo 11
+            'begin.module11.title': '💼 Módulo 11: Trabalho e Profissões',
+            // Módulo 12
+            'begin.module12.title': '✈️ Módulo 12: Viagem e Transporte',
+            // Módulo 13
+            'begin.module13.title': '⚕️ Módulo 13: Saúde e Partes do Corpo',
+            // Módulo 14
+            'begin.module14.title': '🌤️ Módulo 14: Clima e Estações',
+            // Módulo 15
+            'begin.module15.title': '🛒 Módulo 15: Compras e Dinheiro',
+            // Módulo 16
+            'begin.module16.title': '⚽ Módulo 16: Hobbies e Esportes',
+            // Módulo 17
+            'begin.module17.title': '😊 Módulo 17: Emoções e Sentimentos',
+            // Módulo 18
+            'begin.module18.title': '💻 Módulo 18: Tecnologia e Internet',
+            // Módulo 19
+            'begin.module19.title': '❓ Módulo 19: Perguntas e Respostas',
+            // Módulo 20
+            'begin.module20.title': '⏪ Módulo 20: Tempo Passado (Passado Simples)',
+            // Módulo 21
+            'begin.module21.title': '⏩ Módulo 21: Tempo Futuro (Will e Going to)',
+            // Módulo 22
+            'begin.module22.title': '🎉 Módulo 22: Fazendo Planos e Convites',
+            // Módulo 23
+            'begin.module23.title': '🚨 Módulo 23: Emergências e Dando Direções'
         },
         'en-US': {
             'maintenance.title': '🚧 Under Construction 🚧',
@@ -184,7 +214,37 @@
             'begin.module7.questions': 'Preguntas:',
             // Módulo 8
             'begin.module8.title': '👋 Módulo 8: Presentándose',
-            'begin.module8.phrases': 'Frases Comunes'
+            'begin.module8.phrases': 'Frases Comunes',
+            // Módulo 9
+            'begin.module9.title': '📚 Módulo 9: Adjetivos Básicos',
+            // Módulo 10
+            'begin.module10.title': '🍽️ Módulo 10: Comida y Bebidas',
+            // Módulo 11
+            'begin.module11.title': '💼 Módulo 11: Trabajo y Profesiones',
+            // Módulo 12
+            'begin.module12.title': '✈️ Módulo 12: Viaje y Transporte',
+            // Módulo 13
+            'begin.module13.title': '⚕️ Módulo 13: Salud y Partes del Cuerpo',
+            // Módulo 14
+            'begin.module14.title': '🌤️ Módulo 14: Clima y Estaciones',
+            // Módulo 15
+            'begin.module15.title': '🛒 Módulo 15: Compras y Dinero',
+            // Módulo 16
+            'begin.module16.title': '⚽ Módulo 16: Hobbies y Deportes',
+            // Módulo 17
+            'begin.module17.title': '😊 Módulo 17: Emociones y Sentimientos',
+            // Módulo 18
+            'begin.module18.title': '💻 Módulo 18: Tecnología e Internet',
+            // Módulo 19
+            'begin.module19.title': '❓ Módulo 19: Preguntas y Respuestas',
+            // Módulo 20
+            'begin.module20.title': '⏪ Módulo 20: Tiempo Pasado (Pasado Simple)',
+            // Módulo 21
+            'begin.module21.title': '⏩ Módulo 21: Tiempo Futuro (Will y Going to)',
+            // Módulo 22
+            'begin.module22.title': '🎉 Módulo 22: Hacer Planes e Invitaciones',
+            // Módulo 23
+            'begin.module23.title': '🚨 Módulo 23: Emergencias y Dar Direcciones'
         },
         'zh-CN': {
             'maintenance.title': '🚧 正在建设中 🚧',
@@ -245,7 +305,37 @@
             'begin.module7.questions': '疑问句：',
             // 模块 8
             'begin.module8.title': '👋 模块 8：自我介绍',
-            'begin.module8.phrases': '常用短语'
+            'begin.module8.phrases': '常用短语',
+            // 模块 9
+            'begin.module9.title': '📚 模块 9：基本形容词',
+            // 模块 10
+            'begin.module10.title': '🍽️ 模块 10：食物和饮料',
+            // 模块 11
+            'begin.module11.title': '💼 模块 11：工作和职业',
+            // 模块 12
+            'begin.module12.title': '✈️ 模块 12：旅行和交通',
+            // 模块 13
+            'begin.module13.title': '⚕️ 模块 13：健康和身体部位',
+            // 模块 14
+            'begin.module14.title': '🌤️ 模块 14：天气和季节',
+            // 模块 15
+            'begin.module15.title': '🛒 模块 15：购物和金钱',
+            // 模块 16
+            'begin.module16.title': '⚽ 模块 16：爱好和运动',
+            // 模块 17
+            'begin.module17.title': '😊 模块 17：情绪和感受',
+            // 模块 18
+            'begin.module18.title': '💻 模块 18：技术和互联网',
+            // 模块 19
+            'begin.module19.title': '❓ 模块 19：问题和回答',
+            // 模块 20
+            'begin.module20.title': '⏪ 模块 20：过去时（一般过去时）',
+            // 模块 21
+            'begin.module21.title': '⏩ 模块 21：将来时（Will 和 Going to）',
+            // 模块 22
+            'begin.module22.title': '🎉 模块 22：制定计划和邀请',
+            // 模块 23
+            'begin.module23.title': '🚨 模块 23：紧急情况和指路'
         }
     };
 
