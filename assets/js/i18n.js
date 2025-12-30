@@ -28,8 +28,10 @@
             'course.writing_practice': 'Prática de Escrita',
             'course.dictionary': 'Dicionário',
             'course.certificate': 'Certificado',
-            'ads.title': 'Anúncios,
-                            // Begin from Zero Page
+            'ads.title': 'Anúncios',
+            'services.nav.home': 'Página Inicial',
+            'services.nav.settings': 'Configurações',
+            // Begin from Zero Page
             'begin.title': 'Começar do Zero',
             'begin.subtitle': 'Inicie sua jornada de aprendizado de inglês desde o início.',
             'begin.module_nav': 'Navegação de Módulos',
@@ -87,7 +89,9 @@
             'course.writing_practice': 'Writing Practice',
             'course.dictionary': 'Dictionary',
             'course.certificate': 'Certificate',
-            'ads.title': 'Ads,
+            'ads.title': 'Ads',
+            'services.nav.home': 'Home',
+            'services.nav.settings': 'Settings',
             // Begin from Zero Page
             'begin.title': 'Begin from Zero',
             'begin.subtitle': 'Start your English learning journey from the very beginning.',
@@ -146,7 +150,9 @@
             'course.writing_practice': 'Práctica de Escritura',
             'course.dictionary': 'Diccionario',
             'course.certificate': 'Certificado',
-            'ads.title': 'Anuncios,
+            'ads.title': 'Anuncios',
+            'services.nav.home': 'Inicio',
+            'services.nav.settings': 'Configuraciones',
             // Página Begin from Zero
             'begin.title': 'Comenzar desde Cero',
             'begin.subtitle': 'Comienza tu viaje de aprendizaje de inglés desde el principio.',
@@ -205,7 +211,9 @@
             'course.writing_practice': '写作练习',
             'course.dictionary': '词典',
             'course.certificate': '证书',
-            'ads.title': '广告,
+            'ads.title': '广告',
+            'services.nav.home': '首页',
+            'services.nav.settings': '设置',
             // Begin from Zero 页面
             'begin.title': '从零开始',
             'begin.subtitle': '从头开始你的英语学习之旅。',
@@ -254,10 +262,18 @@
             this.updatePage();
         },
         updatePage: function() {
-            const elements = document.querySelectorAll('[data-i18n]');
-            elements.forEach(el => {
+            // For elements with data-i18n, set textContent
+            const textElements = document.querySelectorAll('[data-i18n]');
+            textElements.forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 el.textContent = this.t(key);
+            });
+
+            // For elements with data-i18n-title, set title attribute
+            const titleElements = document.querySelectorAll('[data-i18n-title]');
+            titleElements.forEach(el => {
+                const key = el.getAttribute('data-i18n-title');
+                el.setAttribute('title', this.t(key));
             });
         }
     };

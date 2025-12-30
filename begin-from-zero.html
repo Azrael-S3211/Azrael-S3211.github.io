@@ -43,7 +43,7 @@
                     </svg>
                 </div>
 
-                <div id="sidebar-toggle" class="nav-button" style="cursor: pointer;" title="Toggle Menu">
+                <div id="sidebar-toggle" class="nav-button" style="cursor: pointer;" onclick="toggleSidebar()" title="Toggle Menu">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 24px; height: 24px;">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
@@ -336,6 +336,13 @@
     <script src="./assets/js/i18n.js"></script>
 
     <script>
+        // Set initial language to Portuguese
+        if (window.I18N) {
+            I18N.setLanguage('pt-BR');
+        }
+    </script>
+
+    <script>
         function toggleLanguage() {
             let options = document.getElementById('languageOptions');
             options.style.display = options.style.display === 'none' ? 'block' : 'none';
@@ -346,8 +353,6 @@
                 window.I18N.setLanguage(lang);
                 // Hide the language options after selection
                 document.getElementById('languageOptions').style.display = 'none';
-            } else {
-                alert('Language changed to: ' + lang);
             }
         }
 
