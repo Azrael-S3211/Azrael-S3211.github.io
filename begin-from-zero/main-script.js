@@ -649,44 +649,100 @@ let modulesData = {
   "module-8": {
     "en": {
       "title": "👋 Module 8: Introducing Yourself",
-      "objective": "Learn how to introduce yourself properly.",
+      "objective": "Learn how to introduce yourself and ask for directions.",
       "parts": [
         {
-          "title": "Self Introduction",
-          "content": "Key phrases for introduction:",
+          "title": "Part 1: Common Phrases",
+          "content": "Key phrases for introductions:",
           "vocabulary": [
-            {"phrase": "My name is...", "translation": "Meu nome é..."},
-            {"phrase": "I am from...", "translation": "Eu sou de..."},
-            {"phrase": "I work as...", "translation": "Eu trabalho como..."}
+            {"word": "Hello, my name is...", "translation": "Olá, meu nome é..."},
+            {"word": "What's your name?", "translation": "Qual é o seu nome?"},
+            {"word": "Nice to meet you", "translation": "Prazer em conhecê-lo"},
+            {"word": "Where are you from?", "translation": "De onde você é?"},
+            {"word": "I'm from Brazil", "translation": "Eu sou do Brasil"}
+          ]
+        },
+        {
+          "title": "Part 2: Common Locations",
+          "content": "Places in the city:",
+          "vocabulary": [
+            {"word": "Bank", "translation": "Banco"},
+            {"word": "Hospital", "translation": "Hospital"},
+            {"word": "Restaurant", "translation": "Restaurante"},
+            {"word": "Supermarket", "translation": "Supermercado"},
+            {"word": "Post office", "translation": "Correio"},
+            {"word": "Train station", "translation": "Estação de trem"},
+            {"word": "Bus stop", "translation": "Ponto de ônibus"},
+            {"word": "Airport", "translation": "Aeroporto"}
+          ]
+        },
+        {
+          "title": "Part 3: Asking for Directions",
+          "content": "Useful phrases for navigation:",
+          "vocabulary": [
+            {"word": "Where is...?", "translation": "Onde fica...?"},
+            {"word": "How do I get to...?", "translation": "Como eu chego em...?"},
+            {"word": "Is it far?", "translation": "É longe?"},
+            {"word": "Can you show me on the map?", "translation": "Pode me mostrar no mapa?"},
+            {"word": "I'm lost", "translation": "Estou perdido"},
+            {"word": "Thank you for your help", "translation": "Obrigado pela ajuda"}
           ]
         }
       ],
       "exercises": [
         {
-          "title": "Exercise 8.1: Introduce Yourself",
-          "description": "Write a short introduction about yourself:",
+          "title": "Exercise 8.1: Complete the dialogue",
+          "description": "A: Hello, ___ your name?\nB: My name ___ Maria. What's ___?\nA: I'm John. Nice ___ meet you.\nB: Nice to ___ you too. Where ___ you from?",
           "type": "textarea"
         }
       ]
     },
     "pt": {
       "title": "👋 Módulo 8: Apresentando-se",
-      "objective": "Aprenda a se apresentar adequadamente.",
+      "objective": "Aprenda a se apresentar e pedir direções.",
       "parts": [
         {
-          "title": "Apresentação Pessoal",
-          "content": "Frases chave para apresentação:",
+          "title": "Parte 1: Frases Comuns",
+          "content": "Frases chave para apresentações:",
           "vocabulary": [
-            {"phrase": "My name is...", "translation": "Meu nome é..."},
-            {"phrase": "I am from...", "translation": "Eu sou de..."},
-            {"phrase": "I work as...", "translation": "Eu trabalho como..."}
+            {"word": "Hello, my name is...", "translation": "Olá, meu nome é..."},
+            {"word": "What's your name?", "translation": "Qual é o seu nome?"},
+            {"word": "Nice to meet you", "translation": "Prazer em conhecê-lo"},
+            {"word": "Where are you from?", "translation": "De onde você é?"},
+            {"word": "I'm from Brazil", "translation": "Eu sou do Brasil"}
+          ]
+        },
+        {
+          "title": "Parte 2: Localizações Comuns",
+          "content": "Lugares na cidade:",
+          "vocabulary": [
+            {"word": "Bank", "translation": "Banco"},
+            {"word": "Hospital", "translation": "Hospital"},
+            {"word": "Restaurant", "translation": "Restaurante"},
+            {"word": "Supermarket", "translation": "Supermercado"},
+            {"word": "Post office", "translation": "Correio"},
+            {"word": "Train station", "translation": "Estação de trem"},
+            {"word": "Bus stop", "translation": "Ponto de ônibus"},
+            {"word": "Airport", "translation": "Aeroporto"}
+          ]
+        },
+        {
+          "title": "Parte 3: Pedindo Direções",
+          "content": "Frases úteis para navegação:",
+          "vocabulary": [
+            {"word": "Where is...?", "translation": "Onde fica...?"},
+            {"word": "How do I get to...?", "translation": "Como eu chego em...?"},
+            {"word": "Is it far?", "translation": "É longe?"},
+            {"word": "Can you show me on the map?", "translation": "Pode me mostrar no mapa?"},
+            {"word": "I'm lost", "translation": "Estou perdido"},
+            {"word": "Thank you for your help", "translation": "Obrigado pela ajuda"}
           ]
         }
       ],
       "exercises": [
         {
-          "title": "Exercício 8.1: Apresente-se",
-          "description": "Escreva uma breve apresentação sobre você:",
+          "title": "Exercício 8.1: Complete o diálogo",
+          "description": "A: Hello, ___ your name?\nB: My name ___ Maria. What's ___?\nA: I'm John. Nice ___ meet you.\nB: Nice to ___ you too. Where ___ you from?",
           "type": "textarea"
         }
       ]
@@ -797,6 +853,764 @@ let modulesData = {
     }
   }
 };
+
+// Additional modules 11-23 from HTML conversion
+Object.assign(modulesData, {
+  "module-11": {
+    "en": {
+      "title": "💼 Module 11: Work & Professions",
+      "objective": "Learn vocabulary related to jobs and workplaces.",
+      "parts": [
+        {
+          "title": "Professions",
+          "content": "Common jobs and occupations:",
+          "vocabulary": [
+            {"word": "Teacher", "translation": "Professor"},
+            {"word": "Doctor", "translation": "Médico"},
+            {"word": "Engineer", "translation": "Engenheiro"},
+            {"word": "Nurse", "translation": "Enfermeiro"},
+            {"word": "Chef", "translation": "Cozinheiro"},
+            {"word": "Driver", "translation": "Motorista"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 11.1: What do they do?",
+          "description": "Match professions with their descriptions:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "💼 Módulo 11: Trabalho & Profissões",
+      "objective": "Aprenda vocabulário relacionado a empregos e locais de trabalho.",
+      "parts": [
+        {
+          "title": "Profissões",
+          "content": "Empregos e ocupações comuns:",
+          "vocabulary": [
+            {"word": "Teacher", "translation": "Professor"},
+            {"word": "Doctor", "translation": "Médico"},
+            {"word": "Engineer", "translation": "Engenheiro"},
+            {"word": "Nurse", "translation": "Enfermeiro"},
+            {"word": "Chef", "translation": "Cozinheiro"},
+            {"word": "Driver", "translation": "Motorista"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 11.1: O que eles fazem?",
+          "description": "Relacione profissões com suas descrições:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-12": {
+    "en": {
+      "title": "✈️ Module 12: Travel & Transportation",
+      "objective": "Learn vocabulary for traveling and transportation.",
+      "parts": [
+        {
+          "title": "Transportation",
+          "content": "Ways to travel:",
+          "vocabulary": [
+            {"word": "Car", "translation": "Carro"},
+            {"word": "Bus", "translation": "Ônibus"},
+            {"word": "Train", "translation": "Trem"},
+            {"word": "Plane", "translation": "Avião"},
+            {"word": "Bike", "translation": "Bicicleta"},
+            {"word": "Taxi", "translation": "Táxi"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 12.1: Travel Plans",
+          "description": "Describe how you would travel to different places:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "✈️ Módulo 12: Viagem & Transporte",
+      "objective": "Aprenda vocabulário para viagens e transporte.",
+      "parts": [
+        {
+          "title": "Transporte",
+          "content": "Formas de viajar:",
+          "vocabulary": [
+            {"word": "Car", "translation": "Carro"},
+            {"word": "Bus", "translation": "Ônibus"},
+            {"word": "Train", "translation": "Trem"},
+            {"word": "Plane", "translation": "Avião"},
+            {"word": "Bike", "translation": "Bicicleta"},
+            {"word": "Taxi", "translation": "Táxi"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 12.1: Planos de Viagem",
+          "description": "Descreva como você viajaria para diferentes lugares:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-13": {
+    "en": {
+      "title": "⚕️ Module 13: Health & Body Parts",
+      "objective": "Learn vocabulary related to health and human body.",
+      "parts": [
+        {
+          "title": "Body Parts",
+          "content": "Parts of the body:",
+          "vocabulary": [
+            {"word": "Head", "translation": "Cabeça"},
+            {"word": "Arm", "translation": "Braço"},
+            {"word": "Leg", "translation": "Perna"},
+            {"word": "Hand", "translation": "Mão"},
+            {"word": "Foot", "translation": "Pé"},
+            {"word": "Eye", "translation": "Olho"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 13.1: Body Parts",
+          "description": "Label the parts of the body:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "⚕️ Módulo 13: Saúde & Partes do Corpo",
+      "objective": "Aprenda vocabulário relacionado à saúde e ao corpo humano.",
+      "parts": [
+        {
+          "title": "Partes do Corpo",
+          "content": "Partes do corpo:",
+          "vocabulary": [
+            {"word": "Head", "translation": "Cabeça"},
+            {"word": "Arm", "translation": "Braço"},
+            {"word": "Leg", "translation": "Perna"},
+            {"word": "Hand", "translation": "Mão"},
+            {"word": "Foot", "translation": "Pé"},
+            {"word": "Eye", "translation": "Olho"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 13.1: Partes do Corpo",
+          "description": "Identifique as partes do corpo:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-14": {
+    "en": {
+      "title": "🌤️ Module 14: Weather & Seasons",
+      "objective": "Learn vocabulary for weather conditions and seasons.",
+      "parts": [
+        {
+          "title": "Weather",
+          "content": "Weather conditions:",
+          "vocabulary": [
+            {"word": "Sunny", "translation": "Ensolarado"},
+            {"word": "Rainy", "translation": "Chuvoso"},
+            {"word": "Cloudy", "translation": "Nublado"},
+            {"word": "Windy", "translation": "Ventoso"},
+            {"word": "Snowy", "translation": "Nevado"},
+            {"word": "Hot", "translation": "Quente"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 14.1: Weather Report",
+          "description": "Describe the weather in your city:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "🌤️ Módulo 14: Tempo & Estações",
+      "objective": "Aprenda vocabulário para condições climáticas e estações.",
+      "parts": [
+        {
+          "title": "Tempo",
+          "content": "Condições climáticas:",
+          "vocabulary": [
+            {"word": "Sunny", "translation": "Ensolarado"},
+            {"word": "Rainy", "translation": "Chuvoso"},
+            {"word": "Cloudy", "translation": "Nublado"},
+            {"word": "Windy", "translation": "Ventoso"},
+            {"word": "Snowy", "translation": "Nevado"},
+            {"word": "Hot", "translation": "Quente"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 14.1: Relatório do Tempo",
+          "description": "Descreva o tempo na sua cidade:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-15": {
+    "en": {
+      "title": "🛒 Module 15: Shopping & Money",
+      "objective": "Learn vocabulary for shopping and financial terms.",
+      "parts": [
+        {
+          "title": "Shopping",
+          "content": "Shopping vocabulary:",
+          "vocabulary": [
+            {"word": "Store", "translation": "Loja"},
+            {"word": "Buy", "translation": "Comprar"},
+            {"word": "Sell", "translation": "Vender"},
+            {"word": "Price", "translation": "Preço"},
+            {"word": "Cheap", "translation": "Barato"},
+            {"word": "Expensive", "translation": "Caro"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 15.1: Shopping List",
+          "description": "Make a shopping list and prices:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "🛒 Módulo 15: Compras & Dinheiro",
+      "objective": "Aprenda vocabulário para compras e termos financeiros.",
+      "parts": [
+        {
+          "title": "Compras",
+          "content": "Vocabulário de compras:",
+          "vocabulary": [
+            {"word": "Store", "translation": "Loja"},
+            {"word": "Buy", "translation": "Comprar"},
+            {"word": "Sell", "translation": "Vender"},
+            {"word": "Price", "translation": "Preço"},
+            {"word": "Cheap", "translation": "Barato"},
+            {"word": "Expensive", "translation": "Caro"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 15.1: Lista de Compras",
+          "description": "Faça uma lista de compras com preços:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-16": {
+    "en": {
+      "title": "⚽ Module 16: Hobbies & Sports",
+      "objective": "Learn vocabulary for hobbies and sports activities.",
+      "parts": [
+        {
+          "title": "Sports & Hobbies",
+          "content": "Common activities:",
+          "vocabulary": [
+            {"word": "Play", "translation": "Jogar"},
+            {"word": "Run", "translation": "Correr"},
+            {"word": "Swim", "translation": "Nadar"},
+            {"word": "Read", "translation": "Ler"},
+            {"word": "Write", "translation": "Escrever"},
+            {"word": "Dance", "translation": "Dançar"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 16.1: My Hobbies",
+          "description": "Describe your favorite hobbies:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "⚽ Módulo 16: Hobbies & Esportes",
+      "objective": "Aprenda vocabulário para hobbies e atividades esportivas.",
+      "parts": [
+        {
+          "title": "Esportes & Hobbies",
+          "content": "Atividades comuns:",
+          "vocabulary": [
+            {"word": "Play", "translation": "Jogar"},
+            {"word": "Run", "translation": "Correr"},
+            {"word": "Swim", "translation": "Nadar"},
+            {"word": "Read", "translation": "Ler"},
+            {"word": "Write", "translation": "Escrever"},
+            {"word": "Dance", "translation": "Dançar"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 16.1: Meus Hobbies",
+          "description": "Descreva seus hobbies favoritos:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-17": {
+    "en": {
+      "title": "😊 Module 17: Emotions & Feelings",
+      "objective": "Learn vocabulary for expressing emotions and feelings.",
+      "parts": [
+        {
+          "title": "Emotions",
+          "content": "Common feelings:",
+          "vocabulary": [
+            {"word": "Happy", "translation": "Feliz"},
+            {"word": "Sad", "translation": "Triste"},
+            {"word": "Angry", "translation": "Bravo"},
+            {"word": "Tired", "translation": "Cansado"},
+            {"word": "Excited", "translation": "Animado"},
+            {"word": "Worried", "translation": "Preocupado"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 17.1: How do you feel?",
+          "description": "Describe how you feel today:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "😊 Módulo 17: Emoções & Sentimentos",
+      "objective": "Aprenda vocabulário para expressar emoções e sentimentos.",
+      "parts": [
+        {
+          "title": "Emoções",
+          "content": "Sentimentos comuns:",
+          "vocabulary": [
+            {"word": "Happy", "translation": "Feliz"},
+            {"word": "Sad", "translation": "Triste"},
+            {"word": "Angry", "translation": "Bravo"},
+            {"word": "Tired", "translation": "Cansado"},
+            {"word": "Excited", "translation": "Animado"},
+            {"word": "Worried", "translation": "Preocupado"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 17.1: Como você se sente?",
+          "description": "Descreva como você se sente hoje:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-18": {
+    "en": {
+      "title": "💻 Module 18: Technology & Internet",
+      "objective": "Learn vocabulary related to technology and online activities.",
+      "parts": [
+        {
+          "title": "Technology",
+          "content": "Digital devices and internet:",
+          "vocabulary": [
+            {"word": "Computer", "translation": "Computador"},
+            {"word": "Phone", "translation": "Telefone"},
+            {"word": "Internet", "translation": "Internet"},
+            {"word": "Email", "translation": "Email"},
+            {"word": "Website", "translation": "Website"},
+            {"word": "App", "translation": "Aplicativo"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 18.1: Digital Life",
+          "description": "Describe your daily technology use:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "💻 Módulo 18: Tecnologia & Internet",
+      "objective": "Aprenda vocabulário relacionado à tecnologia e atividades online.",
+      "parts": [
+        {
+          "title": "Tecnologia",
+          "content": "Dispositivos digitais e internet:",
+          "vocabulary": [
+            {"word": "Computer", "translation": "Computador"},
+            {"word": "Phone", "translation": "Telefone"},
+            {"word": "Internet", "translation": "Internet"},
+            {"word": "Email", "translation": "Email"},
+            {"word": "Website", "translation": "Website"},
+            {"word": "App", "translation": "Aplicativo"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 18.1: Vida Digital",
+          "description": "Descreva seu uso diário de tecnologia:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-19": {
+    "en": {
+      "title": "❓ Module 19: Questions & Answers",
+      "objective": "Learn how to ask and answer questions in English.",
+      "parts": [
+        {
+          "title": "Question Words",
+          "content": "Words for asking questions:",
+          "vocabulary": [
+            {"word": "What", "translation": "O que"},
+            {"word": "Where", "translation": "Onde"},
+            {"word": "When", "translation": "Quando"},
+            {"word": "Why", "translation": "Por quê"},
+            {"word": "How", "translation": "Como"},
+            {"word": "Who", "translation": "Quem"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 19.1: Ask Questions",
+          "description": "Write 5 questions you want to ask:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "❓ Módulo 19: Perguntas & Respostas",
+      "objective": "Aprenda a fazer e responder perguntas em inglês.",
+      "parts": [
+        {
+          "title": "Palavras Interrogativas",
+          "content": "Palavras para fazer perguntas:",
+          "vocabulary": [
+            {"word": "What", "translation": "O que"},
+            {"word": "Where", "translation": "Onde"},
+            {"word": "When", "translation": "Quando"},
+            {"word": "Why", "translation": "Por quê"},
+            {"word": "How", "translation": "Como"},
+            {"word": "Who", "translation": "Quem"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 19.1: Faça Perguntas",
+          "description": "Escreva 5 perguntas que você quer fazer:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-20": {
+    "en": {
+      "title": "⏪ Module 20: Past Tense (Simple Past)",
+      "objective": "Learn to talk about past actions and events.",
+      "parts": [
+        {
+          "title": "Regular Verbs",
+          "content": "Past tense of regular verbs:",
+          "vocabulary": [
+            {"word": "Worked", "translation": "Trabalhou"},
+            {"word": "Played", "translation": "Jogou"},
+            {"word": "Walked", "translation": "Caminhou"},
+            {"word": "Studied", "translation": "Estudou"},
+            {"word": "Watched", "translation": "Assistiu"},
+            {"word": "Cooked", "translation": "Cozinhou"}
+          ]
+        },
+        {
+          "title": "Irregular Verbs",
+          "content": "Common irregular verbs:",
+          "vocabulary": [
+            {"word": "Go - Went", "translation": "Ir - Foi"},
+            {"word": "Come - Came", "translation": "Vir - Veio"},
+            {"word": "See - Saw", "translation": "Ver - Viu"},
+            {"word": "Have - Had", "translation": "Ter - Teve"},
+            {"word": "Do - Did", "translation": "Fazer - Fez"},
+            {"word": "Buy - Bought", "translation": "Comprar - Comprou"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 20.1: Past Activities",
+          "description": "Write about what you did yesterday:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "⏪ Módulo 20: Passado (Simple Past)",
+      "objective": "Aprenda a falar sobre ações e eventos passados.",
+      "parts": [
+        {
+          "title": "Verbos Regulares",
+          "content": "Passado de verbos regulares:",
+          "vocabulary": [
+            {"word": "Worked", "translation": "Trabalhou"},
+            {"word": "Played", "translation": "Jogou"},
+            {"word": "Walked", "translation": "Caminhou"},
+            {"word": "Studied", "translation": "Estudou"},
+            {"word": "Watched", "translation": "Assistiu"},
+            {"word": "Cooked", "translation": "Cozinhou"}
+          ]
+        },
+        {
+          "title": "Verbos Irregulares",
+          "content": "Verbos irregulares comuns:",
+          "vocabulary": [
+            {"word": "Go - Went", "translation": "Ir - Foi"},
+            {"word": "Come - Came", "translation": "Vir - Veio"},
+            {"word": "See - Saw", "translation": "Ver - Viu"},
+            {"word": "Have - Had", "translation": "Ter - Teve"},
+            {"word": "Do - Did", "translation": "Fazer - Fez"},
+            {"word": "Buy - Bought", "translation": "Comprar - Comprou"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 20.1: Atividades Passadas",
+          "description": "Escreva sobre o que você fez ontem:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-21": {
+    "en": {
+      "title": "⏩ Module 21: Future Tense (Will & Going to)",
+      "objective": "Learn to talk about future plans and predictions.",
+      "parts": [
+        {
+          "title": "Will for Future",
+          "content": "Using 'will' for future actions:",
+          "vocabulary": [
+            {"word": "I will study", "translation": "Eu vou estudar"},
+            {"word": "She will work", "translation": "Ela vai trabalhar"},
+            {"word": "We will travel", "translation": "Nós vamos viajar"},
+            {"word": "They will arrive", "translation": "Eles vão chegar"}
+          ]
+        },
+        {
+          "title": "Going to for Plans",
+          "content": "Using 'going to' for planned actions:",
+          "vocabulary": [
+            {"word": "I'm going to study", "translation": "Eu vou estudar"},
+            {"word": "She's going to buy a car", "translation": "Ela vai comprar um carro"},
+            {"word": "We're going to have dinner", "translation": "Nós vamos jantar"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 21.1: Future Plans",
+          "description": "Write about your plans for next week:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "⏩ Módulo 21: Futuro (Will & Going to)",
+      "objective": "Aprenda a falar sobre planos futuros e previsões.",
+      "parts": [
+        {
+          "title": "Will para Futuro",
+          "content": "Usando 'will' para ações futuras:",
+          "vocabulary": [
+            {"word": "I will study", "translation": "Eu vou estudar"},
+            {"word": "She will work", "translation": "Ela vai trabalhar"},
+            {"word": "We will travel", "translation": "Nós vamos viajar"},
+            {"word": "They will arrive", "translation": "Eles vão chegar"}
+          ]
+        },
+        {
+          "title": "Going to para Planos",
+          "content": "Usando 'going to' para ações planejadas:",
+          "vocabulary": [
+            {"word": "I'm going to study", "translation": "Eu vou estudar"},
+            {"word": "She's going to buy a car", "translation": "Ela vai comprar um carro"},
+            {"word": "We're going to have dinner", "translation": "Nós vamos jantar"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 21.1: Planos Futuros",
+          "description": "Escreva sobre seus planos para a próxima semana:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-22": {
+    "en": {
+      "title": "🎉 Module 22: Making Plans & Invitations",
+      "objective": "Learn how to make plans and extend invitations.",
+      "parts": [
+        {
+          "title": "Making Invitations",
+          "content": "Phrases for inviting people:",
+          "vocabulary": [
+            {"word": "Would you like to...?", "translation": "Você gostaria de...?"},
+            {"word": "Do you want to...?", "translation": "Você quer...?"},
+            {"word": "Let's go to...", "translation": "Vamos para..."},
+            {"word": "How about...?", "translation": "Que tal...?"}
+          ]
+        },
+        {
+          "title": "Accepting & Refusing",
+          "content": "Responding to invitations:",
+          "vocabulary": [
+            {"word": "Yes, I'd love to", "translation": "Sim, eu adoraria"},
+            {"word": "That sounds great!", "translation": "Parece ótimo!"},
+            {"word": "I'm sorry, I can't", "translation": "Desculpe, não posso"},
+            {"word": "Maybe another time", "translation": "Talvez outra hora"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 22.1: Plan a Meeting",
+          "description": "Invite a friend to do something together:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "🎉 Módulo 22: Fazendo Planos & Convites",
+      "objective": "Aprenda a fazer planos e estender convites.",
+      "parts": [
+        {
+          "title": "Fazendo Convites",
+          "content": "Frases para convidar pessoas:",
+          "vocabulary": [
+            {"word": "Would you like to...?", "translation": "Você gostaria de...?"},
+            {"word": "Do you want to...?", "translation": "Você quer...?"},
+            {"word": "Let's go to...", "translation": "Vamos para..."},
+            {"word": "How about...?", "translation": "Que tal...?"}
+          ]
+        },
+        {
+          "title": "Aceitando & Recusando",
+          "content": "Respondendo a convites:",
+          "vocabulary": [
+            {"word": "Yes, I'd love to", "translation": "Sim, eu adoraria"},
+            {"word": "That sounds great!", "translation": "Parece ótimo!"},
+            {"word": "I'm sorry, I can't", "translation": "Desculpe, não posso"},
+            {"word": "Maybe another time", "translation": "Talvez outra hora"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 22.1: Planeje um Encontro",
+          "description": "Convide um amigo para fazer algo juntos:",
+          "type": "textarea"
+        }
+      ]
+    }
+  },
+  "module-23": {
+    "en": {
+      "title": "🚨 Module 23: Emergencies & Giving Directions",
+      "objective": "Learn emergency vocabulary and how to give directions.",
+      "parts": [
+        {
+          "title": "Emergency Phrases",
+          "content": "Important emergency expressions:",
+          "vocabulary": [
+            {"word": "Help!", "translation": "Socorro!"},
+            {"word": "Call the police!", "translation": "Chame a polícia!"},
+            {"word": "Call an ambulance!", "translation": "Chame uma ambulância!"},
+            {"word": "I'm lost", "translation": "Estou perdido"},
+            {"word": "Where's the hospital?", "translation": "Onde fica o hospital?"}
+          ]
+        },
+        {
+          "title": "Giving Directions",
+          "content": "Directions vocabulary:",
+          "vocabulary": [
+            {"word": "Turn left", "translation": "Vire à esquerda"},
+            {"word": "Turn right", "translation": "Vire à direita"},
+            {"word": "Go straight", "translation": "Vá em frente"},
+            {"word": "It's on the left", "translation": "Está à esquerda"},
+            {"word": "It's on the right", "translation": "Está à direita"},
+            {"word": "Next to", "translation": "Ao lado de"},
+            {"word": "Across from", "translation": "Em frente a"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercise 23.1: Emergency Situation",
+          "description": "Describe what you would do in an emergency:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "pt": {
+      "title": "🚨 Módulo 23: Emergências & Dando Direções",
+      "objective": "Aprenda vocabulário de emergência e como dar direções.",
+      "parts": [
+        {
+          "title": "Frases de Emergência",
+          "content": "Expressões importantes de emergência:",
+          "vocabulary": [
+            {"word": "Help!", "translation": "Socorro!"},
+            {"word": "Call the police!", "translation": "Chame a polícia!"},
+            {"word": "Call an ambulance!", "translation": "Chame uma ambulância!"},
+            {"word": "I'm lost", "translation": "Estou perdido"},
+            {"word": "Where's the hospital?", "translation": "Onde fica o hospital?"}
+          ]
+        },
+        {
+          "title": "Dando Direções",
+          "content": "Vocabulário de direções:",
+          "vocabulary": [
+            {"word": "Turn left", "translation": "Vire à esquerda"},
+            {"word": "Turn right", "translation": "Vire à direita"},
+            {"word": "Go straight", "translation": "Vá em frente"},
+            {"word": "It's on the left", "translation": "Está à esquerda"},
+            {"word": "It's on the right", "translation": "Está à direita"},
+            {"word": "Next to", "translation": "Ao lado de"},
+            {"word": "Across from", "translation": "Em frente a"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercício 23.1: Situação de Emergência",
+          "description": "Descreva o que você faria em uma emergência:",
+          "type": "textarea"
+        }
+      ]
+    }
+  }
+});
 
 let dataLoaded = true;
 
