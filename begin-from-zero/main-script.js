@@ -2888,6 +2888,284 @@ Object.assign(modulesData, {
           "type": "textarea"
         }
       ]
+    },
+    "es": {
+      "title": "⏪ Módulo 20: Pasado (Simple Past)",
+      "objective": "Aprende a hablar sobre acciones y eventos pasados.",
+      "parts": [
+        {
+          "title": "Verbos Regulares",
+          "content": "Pasado de verbos regulares:",
+          "vocabulary": [
+            {"word": "Worked", "translation": "Trabajó"},
+            {"word": "Played", "translation": "Jugó"},
+            {"word": "Walked", "translation": "Caminó"},
+            {"word": "Studied", "translation": "Estudió"},
+            {"word": "Watched", "translation": "Vio"},
+            {"word": "Cooked", "translation": "Cocinó"}
+          ]
+        },
+        {
+          "title": "Verbos Irregulares",
+          "content": "Verbos irregulares comunes:",
+          "vocabulary": [
+            {"word": "Go - Went", "translation": "Ir - Fue"},
+            {"word": "Come - Came", "translation": "Venir - Vino"},
+            {"word": "See - Saw", "translation": "Ver - Vio"},
+            {"word": "Have - Had", "translation": "Tener - Tuvo"},
+            {"word": "Do - Did", "translation": "Hacer - Hizo"},
+            {"word": "Buy - Bought", "translation": "Comprar - Compró"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 20.1: Actividades Pasadas",
+          "description": "Escribe sobre lo que hiciste ayer:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "⏪ 模块 20：过去时（一般过去时）",
+      "objective": "学习谈论过去的行为和事件。",
+      "parts": [
+        {
+          "title": "规则动词",
+          "content": "规则动词的过去式：",
+          "vocabulary": [
+            {"word": "Worked", "translation": "工作了"},
+            {"word": "Played", "translation": "玩耍了"},
+            {"word": "Walked", "translation": "走路了"},
+            {"word": "Studied", "translation": "学习了"},
+            {"word": "Watched", "translation": "看了"},
+            {"word": "Cooked", "translation": "烹饪了"}
+          ]
+        },
+        {
+          "title": "不规则动词",
+          "content": "常见的不规则动词：",
+          "vocabulary": [
+            {"word": "Go - Went", "translation": "去 - 去了"},
+            {"word": "Come - Came", "translation": "来 - 来了"},
+            {"word": "See - Saw", "translation": "看 - 看了"},
+            {"word": "Have - Had", "translation": "有 - 有了"},
+            {"word": "Do - Did", "translation": "做 - 做了"},
+            {"word": "Buy - Bought", "translation": "买 - 买了"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 20.1：过去的活动",
+          "description": "写下你昨天做了什么：",
+          "type": "textarea"
+        }
+      ]
+    },
+    "es": {
+      "title": "⏩ Módulo 21: Futuro (Will & Going to)",
+      "objective": "Aprende a hablar sobre planes futuros y predicciones.",
+      "parts": [
+        {
+          "title": "Will para Futuro",
+          "content": "Usando 'will' para acciones futuras:",
+          "vocabulary": [
+            {"word": "I will study", "translation": "Yo estudiaré"},
+            {"word": "She will work", "translation": "Ella trabajará"},
+            {"word": "We will travel", "translation": "Nosotros viajaremos"},
+            {"word": "They will arrive", "translation": "Ellos llegarán"}
+          ]
+        },
+        {
+          "title": "Going to para Planes",
+          "content": "Usando 'going to' para acciones planeadas:",
+          "vocabulary": [
+            {"word": "I'm going to study", "translation": "Yo voy a estudiar"},
+            {"word": "She's going to buy a car", "translation": "Ella va a comprar un carro"},
+            {"word": "We're going to have dinner", "translation": "Nosotros vamos a cenar"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 21.1: Planes Futuros",
+          "description": "Escribe sobre tus planes para la próxima semana:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "⏩ 模块 21：将来时（Will 和 Going to）",
+      "objective": "学习谈论未来的计划和预测。",
+      "parts": [
+        {
+          "title": "Will 表示将来",
+          "content": "用 'will' 表示未来的动作：",
+          "vocabulary": [
+            {"word": "I will study", "translation": "我将学习"},
+            {"word": "She will work", "translation": "她将工作"},
+            {"word": "We will travel", "translation": "我们将旅行"},
+            {"word": "They will arrive", "translation": "他们将到达"}
+          ]
+        },
+        {
+          "title": "Going to 表示计划",
+          "content": "用 'going to' 表示计划的动作：",
+          "vocabulary": [
+            {"word": "I'm going to study", "translation": "我打算学习"},
+            {"word": "She's going to buy a car", "translation": "她打算买车"},
+            {"word": "We're going to have dinner", "translation": "我们打算吃饭"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 21.1：未来的计划",
+          "description": "写下你下周的计划：",
+          "type": "textarea"
+        }
+      ]
+    },
+    "es": {
+      "title": "🎉 Módulo 22: Hacer Planes & Invitaciones",
+      "objective": "Aprende a hacer planes y extender invitaciones.",
+      "parts": [
+        {
+          "title": "Hacer Invitaciones",
+          "content": "Frases para invitar a la gente:",
+          "vocabulary": [
+            {"word": "Would you like to...?", "translation": "¿Te gustaría...? "},
+            {"word": "Do you want to...?", "translation": "¿Quieres...? "},
+            {"word": "Let's go to...", "translation": "Vamos a..."},
+            {"word": "How about...?", "translation": "¿Qué tal...? "}
+          ]
+        },
+        {
+          "title": "Aceptar & Rechazar",
+          "content": "Respondiendo a invitaciones:",
+          "vocabulary": [
+            {"word": "Yes, I'd love to", "translation": "Sí, me encantaría"},
+            {"word": "That sounds great!", "translation": "¡Suena genial!"},
+            {"word": "I'm sorry, I can't", "translation": "Lo siento, no puedo"},
+            {"word": "Maybe another time", "translation": "Tal vez en otra ocasión"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 22.1: Planear un Encuentro",
+          "description": "Invita a un amigo a hacer algo juntos:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "🎉 模块 22：制定计划和邀请",
+      "objective": "学习制定计划和发出邀请。",
+      "parts": [
+        {
+          "title": "发出邀请",
+          "content": "邀请别人的短语：",
+          "vocabulary": [
+            {"word": "Would you like to...?", "translation": "你想...吗？"},
+            {"word": "Do you want to...?", "translation": "你想要...吗？"},
+            {"word": "Let's go to...", "translation": "我们去...吧"},
+            {"word": "How about...?", "translation": "怎么样...？"}
+          ]
+        },
+        {
+          "title": "接受和拒绝",
+          "content": "回应邀请：",
+          "vocabulary": [
+            {"word": "Yes, I'd love to", "translation": "是的，我很乐意"},
+            {"word": "That sounds great!", "translation": "听起来很棒！"},
+            {"word": "I'm sorry, I can't", "translation": "抱歉，我不能"},
+            {"word": "Maybe another time", "translation": "也许下次吧"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 22.1：规划一次会面",
+          "description": "邀请朋友一起做某事：",
+          "type": "textarea"
+        }
+      ]
+    },
+    "es": {
+      "title": "🚨 Módulo 23: Emergencias & Dar Direcciones",
+      "objective": "Aprende vocabulario de emergencia y cómo dar direcciones.",
+      "parts": [
+        {
+          "title": "Frases de Emergencia",
+          "content": "Expresiones importantes de emergencia:",
+          "vocabulary": [
+            {"word": "Help!", "translation": "¡Ayuda!"},
+            {"word": "Call the police!", "translation": "¡Llama a la policía!"},
+            {"word": "Call an ambulance!", "translation": "¡Llama a una ambulancia!"},
+            {"word": "I'm lost", "translation": "Estoy perdido"},
+            {"word": "Where's the hospital?", "translation": "¿Dónde está el hospital?"}
+          ]
+        },
+        {
+          "title": "Dar Direcciones",
+          "content": "Vocabulario de direcciones:",
+          "vocabulary": [
+            {"word": "Turn left", "translation": "Gira a la izquierda"},
+            {"word": "Turn right", "translation": "Gira a la derecha"},
+            {"word": "Go straight", "translation": "Ve derecho"},
+            {"word": "It's on the left", "translation": "Está a la izquierda"},
+            {"word": "It's on the right", "translation": "Está a la derecha"},
+            {"word": "Next to", "translation": "Al lado de"},
+            {"word": "Across from", "translation": "Enfrente de"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 23.1: Situación de Emergencia",
+          "description": "Describe qué harías en una emergencia:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "🚨 模块 23：紧急情况和指路",
+      "objective": "学习紧急情况词汇和如何指路。",
+      "parts": [
+        {
+          "title": "紧急短语",
+          "content": "重要的紧急表达：",
+          "vocabulary": [
+            {"word": "Help!", "translation": "救命！"},
+            {"word": "Call the police!", "translation": "叫警察！"},
+            {"word": "Call an ambulance!", "translation": "叫救护车！"},
+            {"word": "I'm lost", "translation": "我迷路了"},
+            {"word": "Where's the hospital?", "translation": "医院在哪里？"}
+          ]
+        },
+        {
+          "title": "指路",
+          "content": "方向词汇：",
+          "vocabulary": [
+            {"word": "Turn left", "translation": "左转"},
+            {"word": "Turn right", "translation": "右转"},
+            {"word": "Go straight", "translation": "直走"},
+            {"word": "It's on the left", "translation": "在左边"},
+            {"word": "It's on the right", "translation": "在右边"},
+            {"word": "Next to", "translation": "旁边"},
+            {"word": "Across from", "translation": "对面"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 23.1：紧急情况",
+          "description": "描述你在紧急情况下会做什么：",
+          "type": "textarea"
+        }
+      ]
     }
   }
 });
