@@ -360,13 +360,25 @@
             options.style.display = options.style.display === 'none' ? 'block' : 'none';
         }
 
-        function changeLanguage(lang) {
+        // Force a função a ser global para que o botão onclick do HTML a encontre
+        window.changeLanguage = function(lang) {
+            console.log("Trocando idioma para: " + lang);
+
+            // Atualiza a variável global que o main-script.js vai ler
+            window.currentLang = lang;
+
             if (window.I18N && window.I18N.setLanguage) {
                 window.I18N.setLanguage(lang);
                 // Hide the language options after selection
                 document.getElementById('languageOptions').style.display = 'none';
             }
-        }
+
+            // RE-GERAR O CONTEÚDO DOS MÓDULOS COM O NOVO IDIOMA
+            if (typeof generateModuleNavigation === 'function') {
+                generateModuleNavigation();
+                console.log("Módulos regenerados!");
+            }
+        };
 
         // Load user data from localStorage
         function loadUserData() {

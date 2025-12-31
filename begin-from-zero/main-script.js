@@ -1,5 +1,5 @@
-// Global variable for current language
-let currentLang = 'pt-BR'; // Default to Portuguese
+// Global variable for current language - shared with HTML
+window.currentLang = window.currentLang || 'pt-BR'; // Default to Portuguese
 
 // Function to map currentLang to JSON keys
 function getLangKey(lang) {
@@ -3360,70 +3360,69 @@ function renderModuleToDiv(moduleId, container) {
     }
 }
 
-// Function to generate module navigation dynamically
+// Function to toggle language
+function toggleLanguage() {
+    // Cycle through languages: pt-BR -> en-US -> es-ES -> zh-CN -> pt-BR
+    if (currentLang === 'pt-BR') {
+        currentLang = 'en-US';
+    } else if (currentLang === 'en-US') {
+        currentLang = 'es-ES';
+    } else if (currentLang === 'es-ES') {
+        currentLang = 'zh-CN';
+    } else if (currentLang === 'zh-CN') {
+        currentLang = 'pt-BR';
+    }
+
+    console.log('Language changed to:', currentLang);
+
+    // Re-generate navigation with new language
+    generateModuleNavigation();
+
+    // Clear all module content and re-render visible ones in the new language
+    const allModuleContents = document.querySelectorAll('.module-content');
+    allModuleContents.forEach(contentDiv => {
+        const moduleId = contentDiv.id.replace('content-', '');
+        if (contentDiv.style.display === 'block' && contentDiv.innerHTML.trim()) {
+            // Re-render visible modules immediately
+            renderModuleToDiv(moduleId, contentDiv);
+        } else {
+            // Clear hidden modules so they re-render when opened
+            contentDiv.innerHTML = '';
+            contentDiv.style.display = 'none';
+        }
+    });
+}
+
 function generateModuleNavigation() {
-    console.log('Generating module navigation...');
     const accordionDiv = document.getElementById('module-accordion');
-    if (!accordionDiv) {
-        console.error('Module accordion div not found!');
-        return;
-    }
+    if (!accordionDiv) return;
 
-    if (!modulesData) {
-        console.error('Modules data not loaded!');
-        return;
-    }
+    // 1. Limpa o que existe para não duplicar
+    accordionDiv.innerHTML = '';
 
-    console.log('Modules data keys:', Object.keys(modulesData).length);
-    let html = '';
+    // 2. Força a leitura do idioma global
+    const langKey = getLangKey(window.currentLang);
 
-    // Get all module keys and sort them numerically
     const moduleKeys = Object.keys(modulesData).sort((a, b) => {
-        const numA = parseInt(a.replace('module-', ''));
-        const numB = parseInt(b.replace('module-', ''));
-        return numA - numB;
+        return parseInt(a.split('-')[1]) - parseInt(b.split('-')[1]);
     });
 
-    console.log('Module keys found:', moduleKeys.length, moduleKeys);
-
-    // Generate accordion items for each module
+    let html = '';
     moduleKeys.forEach(moduleKey => {
-        try {
-            // Use currentLang directly since it matches JSON keys ('pt-BR' or 'en-US')
-            const moduleData = modulesData[moduleKey][currentLang];
-
-            if (!moduleData || !moduleData.title) {
-                console.warn(`Module ${moduleKey} has invalid data structure for language ${currentLang}`);
-                return; // Skip this module
-            }
-
-            const moduleNumber = moduleKey.replace('module-', '');
-            const titleParts = moduleData.title.split(' ');
-            const emoji = titleParts.length > 0 ? titleParts[0] : '📖';
-            const title = titleParts.length > 1 ? titleParts.slice(1).join(' ') : moduleData.title;
-
-            console.log(`Processing module ${moduleNumber}: ${title}`);
-
+        const module = modulesData[moduleKey][langKey];
+        if (module) {
             html += `
                 <div class="module-item">
-                    <button class="module-btn" onclick="toggleModule('${moduleKey}')">${emoji} Module ${moduleNumber}: ${title}</button>
-                    <div id="content-${moduleKey}" class="module-content" style="display: none;"></div>
-                </div>
-            `;
-        } catch (error) {
-            console.warn(`Error processing module ${moduleKey}:`, error);
-            // Add a fallback button for broken modules
-            const moduleNumber = moduleKey.replace('module-', '');
-            html += `
-                <div class="module-item">
-                    <button class="module-btn" disabled style="opacity: 0.5;">❌ Module ${moduleNumber}: Error loading</button>
-                    <div id="content-${moduleKey}" class="module-content" style="display: none;"></div>
+                    <button class="module-btn" onclick="toggleModule('${moduleKey}')">
+                        ${module.title}
+                    </button>
+                    <div id="content-${moduleKey}" class="module-content" style="display: none;">
+                        </div>
                 </div>
             `;
         }
     });
 
-    console.log('Generated HTML for', moduleKeys.length, 'modules');
     accordionDiv.innerHTML = html;
 }
 
