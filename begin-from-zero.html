@@ -89,73 +89,142 @@
 
             <!-- Static Module Buttons -->
             <div class="module-buttons-container">
-                <button class="module-btn-static" onclick="toggleModule('module-1')" data-i18n="begin.module1.title">📖 Module 1: English Alphabet & Pronunciation</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-1" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-1')" data-i18n="begin.module1.title">📖 Module 1: English Alphabet & Pronunciation</button>
+                </div>
                 <div id="content-module-1" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-2')" data-i18n="begin.module2.title">👋 Module 2: Greetings & Introductions</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-2" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-2')" data-i18n="begin.module2.title">👋 Module 2: Greetings & Introductions</button>
+                </div>
                 <div id="content-module-2" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-3')" data-i18n="begin.module3.title">🔢 Module 3: Numbers & Time</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-3" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-3')" data-i18n="begin.module3.title">🔢 Module 3: Numbers & Time</button>
+                </div>
                 <div id="content-module-3" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-4')" data-i18n="begin.module4.title">👨 Module 4: Verb 'To Be'</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-4" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-4')" data-i18n="begin.module4.title">👨 Module 4: Verb 'To Be'</button>
+                </div>
                 <div id="content-module-4" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-5')" data-i18n="begin.module5.title">🏠 Module 5: Family & Home</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-5" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-5')" data-i18n="begin.module5.title">🏠 Module 5: Family & Home</button>
+                </div>
                 <div id="content-module-5" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-6')" data-i18n="begin.module6.title">📅 Module 6: Daily Routines & Activities</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-6" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-6')" data-i18n="begin.module6.title">📅 Module 6: Daily Routines & Activities</button>
+                </div>
                 <div id="content-module-6" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-7')" data-i18n="begin.module7.title">⌛ Module 7: Present Simple</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-7" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-7')" data-i18n="begin.module7.title">⌛ Module 7: Present Simple</button>
+                </div>
                 <div id="content-module-7" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-8')" data-i18n="begin.module8.title">👋 Module 8: Introducing Yourself</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-8" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-8')" data-i18n="begin.module8.title">👋 Module 8: Introducing Yourself</button>
+                </div>
                 <div id="content-module-8" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-9')" data-i18n="begin.module9.title">📚 Module 9: Basic Adjectives</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-9" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-9')" data-i18n="begin.module9.title">📚 Module 9: Basic Adjectives</button>
+                </div>
                 <div id="content-module-9" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-10')" data-i18n="begin.module10.title">🍽️ Module 10: Food & Drinks</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-10" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-10')" data-i18n="begin.module10.title">🍽️ Module 10: Food & Drinks</button>
+                </div>
                 <div id="content-module-10" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-11')" data-i18n="begin.module11.title">💼 Module 11: Work & Professions</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-11" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-11')" data-i18n="begin.module11.title">💼 Module 11: Work & Professions</button>
+                </div>
                 <div id="content-module-11" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-12')" data-i18n="begin.module12.title">✈️ Module 12: Travel & Transportation</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-12" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-12')" data-i18n="begin.module12.title">✈️ Module 12: Travel & Transportation</button>
+                </div>
                 <div id="content-module-12" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-13')" data-i18n="begin.module13.title">⚕️ Module 13: Health & Body Parts</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-13" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-13')" data-i18n="begin.module13.title">⚕️ Module 13: Health & Body Parts</button>
+                </div>
                 <div id="content-module-13" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-14')" data-i18n="begin.module14.title">🌤️ Module 14: Weather & Seasons</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-14" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-14')" data-i18n="begin.module14.title">🌤️ Module 14: Weather & Seasons</button>
+                </div>
                 <div id="content-module-14" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-15')" data-i18n="begin.module15.title">🛒 Module 15: Shopping & Money</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-15" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-15')" data-i18n="begin.module15.title">🛒 Module 15: Shopping & Money</button>
+                </div>
                 <div id="content-module-15" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-16')" data-i18n="begin.module16.title">⚽ Module 16: Hobbies & Sports</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-16" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-16')" data-i18n="begin.module16.title">⚽ Module 16: Hobbies & Sports</button>
+                </div>
                 <div id="content-module-16" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-17')" data-i18n="begin.module17.title">😊 Module 17: Emotions & Feelings</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-17" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-17')" data-i18n="begin.module17.title">😊 Module 17: Emotions & Feelings</button>
+                </div>
                 <div id="content-module-17" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-18')" data-i18n="begin.module18.title">💻 Module 18: Technology & Internet</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-18" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-18')" data-i18n="begin.module18.title">💻 Module 18: Technology & Internet</button>
+                </div>
                 <div id="content-module-18" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-19')" data-i18n="begin.module19.title">❓ Module 19: Questions & Answers</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-19" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-19')" data-i18n="begin.module19.title">❓ Module 19: Questions & Answers</button>
+                </div>
                 <div id="content-module-19" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-20')" data-i18n="begin.module20.title">⏪ Module 20: Past Tense (Simple Past)</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-20" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-20')" data-i18n="begin.module20.title">⏪ Module 20: Past Tense (Simple Past)</button>
+                </div>
                 <div id="content-module-20" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-21')" data-i18n="begin.module21.title">⏩ Module 21: Future Tense (Will & Going to)</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-21" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-21')" data-i18n="begin.module21.title">⏩ Module 21: Future Tense (Will & Going to)</button>
+                </div>
                 <div id="content-module-21" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-22')" data-i18n="begin.module22.title">🎉 Module 22: Making Plans & Invitations</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-22" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-22')" data-i18n="begin.module22.title">🎉 Module 22: Making Plans & Invitations</button>
+                </div>
                 <div id="content-module-22" class="module-content-static" style="display: none;"></div>
 
-                <button class="module-btn-static" onclick="toggleModule('module-23')" data-i18n="begin.module23.title">🚨 Module 23: Emergencies & Giving Directions</button>
+                <div class="module-item">
+                    <input type="checkbox" id="checkbox-module-23" class="module-checkbox">
+                    <button class="module-btn-static" onclick="toggleModule('module-23')" data-i18n="begin.module23.title">🚨 Module 23: Emergencies & Giving Directions</button>
+                </div>
                 <div id="content-module-23" class="module-content-static" style="display: none;"></div>
             </div>
 
@@ -321,6 +390,20 @@
                     margin-bottom: 20px;
                     background: #fafafa;
                     border-left: 4px solid #2196F3;
+                }
+                .module-item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+                .module-checkbox {
+                    margin-right: 10px;
+                    width: 20px;
+                    height: 20px;
+                    accent-color: #007bff;
+                }
+                .module-btn-static {
+                    flex: 1;
                 }
             </style>
         </div>

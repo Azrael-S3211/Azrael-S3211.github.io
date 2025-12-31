@@ -12,6 +12,117 @@ function getLangKey(lang) {
     }
 }
 
+// Progress tracking functions
+function getProgress() {
+    const stored = localStorage.getItem('englishCourseProgress');
+    return stored ? JSON.parse(stored) : {};
+}
+
+function saveProgress(progress) {
+    localStorage.setItem('englishCourseProgress', JSON.stringify(progress));
+}
+
+function markModuleCompleted(moduleId) {
+    const progress = getProgress();
+    const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+
+    if (!progress[moduleId] || !progress[moduleId].completed) {
+        progress[moduleId] = { completed: true, date: today };
+        saveProgress(progress);
+        updateStreak(today);
+        updateCheckboxes();
+    }
+}
+
+function updateStreak(today) {
+    const stored = localStorage.getItem('englishCourseStreak');
+    let streakData = stored ? JSON.parse(stored) : { current: 0, lastActivity: null };
+
+    const lastDate = streakData.lastActivity;
+    if (!lastDate) {
+        streakData.current = 1;
+        streakData.lastActivity = today;
+    } else {
+        const last = new Date(lastDate);
+        const current = new Date(today);
+        const diffTime = current - last;
+        const diffDays = diffTime / (1000 * 60 * 60 * 24);
+
+        if (diffDays === 1) {
+            // Consecutive day
+            streakData.current += 1;
+            streakData.lastActivity = today;
+        } else if (diffDays === 0) {
+            // Same day, no change
+        } else {
+            // Gap, reset
+            streakData.current = 1;
+            streakData.lastActivity = today;
+        }
+    }
+
+    localStorage.setItem('englishCourseStreak', JSON.stringify(streakData));
+}
+
+function getStreak() {
+    const stored = localStorage.getItem('englishCourseStreak');
+    return stored ? JSON.parse(stored).current : 0;
+}
+
+function getProgressPercentage() {
+    const progress = getProgress();
+    const totalModules = Object.keys(modulesData).length;
+    const completed = Object.values(progress).filter(p => p.completed).length;
+    return Math.round((completed / totalModules) * 100);
+}
+
+function getNextLesson() {
+    const progress = getProgress();
+    for (let i = 1; i <= Object.keys(modulesData).length; i++) {
+        const moduleId = `module-${i}`;
+        if (!progress[moduleId] || !progress[moduleId].completed) {
+            const langKey = getLangKey(window.currentLang);
+            const module = modulesData[moduleId][langKey];
+            return module ? module.title : `Module ${i}`;
+        }
+    }
+    return 'All modules completed!';
+}
+
+function updateCheckboxes() {
+    const progress = getProgress();
+    Object.keys(progress).forEach(moduleId => {
+        const checkbox = document.getElementById(`checkbox-${moduleId}`);
+        if (checkbox) {
+            checkbox.checked = progress[moduleId].completed;
+            // Remove existing listener to avoid duplicates
+            checkbox.removeEventListener('change', handleCheckboxChange);
+            // Add new listener
+            checkbox.addEventListener('change', handleCheckboxChange);
+        }
+    });
+}
+
+function handleCheckboxChange(event) {
+    const checkbox = event.target;
+    const moduleId = checkbox.id.replace('checkbox-', '');
+    const progress = getProgress();
+
+    if (checkbox.checked) {
+        // Mark as completed
+        const today = new Date().toISOString().split('T')[0];
+        progress[moduleId] = { completed: true, date: today };
+        updateStreak(today);
+    } else {
+        // Mark as not completed
+        delete progress[moduleId];
+    }
+
+    saveProgress(progress);
+    // Update checkboxes to ensure UI is consistent
+    updateCheckboxes();
+}
+
 // Modules data - EMBEDDED DIRECTLY for offline functionality
 let modulesData = {
   "module-1": {
@@ -3210,6 +3321,7 @@ function toggleModule(moduleId) {
             renderModuleToDiv(moduleId, contentDiv);
         }
         contentDiv.style.display = 'block';
+        markModuleCompleted(moduleId); // Mark as completed when opening
     } else {
         contentDiv.style.display = 'none';
     }
@@ -3440,6 +3552,7 @@ function renderModule(moduleId, lang = currentLang) {
 // DOM Content Loaded - ensure navigation is generated if not already done
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM loaded - navigation is static, no generation needed.');
+    updateCheckboxes(); // Initialize checkboxes on load
     // if (dataLoaded && modulesData) {
     //     const accordionDiv = document.getElementById('module-accordion');
     //     if (accordionDiv && !accordionDiv.innerHTML.trim()) {

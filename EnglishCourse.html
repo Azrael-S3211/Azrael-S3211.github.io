@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="./assets/img/logo.png">
     <link rel="stylesheet" href="./assets/css/global-style.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./begin-from-zero/main-script.js"></script>
     <!-- Maintenance Modal Styles -->
 
     <!-- AdSense script with automatic ads -->
@@ -163,14 +164,26 @@
 
         // Load user data from localStorage
         function loadUserData() {
-            const progress = localStorage.getItem('userProgress') || '0';
-            const streak = localStorage.getItem('userStreak') || '0';
-            const nextLesson = localStorage.getItem('nextLesson') || 'Unidade 1: Introdução ao Inglês';
+            // Import functions from begin-from-zero/main-script.js if available
+            if (typeof getProgressPercentage === 'function' && typeof getStreak === 'function' && typeof getNextLesson === 'function') {
+                const progress = getProgressPercentage();
+                const streak = getStreak();
+                const nextLesson = getNextLesson();
 
-            document.getElementById('progress-bar').style.width = progress + '%';
-            document.getElementById('progress-percent').textContent = progress;
-            document.getElementById('streak-number').textContent = streak;
-            // Next lesson is static for now
+                document.getElementById('progress-bar').style.width = progress + '%';
+                document.getElementById('progress-percent').textContent = progress;
+                document.getElementById('streak-number').textContent = streak;
+                document.getElementById('next-lesson-text').textContent = nextLesson;
+            } else {
+                // Fallback to old method
+                const progress = localStorage.getItem('userProgress') || '0';
+                const streak = localStorage.getItem('userStreak') || '0';
+                const nextLesson = localStorage.getItem('nextLesson') || 'Unidade 1: Introdução ao Inglês';
+
+                document.getElementById('progress-bar').style.width = progress + '%';
+                document.getElementById('progress-percent').textContent = progress;
+                document.getElementById('streak-number').textContent = streak;
+            }
         }
 
         // Save user data to localStorage
@@ -181,15 +194,10 @@
             localStorage.setItem('userStreak', streak);
         }
 
-        // Simulate progress update (for demo)
+        // Redirect to appropriate page based on progress
         document.querySelector('.btn-resume').addEventListener('click', () => {
-            let currentProgress = parseInt(document.getElementById('progress-percent').textContent);
-            if (currentProgress < 100) {
-                currentProgress += 5;
-                document.getElementById('progress-bar').style.width = currentProgress + '%';
-                document.getElementById('progress-percent').textContent = currentProgress;
-                saveUserData();
-            }
+            // For now, always redirect to begin-from-zero since it's the only implemented course
+            window.location.href = 'begin-from-zero.html';
         });
 
         // Dark mode is now handled by the global dark-mode.js script
@@ -235,8 +243,6 @@
             }
         });
     </script>
-
-
 
     <script src="./assets/js/i18n.js"></script>
 
