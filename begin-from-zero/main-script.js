@@ -3217,18 +3217,11 @@ function toggleModule(moduleId) {
 
 // Function to render a module to a specific div
 function renderModuleToDiv(moduleId, container) {
-    if (!modulesData) {
-        container.innerHTML = '<p>Loading module data...</p>';
-        return;
-    }
-
     try {
-        const langKey = getLangKey(currentLang);
-        if (!modulesData[moduleId] || !modulesData[moduleId][langKey]) {
-            throw new Error(`Module ${moduleId} or language ${langKey} not found`);
-        }
-
+        const langKey = getLangKey(window.currentLang); // Garante que usa o idioma global atual
         const moduleData = modulesData[moduleId][langKey];
+
+        if (!moduleData) return;
 
         // Generate HTML
         let html = `
@@ -3344,7 +3337,7 @@ function renderModuleToDiv(moduleId, container) {
         const moduleNumber = moduleId.replace('module-', '');
         container.innerHTML = `
             <div class="module-section" style="text-align: center; padding: 20px;">
-                <h3>� Module ${moduleNumber}: Coming Soon</h3>
+                <h3> Module ${moduleNumber}: Coming Soon</h3>
                 <p>This module is under preparation. Basic content will be available soon!</p>
                 <p style="font-size: 14px; color: #666;">🇧🇷 Este módulo está sendo preparado. Conteúdo básico estará disponível em breve!</p>
                 <div style="text-align: left; margin-top: 20px;">
@@ -3397,16 +3390,18 @@ function generateModuleNavigation() {
     const accordionDiv = document.getElementById('module-accordion');
     if (!accordionDiv) return;
 
-    // 1. Limpa o que existe para não duplicar
+    // 1. Identifica se havia algo aberto
+    const openedModule = document.querySelector('.module-content[style*="display: block"]');
+    const openedModuleId = openedModule ? openedModule.id.replace('content-', '') : null;
+
+    // 2. Limpa tudo
     accordionDiv.innerHTML = '';
-
-    // 2. Força a leitura do idioma global
     const langKey = getLangKey(window.currentLang);
-
     const moduleKeys = Object.keys(modulesData).sort((a, b) => {
         return parseInt(a.split('-')[1]) - parseInt(b.split('-')[1]);
     });
 
+    // 3. Reconstrói os botões
     let html = '';
     moduleKeys.forEach(moduleKey => {
         const module = modulesData[moduleKey][langKey];
@@ -3416,14 +3411,22 @@ function generateModuleNavigation() {
                     <button class="module-btn" onclick="toggleModule('${moduleKey}')">
                         ${module.title}
                     </button>
-                    <div id="content-${moduleKey}" class="module-content" style="display: none;">
-                        </div>
+                    <div id="content-${moduleKey}" class="module-content" style="display: none;"></div>
                 </div>
             `;
         }
     });
-
     accordionDiv.innerHTML = html;
+
+    // 4. O PULO DO GATO: Se havia um módulo aberto, renderiza o conteúdo dele IMEDIATAMENTE
+    if (openedModuleId) {
+        const targetDiv = document.getElementById(`content-${openedModuleId}`);
+        if (targetDiv) {
+            // Chamamos a função de renderização diretamente para garantir que o texto mude
+            renderModuleToDiv(openedModuleId, targetDiv);
+            targetDiv.style.display = 'block'; // Mantém visível
+        }
+    }
 }
 
 // Function to render a module (legacy, for single module)
