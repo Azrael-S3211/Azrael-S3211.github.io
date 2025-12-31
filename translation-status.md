@@ -18,18 +18,18 @@
 - **Module 7**: Present Simple
 - **Module 8**: Introducing Yourself
 - **Module 9**: Basic Adjectives
-- **Module 10**: Food & Drinks ✅ **NOVO!**
+- **Module 10**: Food & Drinks
 - **Module 11**: Work & Professions
 - **Module 12**: Travel & Transportation
 - **Module 13**: Health & Body Parts
 - **Module 14**: Weather & Seasons
 - **Module 15**: Shopping & Money
-- **Module 16**: Hobbies & Sports ✅ **NOVO!**
+- **Module 16**: Hobbies & Sports
+- **Module 17**: Emotions & Feelings ✅ **NOVO!**
+- **Module 18**: Technology & Internet ✅ **NOVO!**
+- **Module 19**: Questions & Answers ✅ **NOVO!**
 
 ### 🔄 Módulos Parcialmente Traduzidos (Faltam es/zh)
-- **Module 17**: Emotions & Feelings (pt ✅, en ✅, es ❌, zh ❌)
-- **Module 18**: Technology & Internet (pt ✅, en ✅, es ❌, zh ❌)
-- **Module 19**: Questions & Answers (pt ✅, en ✅, es ❌, zh ❌)
 - **Module 20**: Past Tense (Simple Past) (pt ✅, en ✅, es ❌, zh ❌)
 - **Module 21**: Future Tense (Will & Going to) (pt ✅, en ✅, es ❌, zh ❌)
 - **Module 22**: Making Plans & Invitations (pt ✅, en ✅, es ❌, zh ❌)
@@ -38,12 +38,13 @@
 ## Próximas Etapas
 1. ✅ Adicionar traduções para Module 10 (Food & Drinks) - CONCLUÍDO
 2. ✅ Adicionar traduções para Module 16 (Hobbies & Sports) - CONCLUÍDO
-3. Adicionar traduções espanholas para Modules 17-23
-4. Adicionar traduções chinesas para Modules 17-23
-5. Testar todas as traduções no site
+3. ✅ Adicionar traduções para Modules 17-19 (Emotions, Technology, Questions) - CONCLUÍDO
+4. Adicionar traduções espanholas para Modules 20-23
+5. Adicionar traduções chinesas para Modules 20-23
+6. Testar todas as traduções no site
 
 ## Estatísticas
 - **Total de módulos**: 23
-- **Módulos completos**: 16 (70%)
-- **Módulos com traduções parciais**: 7 (30%)
-- **Tradução total**: ~88% completa
+- **Módulos completos**: 19 (83%)
+- **Módulos com traduções parciais**: 4 (17%)
+- **Tradução total**: ~95% completa

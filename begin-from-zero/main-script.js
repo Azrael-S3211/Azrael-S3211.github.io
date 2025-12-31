@@ -2738,6 +2738,156 @@ Object.assign(modulesData, {
           "type": "textarea"
         }
       ]
+    },
+    "es": {
+      "title": "😊 Módulo 17: Emociones & Sentimientos",
+      "objective": "Aprende vocabulario para expresar emociones y sentimientos.",
+      "parts": [
+        {
+          "title": "Emociones",
+          "content": "Sentimientos comunes:",
+          "vocabulary": [
+            {"word": "Happy", "translation": "Feliz"},
+            {"word": "Sad", "translation": "Triste"},
+            {"word": "Angry", "translation": "Enojado"},
+            {"word": "Tired", "translation": "Cansado"},
+            {"word": "Excited", "translation": "Emocionado"},
+            {"word": "Worried", "translation": "Preocupado"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 17.1: ¿Cómo te sientes?",
+          "description": "Describe cómo te sientes hoy:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "😊 模块 17：情绪和感受",
+      "objective": "学习表达情绪和感受的词汇。",
+      "parts": [
+        {
+          "title": "情绪",
+          "content": "常见感受：",
+          "vocabulary": [
+            {"word": "Happy", "translation": "快乐的"},
+            {"word": "Sad", "translation": "悲伤的"},
+            {"word": "Angry", "translation": "生气的"},
+            {"word": "Tired", "translation": "疲倦的"},
+            {"word": "Excited", "translation": "兴奋的"},
+            {"word": "Worried", "translation": "担心的"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 17.1：你感觉怎么样？",
+          "description": "描述你今天的感觉：",
+          "type": "textarea"
+        }
+      ]
+    },
+    "es": {
+      "title": "💻 Módulo 18: Tecnología & Internet",
+      "objective": "Aprende vocabulario relacionado con la tecnología y actividades en línea.",
+      "parts": [
+        {
+          "title": "Tecnología",
+          "content": "Dispositivos digitales e internet:",
+          "vocabulary": [
+            {"word": "Computer", "translation": "Computadora"},
+            {"word": "Phone", "translation": "Teléfono"},
+            {"word": "Internet", "translation": "Internet"},
+            {"word": "Email", "translation": "Correo electrónico"},
+            {"word": "Website", "translation": "Sitio web"},
+            {"word": "App", "translation": "Aplicación"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 18.1: Vida Digital",
+          "description": "Describe tu uso diario de tecnología:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "💻 模块 18：技术和互联网",
+      "objective": "学习与技术和在线活动相关的词汇。",
+      "parts": [
+        {
+          "title": "技术",
+          "content": "数字设备和互联网：",
+          "vocabulary": [
+            {"word": "Computer", "translation": "计算机"},
+            {"word": "Phone", "translation": "电话"},
+            {"word": "Internet", "translation": "互联网"},
+            {"word": "Email", "translation": "电子邮件"},
+            {"word": "Website", "translation": "网站"},
+            {"word": "App", "translation": "应用程序"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 18.1：数字生活",
+          "description": "描述你日常使用技术的情况：",
+          "type": "textarea"
+        }
+      ]
+    },
+    "es": {
+      "title": "❓ Módulo 19: Preguntas & Respuestas",
+      "objective": "Aprende a hacer y responder preguntas en inglés.",
+      "parts": [
+        {
+          "title": "Palabras Interrogativas",
+          "content": "Palabras para hacer preguntas:",
+          "vocabulary": [
+            {"word": "What", "translation": "¿Qué"},
+            {"word": "Where", "translation": "¿Dónde"},
+            {"word": "When", "translation": "¿Cuándo"},
+            {"word": "Why", "translation": "¿Por qué"},
+            {"word": "How", "translation": "¿Cómo"},
+            {"word": "Who", "translation": "¿Quién"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 19.1: Haz Preguntas",
+          "description": "Escribe 5 preguntas que quieres hacer:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "❓ 模块 19：问题和答案",
+      "objective": "学习如何用英语提问和回答问题。",
+      "parts": [
+        {
+          "title": "疑问词",
+          "content": "用来提问的词：",
+          "vocabulary": [
+            {"word": "What", "translation": "什么"},
+            {"word": "Where", "translation": "哪里"},
+            {"word": "When", "translation": "什么时候"},
+            {"word": "Why", "translation": "为什么"},
+            {"word": "How", "translation": "怎么样"},
+            {"word": "Who", "translation": "谁"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 19.1：提出问题",
+          "description": "写出你想问的5个问题：",
+          "type": "textarea"
+        }
+      ]
     }
   }
 });
