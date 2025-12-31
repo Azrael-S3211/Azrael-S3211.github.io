@@ -108,19 +108,17 @@ function handleCheckboxChange(event) {
     const moduleId = checkbox.id.replace('checkbox-', '');
     const progress = getProgress();
 
-    if (checkbox.checked) {
-        // Mark as completed
-        const today = new Date().toISOString().split('T')[0];
-        progress[moduleId] = { completed: true, date: today };
-        updateStreak(today);
-    } else {
+    // Only allow unchecking, not checking manually
+    if (!checkbox.checked) {
         // Mark as not completed
         delete progress[moduleId];
+        saveProgress(progress);
+        // Update checkboxes to ensure UI is consistent
+        updateCheckboxes();
+    } else {
+        // If trying to check manually, revert the change
+        checkbox.checked = progress[moduleId] && progress[moduleId].completed;
     }
-
-    saveProgress(progress);
-    // Update checkboxes to ensure UI is consistent
-    updateCheckboxes();
 }
 
 // Modules data - EMBEDDED DIRECTLY for offline functionality
