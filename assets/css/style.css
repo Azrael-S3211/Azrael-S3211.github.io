@@ -457,22 +457,19 @@
 /* Ajustes para quando o Modo Escuro estiver ativo */
 .dark-mode .home-bottom-ads {
     color-scheme: dark;
-    background-color: #1a1a1a; /* Fundo escuro */
+    background-color: var(--color-bg);
 }
 
 .dark-mode .home-bottom-ads h3 {
-    color: #ffffff;
+    color: var(--color-text);
 }
 
 .dark-mode .ad-banner {
-    background: #2d2d2d;
-    border-color: #444;
+    background: var(--ml-light-gray);
+    border-color: var(--ml-border);
 }
 
-/* Tenta forçar os iframes dos anúncios a seguirem o esquema de cores da página */
-.dark-mode .ad-banner iframe {
-    filter: invert(1) hue-rotate(180deg);
-}
+/* Removed filter: invert(1) hue-rotate(180deg) from iframes as requested */
 
 /* Ajustes para mobile */
 @media (max-width: 768px) {
