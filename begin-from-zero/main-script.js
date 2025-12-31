@@ -1630,6 +1630,56 @@ let modulesData = {
           "type": "textarea"
         }
       ]
+    },
+    "es": {
+      "title": "🍽️ Módulo 10: Comida y Bebidas",
+      "objective": "Aprende vocabulario relacionado con comida y bebidas.",
+      "parts": [
+        {
+          "title": "Vocabulario de Comida",
+          "content": "Alimentos y bebidas comunes:",
+          "vocabulary": [
+            {"word": "Apple", "translation": "Manzana"},
+            {"word": "Bread", "translation": "Pan"},
+            {"word": "Water", "translation": "Agua"},
+            {"word": "Milk", "translation": "Leche"},
+            {"word": "Coffee", "translation": "Café"},
+            {"word": "Rice", "translation": "Arroz"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 10.1: Comidas Favoritas",
+          "description": "Lista tus 5 comidas y bebidas favoritas:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "🍽️ 模块 10：食物和饮料",
+      "objective": "学习与食物和饮料相关的词汇。",
+      "parts": [
+        {
+          "title": "食物词汇",
+          "content": "常见的食物和饮料：",
+          "vocabulary": [
+            {"word": "Apple", "translation": "苹果"},
+            {"word": "Bread", "translation": "面包"},
+            {"word": "Water", "translation": "水"},
+            {"word": "Milk", "translation": "牛奶"},
+            {"word": "Coffee", "translation": "咖啡"},
+            {"word": "Rice", "translation": "米饭"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 10.1：最喜欢的食物",
+          "description": "列出你最喜欢的5种食物和饮料：",
+          "type": "textarea"
+        }
+      ]
     }
   }
 };
@@ -2635,6 +2685,56 @@ Object.assign(modulesData, {
         {
           "title": "Exercício 23.1: Situação de Emergência",
           "description": "Descreva o que você faria em uma emergência:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "es": {
+      "title": "⚽ Módulo 16: Hobbies & Deportes",
+      "objective": "Aprende vocabulario para hobbies y actividades deportivas.",
+      "parts": [
+        {
+          "title": "Deportes & Hobbies",
+          "content": "Actividades comunes:",
+          "vocabulary": [
+            {"word": "Play", "translation": "Jugar"},
+            {"word": "Run", "translation": "Correr"},
+            {"word": "Swim", "translation": "Nadar"},
+            {"word": "Read", "translation": "Leer"},
+            {"word": "Write", "translation": "Escribir"},
+            {"word": "Dance", "translation": "Bailar"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Ejercicio 16.1: Mis Hobbies",
+          "description": "Describe tus hobbies favoritos:",
+          "type": "textarea"
+        }
+      ]
+    },
+    "zh": {
+      "title": "⚽ 模块 16：爱好和体育",
+      "objective": "学习爱好和体育活动的词汇。",
+      "parts": [
+        {
+          "title": "体育和爱好",
+          "content": "常见活动：",
+          "vocabulary": [
+            {"word": "Play", "translation": "玩耍"},
+            {"word": "Run", "translation": "跑步"},
+            {"word": "Swim", "translation": "游泳"},
+            {"word": "Read", "translation": "阅读"},
+            {"word": "Write", "translation": "写作"},
+            {"word": "Dance", "translation": "跳舞"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "练习 16.1：我的爱好",
+          "description": "描述你最喜欢的爱好：",
           "type": "textarea"
         }
       ]
